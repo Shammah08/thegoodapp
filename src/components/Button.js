@@ -1,13 +1,13 @@
-const Button = ({height, width, text, backgroundColor, borderRadius}) => {
-    const buttonStyle = {
-        height,
-        width,
-        backgroundColor,
-        borderRadius,
-    }
+const Button = ({classes, text, route, onClick}) => {
+    let url = '/' + route
+    url = url.toLowerCase()
+   
+
     return (
-        <button style={ buttonStyle}>
-            {text}
+        <button className={classes} onClick={onClick}>
+        <a href={url}>
+        {text}
+        </a>
         </button>
     )
 }
@@ -15,14 +15,7 @@ const Button = ({height, width, text, backgroundColor, borderRadius}) => {
 
 
 Button.defaultProps = {
-    height: '60px',
-    width: '250px',
-    text: 'Click',
-    backgroundColor: '#333',
-    borderRadius: '20px',
-    // outline: 'none',
-    // border: 'none',
-    // // fontWeight: '500',
-    // fontSize: '30px' 
+        route: '#',
+        text: 'Click Me'
 }
 export default Button
