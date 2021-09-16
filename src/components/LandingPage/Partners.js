@@ -1,13 +1,14 @@
-import amaize from "./images/amaize.webp";
-import apa from "./images/apa.webp";
-import safaricom from "./images/safaricom.webp";
-import ciroc from "./images/ciroc.webp";
-import artcaffe from "./images/artcaffe.webp";
-import prudential from "./images/prudential.webp";
-import stanbic from "./images/stanbic.webp";
-import ikigai from "./images/ikigai.webp";
-import ohcha from "./images/ohcha.webp";
-import redbull from "./images/redbull.webp";
+import amaize from "../images/amaize.webp";
+import apa from "../images/apa.webp";
+import safaricom from "../images/safaricom.webp";
+import ciroc from "../images/ciroc.webp";
+import artcaffe from "../images/artcaffe.webp";
+import prudential from "../images/prudential.webp";
+import stanbic from "../images/stanbic.webp";
+import ikigai from "../images/ikigai.webp";
+import ohcha from "../images/ohcha.webp";
+import redbull from "../images/redbull.webp";
+
 
 function Partners() {
   // const partnerImg = []

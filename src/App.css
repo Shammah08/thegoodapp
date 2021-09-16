@@ -28,10 +28,10 @@ header{
   height: 120px;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid rgb(165, 165, 165);
+  /* border-bottom: 1px solid rgb(165, 165, 165); */
   padding: 10px;
   z-index: 1000;
-  background-color: none;
+  background-color: rgba(0, 0, 0, 0.5);
 
 }
 nav{
@@ -109,6 +109,7 @@ header .logo{
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: red;
 }
 .loader-container{
   height: 100vh;

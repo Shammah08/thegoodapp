@@ -1,0 +1,61 @@
+.team-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.team-text h1{
+    font-size: 6rem;
+    color: #141618;
+}
+.team-text p{
+    font-size: 1.6rem;
+    width: 100%;
+    color: #141618;
+}
+.team-container {
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  padding: 20px 50px;
+  
+}
+.team-member {
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #141618;
+}
+.team-member .image-container {
+  height: 100%;
+  width: 100%;
+}
+.team-member img {
+  height: 100%;
+  width: 100%;
+}
+.team-member figcaption {
+  position: absolute;
+  padding: 10px;
+  padding-right: 30px;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 110%;
+  overflow-y: scroll;
+  background-color: #141618;
+  color: azure;
+}
+.team-member figcaption .icon{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.team-member figcaption p {
+  line-height: 20px;
+  letter-spacing: 2px;
+}

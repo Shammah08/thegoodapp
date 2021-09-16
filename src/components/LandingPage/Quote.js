@@ -1,4 +1,4 @@
-import blankLaptop from './images/blank-laptop.jpg'
+import blankLaptop from '../images/blank-laptop.jpg'
 
 
 const Quote = () => {

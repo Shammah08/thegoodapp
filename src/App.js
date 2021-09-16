@@ -7,8 +7,13 @@ import WalkPage from "./components/WalkWithG/WalkPage";
 import Team from "./components/TeamPage/Team";
 import Shop from "./components/ShopPage/Shop";
 import Podcast from "./components/PodcastPage/Podcast";
+import Show from "./components/PodcastPage/Show";
 import News from "./components/NewsPage/News";
 import Header from "./components/Header";
+import {TopButton} from './components/Button'
+
+
+
 
 
 function App() {
@@ -22,11 +27,12 @@ function App() {
           </Route>
           <Route path="/walk" component={WalkPage} />
           <Route path="/team" component={Team} />
-          <Route path="/shop" component={Shop} />
-          <Route path="/podcast" component={Podcast} />
+          <Route path="/shop"  component={Shop} />
+          <Route path="/podcast" exact component={Podcast} />
+          <Route path="/show/:url/:title" component={Show} />
           <Route path="/news" component={News} />
         </Switch>
-
+        <TopButton />
         <Footer />
       </Router>
     </div>
