@@ -1,4 +1,4 @@
-import Loader from '../Loader'
+
 
 function Show({ match }) {
   console.log("MATCH", match);

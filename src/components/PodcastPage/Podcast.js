@@ -40,14 +40,14 @@ const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelI
       const data = await response.json()
     setAllVideos(data.items)
     setDisplayVideos(allVideos)
-    // console.log('State', displayVideos)
+    console.log('State', displayVideos)
   }
 
   const handleClick = (e) => {
     setDisplayVideos(allVideos)
     const name = e.target.alt.slice(0,5)
     let filteredVideos;
-    if(!allVideos === []){
+    if(!allVideos ===false){
       filteredVideos = allVideos.filter(episode =>{
         const title = episode.snippet.title.slice(0,10)
         return title.includes(name) 
