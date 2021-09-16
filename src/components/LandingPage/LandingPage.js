@@ -4,7 +4,7 @@ import Quote from './Quote';
 import Partners from './Partners';
 import Services from './Services'
 import './Landing.css'
-import { landingTemplates } from "../database";
+import { landingTemplates, services } from "../database";
 import { useState, useEffect } from "react";
 
 
@@ -26,9 +26,9 @@ const LandingPage = () => {
   });
   // next slide
   const nextSlide = (index) => {
-    console.log("Current Index", index);
+    // console.log("Current Index", index);
     if (index === landingTemplates.length - 1) {
-      console.log(landingTemplates.length);
+      // console.log(landingTemplates.length);
 
       let prevItem = landingTemplates.length - 1;
       landingTemplates[prevItem].startAnimation = "";
@@ -67,7 +67,7 @@ const LandingPage = () => {
           <About />
           <Quote />
           <Partners />
-          <Services/>
+          <Services services={services} />
 
     </main>
   );

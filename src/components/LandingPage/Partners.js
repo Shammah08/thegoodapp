@@ -25,7 +25,7 @@ function Partners() {
     { url: redbull, title: "REDBULL" },
   ];
   const partners = partnersList.map((partner) => {
-    return <img src={partner.url} alt={partner} title={partner.title} />;
+    return <img src={partner.url} alt={partner} title={partner.title} key={partner.title} />;
   });
   return (
     <section className="partners-container">

@@ -10,7 +10,7 @@ import {
 
 function Members({team}) {
     const teamMembers = team.map(member => {
-        return <figure className='team-member' key={member.id}>
+        return <figure className='team-member' key={member.userid}>
             <div className='image-container'>
                 <img src={member.image} alt={member.fullName + 'image'} />
             </div>
@@ -23,7 +23,7 @@ function Members({team}) {
                 <FaTwitter  className='icon'/>
                 <FaFacebookF  className='icon'/>
                  </span>
-                <p>{member.bio? member.bio: "Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company.' said the Tiny Dragon" }</p>
+                <p>{member.bio? member.bio: "Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company.' said "+ member.fullName }</p>
             </figcaption>
         </figure>
     })

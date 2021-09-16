@@ -3,7 +3,7 @@ import { team } from "../database";
 import Members from "./Members";
 
 function Team() {
-  console.log(team);
+  // console.log(team);
   return (
     <main id="#">
       <section className="landing-section">
