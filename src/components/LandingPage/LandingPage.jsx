@@ -1,22 +1,19 @@
-import LandingSlides from './LandingSlides'
-import About from './About'
-import Quote from './Quote';
-import Partners from './Partners';
-import Services from './Services'
-import './Landing.css'
+import LandingSlides from "./LandingSlides";
+import About from "./About";
+import Quote from "./Quote";
+import Partners from "./Partners";
+import Services from "./Services";
+import Footer from "./Footer";
+import "./Landing.css";
 import { landingTemplates, services } from "../database";
 import { useState, useEffect } from "react";
-
-
-
-
 
 const LandingPage = () => {
   const [slide, setSlide] = useState(landingTemplates[0]);
 
   //  transition effect
   useEffect(() => {
-    const timeRemaining = "10000";
+    const timeRemaining = "100000";
     const timeout = setInterval(() => {
       nextSlide(slide.index);
     }, timeRemaining);
@@ -63,12 +60,16 @@ const LandingPage = () => {
   };
   return (
     <main>
-    <LandingSlides slide={slide} nextSlide={nextSlide} prevSlide={prevSlide}/>
-          <About />
-          <Quote />
-          <Partners />
-          <Services services={services} />
-
+      <LandingSlides
+        slide={slide}
+        nextSlide={nextSlide}
+        prevSlide={prevSlide}
+      />
+      <About />
+      <Quote />
+      <Partners />
+      <Services services={services} />
+      <Footer />
     </main>
   );
 };

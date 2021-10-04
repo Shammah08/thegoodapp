@@ -5,7 +5,7 @@ import Members from "./Members";
 function Team() {
   // console.log(team);
   return (
-    <main id="#">
+    <main>
       <section className="landing-section">
         <Loader />
         <div className="team-text">

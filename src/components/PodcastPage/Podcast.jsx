@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
 import { shows, videosData } from "../database";
 
 function Podcast() {
-  // const apiKey = "AIzaSyCCUi3ewXd7ZVuj8_sOaRiprmTq6hBlGac";     // SR-Key
-  const apiKey = "AIzaSyDlZRxHYzY6frk2ilDYClj3vV5Ry6iw1T0";     //SO-Key
+  const apiKey = "AIzaSyCCUi3ewXd7ZVuj8_sOaRiprmTq6hBlGac"; // SR-Key
+  // const apiKey = "AIzaSyDlZRxHYzY6frk2ilDYClj3vV5Ry6iw1T0";     //SO-Key
   const channelID = "UC7h4tUtdH0L06sDZVmBMc4Q"; //TGC
   // const channelID = "UC6yW44UGJJBvYTlfC7CRg2Q";     //ManU
   const videoCount = 150;
@@ -18,15 +18,14 @@ function Podcast() {
   const [displayVideos, setDisplayVideos] = useState([]);
 
   useEffect(() => {
-    console.log("FETCHING DATA"); 
-      fetchData().catch((error) => {
-        console.log("The Following Error Occurred", error.message);
-        setAllVideos(videosData);
-        console.log('Fetching still')
-        setDisplayVideos(videosData);
-        return;
-      });
-
+    console.log("FETCHING DATA");
+    fetchData().catch((error) => {
+      console.log("The Following Error Occurred", error.message);
+      setAllVideos(videosData);
+      console.log("Fetching still");
+      setDisplayVideos(videosData);
+      return;
+    });
 
     return () => {
       // setDisplayVideos(allVideos)
@@ -49,7 +48,7 @@ function Podcast() {
 
   const handleClick = (e) => {
     setDisplayVideos(allVideos);
-    console.log('All Videos', allVideos)
+    console.log("All Videos", allVideos);
     const name = e.target.alt.slice(0, 5);
     let filteredVideos;
     if (!allVideos === false) {
@@ -66,7 +65,7 @@ function Podcast() {
   };
 
   return (
-    <main id="#">
+    <main>
       <ChannelContainer shows={shows} onClick={handleClick} />
       <RecentVideo videos={displayVideos} />
     </main>
