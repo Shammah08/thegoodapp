@@ -11,7 +11,7 @@ import {
 function Members({team}) {
     const teamMembers = team.map(member => {
         return <figure className='team-member' key={member.userid}>
-            <div className='image-container'>
+            <div className='member-image'>
                 <img src={member.image} alt={member.fullName + 'image'} />
             </div>
             <figcaption>

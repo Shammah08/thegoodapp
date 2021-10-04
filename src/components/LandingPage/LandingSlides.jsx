@@ -1,59 +1,89 @@
 import {
-  FaChevronLeft,
-  FaChevronRight,
-  FaAngleDoubleDown,
+  // FaChevronLeft,
+  // FaChevronRight,
+  // FaAngleDoubleDown,
+  FaAngleRight,
+  FaAngleLeft,
   // FaEnvelopeOpenText,
 } from "react-icons/fa";
-import Loader from "../Loader";
+// import Loader from "../Loader";
+import { useState, useEffect, useRef } from "react";
+import { init } from "ityped";
 
-function LandingSlides({slide, nextSlide, prevSlide}) {
+function LandingSlides({ allSlides }) {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const headingRef = useRef();
+
+  useEffect(() => {
+    init(headingRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      strings: ["Developer", "and Human Being"],
+      backSpeed: 60,
+      startDelay: 500,
+    });
+    return () => {};
+  });
+  //  transition effect
+  useEffect(() => {
+    const timeRemaining = "10000";
+    const timeout = setInterval(() => {
+      handleClick("right");
+    }, timeRemaining);
+    return () => {
+      clearTimeout(timeout);
+    };
+  });
+
+  const handleClick = (way) => {
+    way === "left"
+      ? setActiveSlide(activeSlide > 0 ? activeSlide - 1 : allSlides.length - 1)
+      : setActiveSlide(
+          activeSlide < allSlides.length - 1 ? activeSlide + 1 : 0
+        );
+  };
+
   return (
     <section className="landing-section" id="home">
-      {/* slides landingTemplates page */}
       <div
-        className="slide"
-        style={{
-          backgroundImage: `linear-gradient(360deg, rgba(0,0,0,0.5), rgba(0,0,0,0.1)),url(${slide.image})`,
-          transition: "all ease-in-out 1s",
-        }}
-      ></div>
+        className="slider"
+        style={{ transform: `translateX(-${activeSlide * 100}vw)` }}
+      >
+        {allSlides.map((slide) => {
+          return (
+            <div className="slide-container" key={slide.index}>
+              <div className="container">
+                <div className="text-container">
+                  <h2>
+                    {slide.title}
+                    <span ref={headingRef}></span>
+                  </h2>
 
-      <Loader />
+                  <p>{slide.desc}</p>
+                  <a href={slide.url}>
+                    <button className="btn">{slide.button}</button>
+                  </a>
+                </div>
 
-      <span className="landing-text">
-        <h1 style={slide.startAnimation ? headingAnimation : { animation: "" }}>
-          {slide.title}
-        </h1>
-        <p
-          style={slide.startAnimation ? paragraphAnimation : { animation: "" }}
-        >
-          {slide.text}
-        </p>
-        <a href={"/" + slide.url}>
-          {" "}
-          <button className="btn-default landing-button">{slide.button}</button>
-        </a>
-      </span>
-      <a href="/#about">
-        <FaAngleDoubleDown className="nav-btn dwn-btn" />
-      </a>
-      <FaChevronRight
-        className=" nav-btn next-btn"
-        onClick={() => nextSlide(slide.index)}
+                <div className="image-container">
+                  <img src={slide.image} alt="" />
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <FaAngleRight
+        className="arrow right-arrow"
+        onClick={() => handleClick("right")}
       />
-      <FaChevronLeft
-        className="nav-btn prev-btn"
-        onClick={() => prevSlide(slide.index)}
+      <FaAngleLeft
+        className="arrow left-arrow"
+        onClick={() => handleClick("left")}
       />
     </section>
   );
 }
-
-const paragraphAnimation = {
-  animation: "text-animation 15s 1s infinite alternate-reverse",
-};
-const headingAnimation = {
-  animation: "text-animation 15s infinite alternate",
-};
 
 export default LandingSlides;

@@ -1,18 +1,20 @@
-.team-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+.team-text {
+  /* position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 60%;
+  height: 200px;
+  margin: auto;
 }
-.team-text h1{
-    font-size: 6rem;
-    color: #141618;
+.team-text h1 {
+  font-size: 6rem;
+  color: #141618;
 }
-.team-text p{
-    font-size: 1.6rem;
-    width: 100%;
-    color: #141618;
+.team-text p {
+  font-size: 1.6rem;
+  width: 100%;
+  color: #141618;
 }
 .team-container {
   margin-top: 1050px;
@@ -24,7 +26,6 @@
   grid-template-rows: auto auto auto;
   grid-gap: 50px;
   padding: 20px 70px;
-  
 }
 .team-member {
   width: 400px;
@@ -34,7 +35,7 @@
   border-radius: 5px;
   box-shadow: 10px 10px 10px #141618;
 }
-.team-member .image-container {
+.team-member .member-image {
   height: 100%;
   width: 100%;
 }
@@ -54,9 +55,9 @@
   background-color: #141618;
   color: azure;
 }
-.team-member figcaption .icon{
-    font-size: 1.5rem;
-    margin: 10px;
+.team-member figcaption .icon {
+  font-size: 1.5rem;
+  margin: 10px;
 }
 .team-member figcaption p {
   line-height: 20px;

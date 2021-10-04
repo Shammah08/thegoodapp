@@ -1,7 +1,6 @@
 import "./App.css";
 import logo from "./components/tgc_logo.png";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
-import Footer from "./components/LandingPage/Footer.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WalkPage from "./components/WalkWithG/WalkPage.jsx";
 import Team from "./components/TeamPage/Team.jsx";
@@ -12,7 +11,6 @@ import Product from "./components/ShopPage/Product.jsx";
 import Checkout from "./components/ShopPage/Checkout.jsx";
 import News from "./components/NewsPage/News.jsx";
 import Header from "./components/Header.jsx";
-import { TopButton } from "./components/Button.jsx";
 
 function App() {
   return (
@@ -34,7 +32,6 @@ function App() {
           <Route path="/shop/checkout" component={Checkout} />
           <Route path="/news" component={News} />
         </Switch>
-        <TopButton />
       </Router>
     </div>
   );

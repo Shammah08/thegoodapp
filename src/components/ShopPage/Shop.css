@@ -23,6 +23,7 @@
   cursor: pointer;
   /* background-color: white; */
 }
+
 .shop-section .icon {
   color: black;
   font-size: 3rem;
@@ -90,11 +91,30 @@
   align-items: center;
 }
 .cart {
-  position: absolute;
-  top: 20px;
   right: 100px;
   color: black;
   font-size: 3rem;
+}
+.cart-link {
+  /* background-color: crimson; */
+  width: 50px;
+  height: 50px;
+  position: relative;
+  /* position: absolute; */
+  top: 20px;
+  left: 90%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.cart-link span {
+  font-size: 1.6rem;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  color: crimson;
+  /* background-color: greenyellow; */
 }
 .product-section div {
   height: 80%;
@@ -134,4 +154,18 @@
 .product-text p {
   width: 70%;
   margin: 20px;
+}
+.quantity-count {
+  width: 75px;
+  height: 30px;
+  display: flex;
+  font-size: 1.4rem;
+}
+.quantity-count span {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  cursor: pointer;
 }

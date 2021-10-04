@@ -270,14 +270,18 @@ footer span h3 {
 }
 
 @keyframes changeImage {
-  from {
-    opacity: 0.8;
-    transform: scale(1.6);
+  0% {
+    transform: scale(1.1);
+    /* opacity: 1; */
   }
 
-  to {
+  50% {
+    /* opacity: 0.8; */
+    transform: scale(1.4);
+  }
+  100% {
     transform: scale(1.1);
-    opacity: 1;
+    /* opacity: 1; */
   }
 }
 @keyframes text-animation {
@@ -288,7 +292,7 @@ footer span h3 {
   }
   50% {
     transform: translate(0%, 0%);
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
     opacity: 1;
   }
 
