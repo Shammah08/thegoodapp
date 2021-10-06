@@ -33,7 +33,10 @@
   height: 100%;
 }
 .show-card img {
-  height: 100%;
+  height: 300px;
+  width: 250px;
+  /* object-fit: fill; */
+  /* object-fit: cover; */
 }
 
 .show-details {
@@ -64,14 +67,19 @@
 }
 
 .recent-pod {
-  display: grid;
+  /* display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
-  grid-gap: 50px;
-  padding: 20px 20px;
+  grid-gap: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* padding: 20px 20px; */
   margin: auto;
-  width: 80%;
+  width: 90vw;
   position: relative;
+  /* background-color: crimson; */
 }
 .redirect-title {
   position: absolute;
@@ -88,6 +96,7 @@
 .episodes-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .channel-episode {
   display: flex;

@@ -1,19 +1,25 @@
-import { FaCartPlus } from "react-icons/fa";
+import { FaCartPlus, FaCartArrowDown, FaSearchDollar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function ShoppingCenter({ onClick, products }) {
   return (
     <section className="shop-section">
-      <span className="title">
-        <h1>EXPLORE STORE!!</h1>
-        <a href="/shop/checkout">
-          <FaCartPlus className="icon" />
-        </a>
-      </span>
+      <Link to="/shop/checkout" className="cart-link">
+        <span className="cart-count">0</span>
+        <FaCartPlus className="icon cart" />
+      </Link>
+      {/* <a href="/shop/checkout" className="cart-link"></a> */}
       <div className="products">
         {products.map((product) => {
           return (
-            <div className="product">
+            <div className="product" key={product.id}>
+              {product.soldOut ? (
+                <span className="sold-out-product">
+                  <h3>Sold Out</h3>
+                </span>
+              ) : (
+                ""
+              )}
               {product.new ? (
                 <span className="new-product">
                   <h3>New</h3>
@@ -22,24 +28,18 @@ function ShoppingCenter({ onClick, products }) {
                 ""
               )}
               <img src={product.img} alt="PRODUCT" />
-              <span>
-                {product.details ? (
-                  product.details
-                ) : (
-                  <h6>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo, enim
-                  </h6>
-                )}
+              <span className="product-options">
+                <FaCartArrowDown className="cart-option" />
 
-                <h3>
-                  <Link
-                    to={`/shop/${product.id}/${product.name}/`}
-                    className="link"
-                  >
-                    {product.name}
-                  </Link>
-                </h3>
+                <Link
+                  to={`/shop/${product.id}/${product.name}/`}
+                  className="link"
+                >
+                  <FaSearchDollar className="cart-option" />
+                </Link>
+              </span>
+              <span className="product-details">
+                <h3>{product.name}</h3>
                 <h5>Ksh. {product.price} /=</h5>
               </span>
             </div>

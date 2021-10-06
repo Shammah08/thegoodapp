@@ -7,27 +7,27 @@ import {
   // FaEnvelopeOpenText,
 } from "react-icons/fa";
 // import Loader from "../Loader";
-import { useState, useEffect, useRef } from "react";
-import { init } from "ityped";
+import { useState, useEffect } from "react";
+// import { init } from "ityped";
 
 function LandingSlides({ allSlides }) {
   const [activeSlide, setActiveSlide] = useState(0);
 
-  const headingRef = useRef();
+  // const headingRef = useRef();
 
-  useEffect(() => {
-    init(headingRef.current, {
-      showCursor: true,
-      backDelay: 1500,
-      strings: ["Developer", "and Human Being"],
-      backSpeed: 60,
-      startDelay: 500,
-    });
-    return () => {};
-  });
+  // useEffect(() => {
+  //   init(headingRef.current, {
+  //     showCursor: true,
+  //     backDelay: 1500,
+  //     strings: ["Developer", "and Human Being"],
+  //     backSpeed: 60,
+  //     startDelay: 500,
+  //   });
+  //   return () => {};
+  // });
   //  transition effect
   useEffect(() => {
-    const timeRemaining = "10000";
+    const timeRemaining = "15000";
     const timeout = setInterval(() => {
       handleClick("right");
     }, timeRemaining);
@@ -55,10 +55,7 @@ function LandingSlides({ allSlides }) {
             <div className="slide-container" key={slide.index}>
               <div className="container">
                 <div className="text-container">
-                  <h2>
-                    {slide.title}
-                    <span ref={headingRef}></span>
-                  </h2>
+                  <h2>{slide.title}</h2>
 
                   <p>{slide.desc}</p>
                   <a href={slide.url}>

@@ -1,4 +1,4 @@
-const Header = ({ logo, onChange }) => {
+const Header = ({ logo }) => {
   const navItems = [
     { route: "welcome", url: "/#home" },
     { route: "about", url: "/#about" },

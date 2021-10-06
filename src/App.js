@@ -8,7 +8,7 @@ import Shop from "./components/ShopPage/Shop.jsx";
 import Podcast from "./components/PodcastPage/Podcast.jsx";
 import Show from "./components/PodcastPage/Show.jsx";
 import Product from "./components/ShopPage/Product.jsx";
-import Checkout from "./components/ShopPage/Checkout.jsx";
+import Cart from "./components/ShopPage/Cart.jsx";
 import News from "./components/NewsPage/News.jsx";
 import Header from "./components/Header.jsx";
 
@@ -29,7 +29,7 @@ function App() {
           <Route path="/podcast" exact component={Podcast} />
           <Route path="/show/:url/:title" component={Show} />
           <Route path="/shop/:id/:name" component={Product} />
-          <Route path="/shop/checkout" component={Checkout} />
+          <Route path="/shop/checkout" component={Cart} />
           <Route path="/news" component={News} />
         </Switch>
       </Router>

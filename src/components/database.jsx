@@ -2,14 +2,14 @@
 import people from "./images/people.jpg";
 import micsAreOpen from "./images/mics-thumbnail.jpg";
 import micsAreOpenSquad from "./images/mics-squad.jpg";
-import queShley from "./images/queshley.jpg";
+import theCookBook from "./images/the-cook-book.jpg";
 import daDing from "./images/dading-different.jpg";
 import lockdownSession from "./images/lockdown-session.jpg";
 import wakeUpCall from "./images/wake-up-call.jpg";
 
 // Landing Sides
 import nairobi from "./images/Nairobi.jpg";
-import skyline from "./images/Nairobi-Night-Skyline.jpg";
+// import skyline from "./images/Nairobi-Night-Skyline.jpg";
 import silverArrow from "./images/silver-arrow.jpg";
 import laptop from "./images/laptop.jpg";
 import party from "./images/party.jpg";
@@ -23,6 +23,8 @@ import Ramadhani from "./images/Ramadhani.png";
 import Calvin from "./images/Calvin.jpg";
 import Neville from "./images/Neville.jpg";
 import Grauchi from "./images/Grauchi.jpg";
+import Ashley from "./images/ashley.jpg";
+import Quellie from "./images/quellie.jpg";
 
 // Shop Products
 import coffeeMug from "./images/Coffee-Mug-1.jpg";
@@ -86,15 +88,6 @@ export const landingTemplates = [
     startAnimation: "",
     url: "team",
   },
-  {
-    index: 6,
-    image: skyline,
-    title: "WE ARE THE GOOD COMPANY",
-    desc: "a creative agency located in Nairobi, Kenya.",
-    button: "About Us",
-    startAnimation: "",
-    url: "#about",
-  },
 ];
 
 export const shows = [
@@ -132,7 +125,7 @@ export const shows = [
     title: "The Cookbook",
     host: ["Ashley", "Quellie"],
     date: "Monday @ 10am",
-    cover: queShley,
+    cover: theCookBook,
     tagline: "Premium Laughter",
   },
   {
@@ -1945,7 +1938,7 @@ export const team = [
     userid: 5,
     username: "Dj Grauchi",
     fullName: "Grauchi",
-    title: "",
+    title: "Lockdown Session's Captain",
     bio: "",
     image: Grauchi,
     social: [],
@@ -1983,7 +1976,7 @@ export const team = [
     fullName: "Ashley",
     title: "Queshley Cast",
     bio: "",
-    image: queShley,
+    image: Ashley,
     social: [],
   },
   {
@@ -1992,7 +1985,7 @@ export const team = [
     fullName: "Quellie",
     title: "Queshley Cast",
     bio: "",
-    image: queShley,
+    image: Quellie,
     social: [],
   },
 ];
@@ -2038,105 +2031,141 @@ export const services = [
 export const products = [
   {
     id: 1,
-    name: "Coffee Mug",
+    name: "Coffee Mug - Black Inside",
     img: coffeeMug,
     price: 750,
     details: "The Mics Are Open Coffee Mug - Black Inside",
+    new: false,
+    soldOut: false,
+    discount: 0,
   },
   {
     id: 2,
-    name: "Coffee Mug",
+    name: "Coffee Mug - White Inside",
     img: coffeeMugWhite,
     price: 700,
     details: "The Mics Are Open Coffee Mug - White Inside",
+    new: false,
+    soldOut: false,
+    discount: 15,
   },
   {
     id: 4,
-    name: "Coffee Mug",
+    name: "Coffee Mug - Black",
     img: coffeeMugBlack,
     price: 700,
     details: "The Mics Are Open Coffee Mug - Black",
     new: true,
+    soldOut: false,
+    discount: 0,
   },
   {
     id: 5,
-    name: "Mics Are Open Tee",
+    name: "Mics Are Open Tee - Black",
     img: maoBlack,
     price: 1200,
-    details: "The Mics Are Open T/Shirt - Black",
+    details: "The Mics Are Open T/Shirt",
+    new: false,
+    soldOut: true,
   },
   {
     id: 6,
-    name: "Mics Are Open Tee",
+    name: "Mics Are Open Tee - White",
     img: maoWhite,
     price: 1100,
-    details: "The Mics Are Open T/Shirt - White",
+    details: "The Mics Are Open T/Shirt",
+    new: false,
+    soldOut: false,
+    discount: 0,
   },
   {
     id: 7,
-    name: "Water Bottle",
+    name: "Water Bottle - Black",
     img: bottleNewBlack,
     price: 1000,
     details: "The Mics Are Open Water Bottle - Black",
     new: true,
+    soldOut: false,
+    discount: 0,
   },
   {
     id: 8,
-    name: "Water Bottle",
+    name: "Water Bottle - Blue",
     img: bottleNewBlue,
     price: 1000,
     details: "The Mics Are Open Water Bottle - Blue",
     new: true,
+    soldOut: false,
   },
   {
     id: 9,
-    name: "Water Bottle",
+    name: "Water Bottle - Charcoal",
     img: bottleCharcoal,
     price: 1000,
     details: "The Mics Are Open Water Bottle - Charcoal",
+    new: false,
+    soldOut: true,
+    discount: 0,
   },
   {
     id: 10,
-    name: "Water Bottle",
+    name: "Water Bottle - Blue",
     img: bottleBlue,
     price: 950,
     details: "The Mics Are Open Water Bottle - Blue",
+    new: false,
+    soldOut: true,
+    discount: 0,
   },
 
   {
     id: 11,
-    name: "Water Bottle",
+    name: "Water Bottle - Lime",
     img: bottleLime,
     price: 950,
     details: "The Mics Are Open Water Bottle - Lime",
+    new: false,
+    soldOut: false,
+    discount: 0,
   },
   {
     id: 12,
-    name: "Water Bottle",
+    name: "Water Bottle - Red",
     img: bottleRed,
     price: 950,
     details: "The Mics Are Open Water Bottle - Red",
+    new: false,
+    soldOut: false,
+    discount: 0,
   },
   {
     id: 13,
-    name: "Water Bottle",
+    name: "Water Bottle - White",
     img: bottleWhite,
     price: 950,
     details: "The Mics Are Open Water Bottle - White",
+    new: false,
+    soldOut: false,
+    discount: 0,
   },
   {
     id: 14,
-    name: "Coaster",
+    name: "Coaster - Round",
     img: coasters,
     price: 1000,
     details: "The Mics Are Open Caster - Round",
+    new: false,
+    soldOut: false,
+    discount: 10,
   },
   {
     id: 15,
-    name: "Coaster",
+    name: "Coaster - Rounded Edges",
     img: coastersRound,
     price: 1100,
     details: "The Mics Are Open Caster - Rounded Edges",
     new: true,
+    soldOut: false,
+    discount: 0,
   },
 ];
