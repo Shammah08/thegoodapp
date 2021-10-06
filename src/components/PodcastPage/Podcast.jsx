@@ -19,16 +19,19 @@ function Podcast() {
 
   useEffect(() => {
     console.log("FETCHING DATA");
-    fetchData().catch((error) => {
-      console.log("The Following Error Occurred", error.message);
-      setAllVideos(videosData);
-      console.log("Fetching still");
-      setDisplayVideos(videosData);
-      return;
-    });
+    fetchData().catch(
+      (error) => {
+        console.log("The Following Error Occurred", error.message);
+        setAllVideos(videosData);
+        console.log("Fetching still");
+        setDisplayVideos(videosData);
+        return;
+      },
+      [allVideos]
+    );
 
     return () => {
-      // setDisplayVideos(allVideos)
+      // setDisplayVideos(allVideos);
       console.log("DATA FETCH COMPLETE");
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -41,7 +44,7 @@ function Podcast() {
     }
     const data = await response.json();
     setAllVideos(data.items);
-    setDisplayVideos(allVideos);
+    setDisplayVideos(data.items);
     console.log("State", displayVideos);
     console.log("State of all videos", allVideos);
   };
