@@ -47,16 +47,16 @@
   color: white;
   /* background-color: red; */
   z-index: 10;
-  background-color: rgba(44, 43, 43, 0.1);
+  /* background-color: rgba(44, 43, 43, 0.1); */
 }
 
 .text-container h2 {
-  font-size: 8rem;
+  font-size: 6rem;
   color: white;
   /* animation: text-animation 9s infinite forwards; */
 }
 .text-container p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   /* animation: text-animation 7s 1s infinite alternate-reverse; */
 }
 .text-container span {
