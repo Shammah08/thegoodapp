@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 import { FaCartPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -38,6 +38,7 @@ function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
 
   handleFlutterPayment = useFlutterwave(config);
 
+  // eslint-disable-next-line
   const handleClick = (e) => {
     handleFlutterPayment({
       callback: (response) => {

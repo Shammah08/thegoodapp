@@ -6,6 +6,7 @@ function Product({ match }) {
   // console.log(onClick, cartCount);
   const [cartCount, setCartCount] = useState(0);
   const [count, setCount] = useState(1);
+  // eslint-disable-next-line
   const [orderItem, setOrderItem] = useState({});
 
   const item = products.filter((product) => {

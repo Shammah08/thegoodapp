@@ -7,6 +7,7 @@ function Cart() {
   const [totalCost, setTotalCost] = useState(0);
   const [itemCount, setItemCount] = useState(0);
   const [userOpen, setUserOpen] = useState(false);
+  // eslint-disable-next-line
   const [userDetails, setUserDetails] = useState({
     username: "",
     phone: "",
@@ -24,12 +25,9 @@ function Cart() {
     return () => {
       console.log("Calculation Done", total);
     };
-  }, []);
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setUserOpen(!userOpen);
-  // };
+    // eslint-disable-next-line
+  }, [products]);
 
   return (
     <section className="checkout-section">
