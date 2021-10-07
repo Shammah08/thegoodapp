@@ -1,10 +1,17 @@
 import ProcessPayment from "./ProcessPayment.jsx";
+import UserDetails from "./UserDetails.jsx";
 import { products } from "../database";
 import { useState, useEffect } from "react";
 
 function Cart() {
   const [totalCost, setTotalCost] = useState(0);
   const [itemCount, setItemCount] = useState(0);
+  const [userOpen, setUserOpen] = useState(false);
+  const [userDetails, setUserDetails] = useState({
+    username: "",
+    phone: "",
+    email: "",
+  });
   useEffect(() => {
     const prices = products.map((product) => {
       return product.price;
@@ -18,6 +25,11 @@ function Cart() {
       console.log("Calculation Done", total);
     };
   }, []);
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setUserOpen(!userOpen);
+  // };
 
   return (
     <section className="checkout-section">
@@ -47,7 +59,15 @@ function Cart() {
           );
         })}
       </div>
-      <ProcessPayment totalCost={totalCost} itemCount={itemCount} />
+      <UserDetails userOpen={userOpen} setUserOpen={setUserOpen} />
+      <ProcessPayment
+        totalCost={totalCost}
+        itemCount={itemCount}
+        // onSubmit={handleSubmit}
+        userOpen={userOpen}
+        setUserOpen={setUserOpen}
+        userDetails={userDetails}
+      />
     </section>
   );
 }

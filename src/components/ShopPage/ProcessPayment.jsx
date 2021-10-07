@@ -5,37 +5,38 @@ import { Link } from "react-router-dom";
 
 import logo from "../tgc_logo.png";
 
-const config = {
-  public_key: "FLWPUBK_TEST-f34df863fe579323ddb58f901d65da9a-X",
-  tx_ref: Date.now(),
-  amount: 1000,
-  currency: "KES",
-  payment_options: "card,mobilemoney,ussd",
-  customer: {
-    email: "shammahranks@gmail.com",
-    phonenumber: "07064586146",
-    name: "Shammah Ranks",
-  },
-  customizations: {
-    title: "The Good Company",
-    description: "Payment for items in cart",
-    logo: logo,
-  },
-};
-function ProcessPayment({ totalCost, itemCount }) {
-  const [orderDetails, setOrderDetails] = useState(config);
+function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
+  // const [orderDetails, setOrderDetails] = useState(config);
   const total = useRef();
   const count = useRef();
+
+  const config = {
+    public_key: "FLWPUBK_TEST-f34df863fe579323ddb58f901d65da9a-X",
+    tx_ref: Date.now(),
+    amount: totalCost,
+    currency: "KES",
+    payment_options: "card,mobilemoney,ussd",
+    customer: {
+      email: userDetails.email,
+      phonenumber: userDetails.phone,
+      name: userDetails.username,
+    },
+    customizations: {
+      title: "The Good Company",
+      description: "Payment for items in cart",
+      logo: logo,
+    },
+  };
 
   useEffect(() => {
     // setOrderDetails(...orderDetails, (orderDetails.amount = total));
 
     return () => {};
-  }, [orderDetails]);
+  }, [config]);
 
   let handleFlutterPayment;
 
-  handleFlutterPayment = useFlutterwave(orderDetails);
+  handleFlutterPayment = useFlutterwave(config);
 
   const handleClick = (e) => {
     handleFlutterPayment({
@@ -65,7 +66,7 @@ function ProcessPayment({ totalCost, itemCount }) {
           <i ref={total}>{totalCost}</i>
         </span>
       </div>
-      <button className="btn payment" onClick={handleClick}>
+      <button className="btn payment" onClick={() => setUserOpen(true)}>
         Proceed to checkout
       </button>
     </div>
