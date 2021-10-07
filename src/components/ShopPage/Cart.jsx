@@ -1,5 +1,5 @@
 import ProcessPayment from "./ProcessPayment.jsx";
-import UserDetails from "./UserDetails.jsx";
+import UserForm from "./UserForm.jsx";
 import { products } from "../database";
 import { useState, useEffect } from "react";
 
@@ -59,7 +59,7 @@ function Cart() {
           );
         })}
       </div>
-      <UserDetails userOpen={userOpen} setUserOpen={setUserOpen} />
+      <UserForm userOpen={userOpen} setUserOpen={setUserOpen} />
       <ProcessPayment
         totalCost={totalCost}
         itemCount={itemCount}
