@@ -12,7 +12,7 @@ function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
 
   // eslint-disable-next-line
   const config = {
-    public_key: "FLWPUBK_TEST-f34df863fe579323ddb58f901d65da9a-X",
+    public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
     tx_ref: Date.now(),
     amount: totalCost,
     currency: "KES",
@@ -65,11 +65,11 @@ function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
         </span>
         <span>
           <h4>SubTotal: </h4>
-          <i ref={total}>{totalCost}</i>
+          <i ref={total}>{totalCost}.00</i>
         </span>
       </div>
       <button className="btn payment" onClick={() => setUserOpen(true)}>
-        Proceed to checkout
+        Proceed to Checkout
       </button>
     </div>
   );

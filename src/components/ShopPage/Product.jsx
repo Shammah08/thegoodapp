@@ -70,14 +70,15 @@ function Product({ match }) {
               </div>
               <div className="product-text" key={detail.name}>
                 <h1>{detail.name}</h1>
-                <p>{detail.details}</p>
+                <h5>By: {detail.by}</h5>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
-                  animi, delectus quidem exercitationem recusandae culpa.
+                  animi, delectus quidem exercitationem recusandae culpa. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Similique,
+                  illo.
                 </p>
                 <span>
-                  <strong>Cost: </strong>
-                  <small>Ksh. {detail.price} /=</small>
+                  Price: <strong>Ksh. {detail.price}.00 </strong>
                 </span>
                 <br />
                 <span className="quantity-count">
@@ -94,7 +95,6 @@ function Product({ match }) {
                   Add to Cart
                 </button>
               </div>
-              ;
             </>
           );
         })}

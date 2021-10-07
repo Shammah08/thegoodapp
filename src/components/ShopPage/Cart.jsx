@@ -43,8 +43,8 @@ function Cart() {
               <div className="cart-item-details">
                 <h4>{product.name}</h4>
                 <p>{product.details}</p>
-                <h5>by The Mics Are Open</h5>
-                <strong>In Stock</strong>
+                <h5>by{product.by}</h5>
+                <strong>{product.soldOut ? "Out Of Stock" : "In Stock"}</strong>
                 <select name="quantity" id="">
                   <option value="1">Qty:</option>
                   <option value="1">1</option>

@@ -153,7 +153,7 @@ button a {
   font-size: 5.4rem;
   width: 1400px;
   padding: 20px 10px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .about-text p {
   width: 87%;
@@ -179,6 +179,7 @@ button a {
   font-size: 4rem;
   text-transform: uppercase;
   width: 1200px;
+  font-weight: 600;
 }
 .quote-section h5 {
   margin: 10px;
@@ -214,9 +215,10 @@ button a {
 }
 .service-title h2 {
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 20px;
+  /* background-color: red; */
 }
 .service-title p {
   font-size: 1.4rem;
@@ -245,7 +247,7 @@ button a {
 .service h4 {
   font-size: 1.4rem;
   margin: 10px 2px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .service p {
   height: 80%;

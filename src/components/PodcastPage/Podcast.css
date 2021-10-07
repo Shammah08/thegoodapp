@@ -9,10 +9,10 @@
   /* flex-direction: column; */
   background-color: #141618;
   color: rgba(139, 139, 139, 0.6);
-  height: 60vh;
+  height: 300px;
 }
 .show-card {
-  height: 300px;
+  height: 95%;
   width: 250px;
   border: none;
   border-radius: 10px;
@@ -40,10 +40,10 @@
 }
 
 .show-details {
-  height: 20%;
+  height: 15%;
   width: 100%;
   border-radius: 2px;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(20, 20, 20, 0.7);
   position: absolute;
   bottom: 0;
   display: flex;
@@ -61,6 +61,10 @@
 .show-details strong {
   font-size: 10px;
   /* padding: 10px; */
+  font-weight: 600;
+}
+.show-details h3 {
+  font-weight: 600;
 }
 .show-details h3:hover {
   animation: zoom 1s;
@@ -88,7 +92,7 @@
   font-size: 2rem;
   width: 100%;
   padding: 10px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .redirect-title a {
   color: black;
@@ -101,20 +105,22 @@
 .channel-episode {
   display: flex;
   align-items: center;
-  height: 350px;
-  width: 700px;
+  height: 300px;
+  width: 650px;
   overflow: hidden;
   margin: 10px;
   border-radius: 10px;
   color: #141618;
-  background-color: rgba(240, 240, 240, 0.5);
+  background-color: rgba(240, 240, 240, 0.7);
+  /* background-color: red; */
   cursor: pointer;
 }
 .channel-episode img {
   height: 150%;
-  width: 50%;
+  width: 40%;
   /* border-radius: 10px; */
   transition: all ease-in-out 2s;
+  object-fit: fill;
 }
 .episode-details {
   display: flex;
@@ -128,7 +134,7 @@
   /* background-color: aqua; */
 }
 .episode-details div {
-  height: 80%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,7 +142,8 @@
   /* background-color: red; */
 }
 .episode-details h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
   width: 100%;
   /* background-color: rebeccapurple; */
   letter-spacing: 1px;
@@ -144,9 +151,10 @@
 }
 .episode-details p {
   font-size: 0.8rem;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   line-height: 25px;
   height: 50%;
+  text-align: left;
 }
 .episode-meta {
   display: flex;
@@ -160,31 +168,35 @@
 }
 .video-player-container {
   /* margin-top: 120px; */
-  height: 80vh;
+  height: 87vh;
   width: 100%;
-  z-index: 100;
+  /* z-index: 100; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: #141618; */
+  flex-direction: column;
+  background-color: #141618;
+
   /* background-color: aqua; */
 }
 .video-player {
-  height: 100%;
-  width: 60%;
+  height: 80%;
+  width: 80%;
   border-radius: 5px;
   display: flex;
   align-items: center;
+  border: 1px solid rgb(243, 243, 243);
 }
 .video-player iframe {
-  height: 80%;
+  height: 100%;
   width: 100%;
+  border: none;
 }
 .video-text {
   display: flex;
   /* flex-direction: column; */
-  height: 50%;
-  width: 30%;
+  height: 10%;
+  width: 70%;
   padding: 2px;
   align-items: center;
   justify-content: space-evenly;
@@ -193,8 +205,9 @@
   /* background-color: red; */
 }
 .video-text h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 100%;
+  color: white;
   /* background-color: red; */
 }
 .video-text p {
