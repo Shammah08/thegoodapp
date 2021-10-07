@@ -10,6 +10,7 @@ function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
   const total = useRef();
   const count = useRef();
 
+  // eslint-disable-next-line
   const config = {
     public_key: "FLWPUBK_TEST-f34df863fe579323ddb58f901d65da9a-X",
     tx_ref: Date.now(),
