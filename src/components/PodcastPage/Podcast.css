@@ -115,12 +115,33 @@
   /* background-color: red; */
   cursor: pointer;
 }
+.channel-episode .premier,
 .channel-episode img {
-  height: 150%;
   width: 40%;
   /* border-radius: 10px; */
+  background-color: black;
+}
+.premier {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+.premier h2 {
+  color: rgba(245, 245, 245, 0.5);
+  font-size: 2rem;
+  z-index: 2;
+  transform: rotate(30deg);
+}
+.premier h5 {
+  font-size: 1.2rem;
+  transform: rotate(0deg);
+}
+.channel-episode img {
   transition: all ease-in-out 2s;
   object-fit: fill;
+  height: 135%;
 }
 .episode-details {
   display: flex;

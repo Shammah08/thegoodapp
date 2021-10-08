@@ -1,37 +1,83 @@
-import './Team.css'
+import "./Team.css";
 import {
-    FaInstagram,
-    FaLinkedinIn,
-    FaTwitter,
-    FaFacebookF,
-  } from "react-icons/fa";
-  
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaFacebookF,
+  FaGithub,
+} from "react-icons/fa";
 
+import { Link } from "react-router-dom";
 
-function Members({team}) {
-    const teamMembers = team.map(member => {
-        return <figure className='team-member' key={member.userid}>
-            <div className='member-image'>
-                <img src={member.image} alt={member.fullName + 'image'} />
-            </div>
-            <figcaption>
+function Members({ team }) {
+  return (
+    <section className="team-container">
+      {team.map((member) => {
+        return (
+          <Link to={"team/" + member.userid}>
+            <figure className="team-member" key={member.userid}>
+              <div className="member-image">
+                <img src={member.image} alt={member.fullName + "image"} />
+              </div>
+              <figcaption>
                 <h2>{member.fullName}</h2>
-                <h5>{member.title? member.title: 'Good Company'}</h5>
+                <h5>{member.title ? member.title : "Good Company"}</h5>
                 <span>
-                <FaInstagram  className='icon' />
-                <FaLinkedinIn  className='icon' />
-                <FaTwitter  className='icon'/>
-                <FaFacebookF  className='icon'/>
-                 </span>
-                <p>{member.bio? member.bio: "Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company.' said "+ member.fullName }</p>
-            </figcaption>
-        </figure>
-    })
-    return (
-        <section className='team-container'>
-            {teamMembers}
-        </section>
-    )
+                  <a
+                    href={
+                      member.social.instagram
+                        ? `https://www.instagram.com/${member.social.instagram} `
+                        : "#"
+                    }
+                    target="_blank"
+                  >
+                    <FaInstagram className="icon" />
+                  </a>
+                  <a
+                    href={
+                      member.social.likedin
+                        ? `https://www.linkedin.com/${member.social.linkedin} `
+                        : "#"
+                    }
+                  >
+                    <FaLinkedinIn className="icon" />
+                  </a>
+                  <a
+                    href={
+                      member.social.twitter
+                        ? `https://www.twitter.com/${member.social.twitter} `
+                        : "#"
+                    }
+                    target="_blank"
+                  >
+                    <FaTwitter className="icon" />
+                  </a>
+                  <a
+                    href={
+                      member.social.facebook
+                        ? `https://www.facebook.com/${member.social.facebook} `
+                        : "#"
+                    }
+                    target="_blank"
+                  >
+                    <FaFacebookF className="icon" />
+                  </a>
 
-    }
-export default Members
+                  {member.social.github ? (
+                    <a href={`https://www.github.com/${member.social.github} `}>
+                      <FaGithub className="icon" />
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                </span>
+                
+              </figcaption>
+            </figure>
+          </Link>
+        );
+      })}
+    </section>
+  );
+}
+export default Members;
