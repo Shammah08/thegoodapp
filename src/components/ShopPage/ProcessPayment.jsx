@@ -3,7 +3,7 @@ import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 import { FaCartPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import logo from "../tgc_logo.png";
+import { logos } from "../database.jsx";
 
 function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
   // const [orderDetails, setOrderDetails] = useState(config);
@@ -25,7 +25,7 @@ function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
     customizations: {
       title: "The Good Company",
       description: "Payment for items in cart",
-      logo: logo,
+      logo: logos.logoRed,
     },
   };
 

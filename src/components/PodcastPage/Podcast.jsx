@@ -1,11 +1,8 @@
-// import Loader from "../Loader";
 import "./Podcast.css";
 import RecentVideo from "./RecentVideo";
 import ChannelContainer from "./ChannelContainer";
 import { useState, useEffect } from "react";
-import { shows, videosData } from "../database";
-
-console.log("ENV: ", process.env);
+import { shows } from "../database";
 
 function Podcast() {
   const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; // SR-Key
@@ -18,21 +15,18 @@ function Podcast() {
   const [displayVideos, setDisplayVideos] = useState([]);
 
   useEffect(() => {
-    console.log("FETCHING DATA");
+    console.log("FETCHING VIDEOS");
     fetchData().catch(
       (error) => {
         console.log("The Following Error Occurred", error.message);
-        setAllVideos(videosData);
-        console.log("Fetching still");
-        setDisplayVideos(videosData);
         return;
-      },
-      [allVideos]
+      }
+      // ,      [allVideos]
     );
 
     return () => {
       // setDisplayVideos(allVideos);
-      console.log("DATA FETCH COMPLETE");
+      console.log("VIDEO FETCH COMPLETE");
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -45,8 +39,6 @@ function Podcast() {
     const data = await response.json();
     setAllVideos(data.items);
     setDisplayVideos(data.items);
-    console.log("State", displayVideos);
-    console.log("State of all videos", allVideos);
   };
 
   const handleClick = (e) => {
@@ -63,7 +55,6 @@ function Podcast() {
       filteredVideos = allVideos;
       return filteredVideos;
     }
-    // console.log("FILTERED VIDEOS", filteredVideos);
     setDisplayVideos(filteredVideos);
   };
 
