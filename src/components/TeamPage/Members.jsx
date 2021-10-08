@@ -14,67 +14,72 @@ function Members({ team }) {
     <section className="team-container">
       {team.map((member) => {
         return (
-          <Link to={"team/" + member.userid}>
-            <figure className="team-member" key={member.userid}>
+          <figure className="team-member" key={member.userid}>
+            <Link to={"team/" + member.userid}>
               <div className="member-image">
                 <img src={member.image} alt={member.fullName + "image"} />
               </div>
-              <figcaption>
-                <h2>{member.fullName}</h2>
-                <h5>{member.title ? member.title : "Good Company"}</h5>
-                <span>
+            </Link>
+            <figcaption>
+              <h2>{member.fullName}</h2>
+              <h5>{member.title ? member.title : "Good Company"}</h5>
+              <span>
+                {member.social.instagram ? (
                   <a
-                    href={
-                      member.social.instagram
-                        ? `https://www.instagram.com/${member.social.instagram} `
-                        : "#"
-                    }
+                    href={`https://www.instagram.com/${member.social.instagram} `}
                     target="_blank"
                   >
                     <FaInstagram className="icon" />
                   </a>
+                ) : (
+                  ""
+                )}
+
+                {member.social.linkedin ? (
                   <a
-                    href={
-                      member.social.likedin
-                        ? `https://www.linkedin.com/${member.social.linkedin} `
-                        : "#"
-                    }
+                    href={`https://www.linkedin.com/in/${member.social.linkedin} `}
+                    target="_blank"
                   >
                     <FaLinkedinIn className="icon" />
                   </a>
+                ) : (
+                  ""
+                )}
+                {member.social.twitter ? (
                   <a
-                    href={
-                      member.social.twitter
-                        ? `https://www.twitter.com/${member.social.twitter} `
-                        : "#"
-                    }
+                    href={`https://www.twitter.com/${member.social.twitter} `}
                     target="_blank"
                   >
                     <FaTwitter className="icon" />
                   </a>
+                ) : (
+                  ""
+                )}
+
+                {member.social.facebook ? (
                   <a
-                    href={
-                      member.social.facebook
-                        ? `https://www.facebook.com/${member.social.facebook} `
-                        : "#"
-                    }
+                    href={`https://www.facebook.com/${member.social.facebook} `}
                     target="_blank"
                   >
                     <FaFacebookF className="icon" />
                   </a>
+                ) : (
+                  ""
+                )}
 
-                  {member.social.github ? (
-                    <a href={`https://www.github.com/${member.social.github} `}>
-                      <FaGithub className="icon" />
-                    </a>
-                  ) : (
-                    ""
-                  )}
-                </span>
-                
-              </figcaption>
-            </figure>
-          </Link>
+                {member.social.github ? (
+                  <a
+                    href={`https://www.github.com/${member.social.github} `}
+                    target="_blank"
+                  >
+                    <FaGithub className="icon" />
+                  </a>
+                ) : (
+                  ""
+                )}
+              </span>
+            </figcaption>
+          </figure>
         );
       })}
     </section>
