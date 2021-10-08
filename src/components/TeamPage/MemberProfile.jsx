@@ -1,27 +1,96 @@
 import { team } from "../database";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaFacebookF,
+  FaGithub,
+} from "react-icons/fa";
 
-function MemberProfile({ match }) {
-  const userProfile = team.filter((member) => {
-    return member.userid == match.params.userid;
+function userProfile({ match }) {
+  const userProfile = team.filter((user) => {
+    return user.userid == match.params.userid;
   });
   return (
-    <section className="team-member-profile">
+    <>
       {userProfile.map((user) => {
         return (
-          <div className="user-bio">
-            <h3>{user.fullName}</h3>
+          <section className="team-user-profile">
+            <div className="user-bio">
+              <h2>{user.fullName}</h2>
+              <h5>{user.title} at The Good Co.</h5>
+              <p>
+                {user.bio
+                  ? user.bio
+                  : "Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company.' said " +
+                    user.fullName}
+              </p>
+            </div>
 
-            <p>
-              {user.bio
-                ? user.bio
-                : "Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company.' said " +
-                  user.fullName}
-            </p>
-          </div>
+            <div className="profile">
+              <img src={user.image} />
+              <h3>{user.username}</h3>
+              <span>
+                {user.social.instagram ? (
+                  <a
+                    href={`https://www.instagram.com/${user.social.instagram} `}
+                    target="_blank"
+                  >
+                    <FaInstagram className="icon" />
+                  </a>
+                ) : (
+                  ""
+                )}
+
+                {user.social.linkedin ? (
+                  <a
+                    href={`https://www.linkedin.com/in/${user.social.linkedin} `}
+                    target="_blank"
+                  >
+                    <FaLinkedinIn className="icon" />
+                  </a>
+                ) : (
+                  ""
+                )}
+                {user.social.twitter ? (
+                  <a
+                    href={`https://www.twitter.com/${user.social.twitter} `}
+                    target="_blank"
+                  >
+                    <FaTwitter className="icon" />
+                  </a>
+                ) : (
+                  ""
+                )}
+
+                {user.social.facebook ? (
+                  <a
+                    href={`https://www.facebook.com/${user.social.facebook} `}
+                    target="_blank"
+                  >
+                    <FaFacebookF className="icon" />
+                  </a>
+                ) : (
+                  ""
+                )}
+
+                {user.social.github ? (
+                  <a
+                    href={`https://www.github.com/${user.social.github} `}
+                    target="_blank"
+                  >
+                    <FaGithub className="icon" />
+                  </a>
+                ) : (
+                  ""
+                )}
+              </span>
+            </div>
+          </section>
         );
       })}
-    </section>
+    </>
   );
 }
 
-export default MemberProfile;
+export default userProfile;
