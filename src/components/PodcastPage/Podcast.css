@@ -1,12 +1,10 @@
 .podcast-container {
-  /* height: 100vh; */
   overflow: hidden;
 }
 .channels-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* flex-direction: column; */
   background-color: #141618;
   color: rgba(139, 139, 139, 0.6);
   height: 300px;
@@ -34,9 +32,7 @@
 }
 .show-card img {
   height: 300px;
-  width: 230px;
-  /* object-fit: fill; */
-  /* object-fit: cover; */
+  width:100%;
 }
 
 .show-details {
@@ -70,24 +66,22 @@
   font-weight: 600;
   color: white;
 }
-.show-details h3:hover {
+.show-name{
+  display: none;
+}
+.show-details h3, .show-name h3:hover {
   animation: zoom 1s;
 }
 
+
 .recent-pod {
-  /* display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  grid-gap: 50px; */
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* padding: 20px 20px; */
   margin: auto;
   width: 90vw;
   position: relative;
-  /* background-color: crimson; */
 }
 .redirect-title {
   position: absolute;
@@ -116,33 +110,11 @@
   border-radius: 10px;
   color: #141618;
   background-color: rgba(240, 240, 240, 0.7);
-  /* background-color: red; */
   cursor: pointer;
 }
-.channel-episode .premier,
 .channel-episode img {
   width: 40%;
-  /* border-radius: 10px; */
   background-color: black;
-}
-.premier {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 100%;
-}
-.premier h2 {
-  color: rgba(245, 245, 245, 0.5);
-  font-size: 2rem;
-  z-index: 2;
-  transform: rotate(30deg);
-}
-.premier h5 {
-  font-size: 1.2rem;
-  transform: rotate(0deg);
-}
-.channel-episode img {
   transition: all ease-in-out 2s;
   object-fit: fill;
   height: 135%;
@@ -156,7 +128,6 @@
   height: 100%;
   position: relative;
   padding: 10px;
-  /* background-color: aqua; */
 }
 .episode-details div {
   height: 90%;
@@ -164,19 +135,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* background-color: red; */
 }
 .episode-details h2 {
   font-size: 1rem;
   font-weight: 600;
   width: 100%;
-  /* background-color: rebeccapurple; */
   letter-spacing: 1px;
   line-height: 20px;
 }
 .episode-details p {
   font-size: 0.8rem;
-  /* letter-spacing: 1px; */
   line-height: 25px;
   height: 50%;
   text-align: left;
@@ -192,48 +160,35 @@
   font-size: 10px;
 }
 .video-player-container {
-  /* margin-top: 120px; */
   height: 87vh;
   width: 100%;
-  /* z-index: 100; */
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   background-color: #141618;
 
-  /* background-color: aqua; */
 }
 .video-player {
   height: 80%;
   width: 80%;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  border: 1px solid rgb(243, 243, 243);
-}
-.video-player iframe {
-  height: 100%;
-  width: 100%;
   border: none;
 }
 .video-text {
   display: flex;
-  /* flex-direction: column; */
   height: 10%;
   width: 70%;
   padding: 2px;
   align-items: center;
   justify-content: space-evenly;
   color: #141618;
-  /* color: white; */
-  /* background-color: red; */
+
 }
 .video-text h1 {
   font-size: 2rem;
   width: 100%;
   color: white;
-  /* background-color: red; */
+  font-weight: 500;
 }
 .video-text p {
   font-size: 1.2rem;

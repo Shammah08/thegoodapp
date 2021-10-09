@@ -3,8 +3,9 @@ function Show({ match }) {
 
   return (
     <section className="video-player-container" id="#">
-      <div className="video-player">
+      {/* <div > */}
         <iframe
+        className="video-player"
           src={url}
           width="640"
           height="480"
@@ -13,7 +14,7 @@ function Show({ match }) {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-      </div>
+      {/* </div> */}
 
       <div className="video-text">
         <h1>{match.params.title}</h1>

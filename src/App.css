@@ -114,11 +114,11 @@ footer span h3:hover {
   color: white;
 }
 .btn-small {
-  height: 30px;
+  height: 40px;
   width: 100px;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   padding: 6px;
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
   border-radius: 10px;
   border: none;
   outline: none;
