@@ -1,4 +1,5 @@
 import "./Podcast.css";
+import "./Podcast.media.css";
 import RecentVideo from "./RecentVideo";
 import ChannelContainer from "./ChannelContainer";
 import { useState, useEffect } from "react";
@@ -59,10 +60,10 @@ function Podcast() {
   };
 
   return (
-    <main>
+    <>
       <ChannelContainer shows={shows} onClick={handleClick} />
       <RecentVideo videos={displayVideos} />
-    </main>
+    </>
   );
 }
 

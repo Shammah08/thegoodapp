@@ -20,8 +20,11 @@ function Card({ show, onClick }) {
             );
           })}
         </span>
+          <Link to={"shows/" + show.id} className='show-name'>
+                        <h3 >{show.id}</h3>
+
+              </Link>
         <strong>{show.tagline}</strong>
-        <i>{show.date}</i>
       </div>
     </section>
   );

@@ -53,18 +53,21 @@ top: 47%;
     line-height: 45px;
 }
 .partners-container{
-    height: 120vh;
+    height: 90vh;
+    padding: 10px 0;
 }
 .partners{
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-gap: 10px; */
     height: 100%;
     overflow-x: hidden;
     padding-top: 10px;
+    width: 80%;
+    margin: auto;
 }
 .partners img{
     width: 100%;
-    margin-top: 10px;
+    height: 60px;
 }
 .services-section{
     width: 100vw;

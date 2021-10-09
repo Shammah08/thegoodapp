@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 import "./Shop.css";
+import "./Shop.media.css";
 import { products } from "../database";
 import ShoppingCenter from "./ShoppingCenter.jsx";
 
