@@ -7,7 +7,7 @@ function Cart() {
   const [totalCost, setTotalCost] = useState(0);
   const [itemCount, setItemCount] = useState(0);
   const [userOpen, setUserOpen] = useState(false);
-  // eslint-disable-next-line
+
   const [userDetails, setUserDetails] = useState({
     username: "",
     phone: "",
@@ -19,15 +19,13 @@ function Cart() {
     });
     const total = prices.reduce((a, b) => a + b);
 
-    setTotalCost(totalCost + total);
+    setTotalCost(total);
     setItemCount(products.length);
 
     return () => {
       console.log("Calculation Done", total);
     };
-
-    // eslint-disable-next-line
-  }, [products]);
+  }, [itemCount]);
 
   return (
     <section className="checkout-section">
@@ -57,7 +55,7 @@ function Cart() {
           );
         })}
       </div>
-      <UserForm userOpen={userOpen} setUserOpen={setUserOpen} />
+      <UserForm userOpen={userOpen} setUserOpen={setUserOpen} setUserDetails={setUserDetails}/>
       <ProcessPayment
         totalCost={totalCost}
         itemCount={itemCount}
@@ -65,6 +63,7 @@ function Cart() {
         userOpen={userOpen}
         setUserOpen={setUserOpen}
         userDetails={userDetails}
+        setUserDetails={setUserDetails}
       />
     </section>
   );

@@ -28,6 +28,7 @@ function Members({ team }) {
                   <a
                     href={`https://www.instagram.com/${member.social.instagram} `}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaInstagram className="icon" />
                   </a>
@@ -39,6 +40,7 @@ function Members({ team }) {
                   <a
                     href={`https://www.linkedin.com/in/${member.social.linkedin} `}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaLinkedinIn className="icon" />
                   </a>
@@ -49,6 +51,7 @@ function Members({ team }) {
                   <a
                     href={`https://www.twitter.com/${member.social.twitter} `}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaTwitter className="icon" />
                   </a>
@@ -60,6 +63,7 @@ function Members({ team }) {
                   <a
                     href={`https://www.facebook.com/${member.social.facebook} `}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaFacebookF className="icon" />
                   </a>
@@ -71,6 +75,7 @@ function Members({ team }) {
                   <a
                     href={`https://www.github.com/${member.social.github} `}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaGithub className="icon" />
                   </a>
