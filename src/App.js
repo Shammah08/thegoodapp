@@ -1,4 +1,5 @@
 import "./App.css";
+import "./App.media.css";
 import { logos } from "./components/database.jsx";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";

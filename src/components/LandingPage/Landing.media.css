@@ -1,0 +1,100 @@
+@media all and (max-width: 480px) {
+    .landing-section{
+        height: 100vh;
+    }
+    .text-container{
+        top: 55%;
+        width: 85%;
+        height: 300px;
+    }
+.text-container h2 {
+  font-size: 2.2rem;
+}
+.text-container p {
+  font-size: .8rem;
+}
+
+.image-container img {
+  object-fit: cover;
+  animation: none;
+}
+
+.arrow {
+font-size: 1.5rem;
+top: 47%;
+}
+.left-arrow {
+  left: 5px;
+}
+.right-arrow {
+  right: 5px;
+}
+.about-text{
+    height: 100vh;
+}
+.about-text h2 {
+    font-size: 3.4rem;
+    line-height: 60px;
+    width: 90%;
+}
+.about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    width: 90%;
+}
+.quote-section{
+  background-position: unset;
+  height: 60vh;
+
+}
+.quote-section h2 {
+    width: 90%;
+    font-size: 2.8rem;
+    line-height: 45px;
+}
+.partners-container{
+    height: 120vh;
+}
+.partners{
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+    height: 100%;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+.partners img{
+    width: 100%;
+    margin-top: 10px;
+}
+.services-section{
+    width: 100vw;
+    height: auto;
+    overflow-y: hidden;
+    padding: 20px 0;
+    align-items: center;
+}
+.service-title{
+    /* display: none; */
+    height: 340px;
+    /* background-color: turquoise; */
+    width: 100% !important;
+}
+.service-title h2 {
+    font-size: 3.4rem;
+    padding: 0;
+}
+.service-title p{
+    font-size: 1.4rem;
+    width: 90%;
+    margin: 0;
+}
+.services-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service p{
+    font-size: 1rem;
+}
+
+}
