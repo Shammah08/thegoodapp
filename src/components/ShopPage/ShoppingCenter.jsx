@@ -1,11 +1,11 @@
 import { FaCartPlus, FaCartArrowDown, FaSearchDollar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function ShoppingCenter({ onClick, products }) {
+function ShoppingCenter({ handleClick, products, count }) {
   return (
     <section className="shop-section">
       <Link to="/shop/checkout" className="cart-link">
-        <span className="cart-count">0</span>
+        <span className="cart-count">{count}</span>
         <FaCartPlus className="icon cart" />
       </Link>
       {/* <a href="/shop/checkout" className="cart-link"></a> */}
@@ -29,7 +29,10 @@ function ShoppingCenter({ onClick, products }) {
               )}
               <img src={product.img} alt="PRODUCT" />
               <span className="product-options">
-                <FaCartArrowDown className="cart-option" />
+                <FaCartArrowDown
+                  className="cart-option"
+                  onClick={handleClick}
+                />
 
                 <Link
                   to={`/shop/${product.id}/${product.name}/`}

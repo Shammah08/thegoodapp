@@ -1,16 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Card({ show, onClick }) {
-  const hosts = [
-    { name: "G Money", id: 1 },
-    { name: "Andy", id: 3 },
-    { name: "Calvin", id: 2 },
-    { name: "Neville", id: 4 },
-  ];
-  console.log(show.hosts.map((link) => link.name));
-  // const links = show.hosts.map((link) => {
-  //   console.log("Link", link.id, link.name);
-  // });
   return (
     <section className="show-card" key={show.id}>
       <figure>

@@ -1,29 +1,32 @@
-// import { useState } from "react";
-// import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
+import { useState } from "react";
+import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 import "./Shop.css";
 import { products } from "../database";
 import ShoppingCenter from "./ShoppingCenter.jsx";
 
 // const config = {
-//   public_key: "FLWPUBK_TEST-f34df863fe579323ddb58f901d65da9a-X",
+//   public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
 //   tx_ref: Date.now(),
-//   amount: 1000,
+//   amount: totalCost,
 //   currency: "KES",
 //   payment_options: "card,mobilemoney,ussd",
 //   customer: {
-//     email: "shammahranks@gmail.com",
-//     phonenumber: "07064586146",
-//     name: "Shammah Ranks",
+//     email: userDetails.email,
+//     phonenumber: userDetails.phone,
+//     name: userDetails.username,
 //   },
 //   customizations: {
 //     title: "The Good Company",
 //     description: "Payment for items in cart",
-//     logo: "../tgc_logo.png",
+//     logo: logos.logoRed,
 //   },
 // };
 
 function Shop() {
   // const [userDetails, setUserDetails] = useState(config);
+  // const [cartCount, setCartCount] = useState(0);
+  const [count, setCount] = useState(0);
+
   // const [cart, setCart] = useState({});
 
   // const getUserDetails = () => {};
@@ -33,6 +36,14 @@ function Shop() {
   // const handleClick = (e) => {
   //   console.log(e.target.value, "Added to Cart");
   // };
+
+  const handleClick = (e) => {
+    // console.log(e.target.innerHTML);
+    e.preventDefault();
+
+    setCount(count + 1);
+  };
+
   return (
     <section className="shopping-center">
       <div className="shopping-text">
@@ -40,7 +51,11 @@ function Shop() {
         <p>Explore the store!</p>
       </div>
 
-      <ShoppingCenter products={products} />
+      <ShoppingCenter
+        products={products}
+        handleClick={handleClick}
+        count={count}
+      />
     </section>
   );
 }
