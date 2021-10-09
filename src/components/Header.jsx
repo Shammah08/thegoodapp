@@ -4,7 +4,7 @@ const Header = ({ logo }) => {
     { route: "about", url: "/#about" },
     { route: "services", url: "/#services" },
     { route: "contact us", url: "/#contacts" },
-    { route: "podcasts & more", url: "/podcast" },
+    { route: "podcasts", url: "/podcast" },
     { route: "shop", url: "/shop" },
     { route: "news", url: "/news" },
     { route: "walk with g", url: "/walk" },

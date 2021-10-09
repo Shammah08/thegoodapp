@@ -5,7 +5,7 @@ import Partners from "./Partners";
 import Services from "./Services";
 import Footer from "./Footer";
 import "./Landing.css";
-import { TopButton } from "../Button.jsx";
+import "./Landing.media.css";
 import { landingTemplates, services } from "../database";
 
 const LandingPage = () => {
@@ -17,7 +17,6 @@ const LandingPage = () => {
       <Partners />
       <Services services={services} />
       <Footer />
-      <TopButton />
     </main>
   );
 };

@@ -84,14 +84,3 @@
   
   }
 
-  .btn{
-    width: 200px;
-    height: 50px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.4rem;
-    margin: 10px;
-    cursor: pointer;
-    background-color: #19B5fE;
-  }

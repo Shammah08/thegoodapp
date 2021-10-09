@@ -2,6 +2,9 @@
   /* background-color: green; */
   color: black;
 }
+.shopping-text h1{
+  font-weight: 600;
+}
 .shopping-text {
   font-size: 2.4rem;
   font-weight: 500;
@@ -25,13 +28,6 @@
   position: sticky;
   top: 130px;
 }
-/* .shop-section h1 {
-  font-size: 1.6rem;
-  font-weight: 100;
-  text-decoration: underline;
-  cursor: pointer;
-  background-color: green;
-} */
 
 .shop-section .icon {
   color: black;
@@ -131,7 +127,9 @@
   height: 40px;
   width: 90%;
 }
-
+.product-details h3, .product-details h5{
+  font-weight: 500;
+}
 /* Product section */
 .product-section {
   height: 80vh;

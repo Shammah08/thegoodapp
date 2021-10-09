@@ -24,7 +24,7 @@ function userProfile({ match }) {
                 {user.bio
                   ? user.bio
                   : "Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company.' said " +
-                    user.fullName}
+                    user.username}
               </p>
             </div>
 

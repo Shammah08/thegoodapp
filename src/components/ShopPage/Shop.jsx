@@ -48,7 +48,6 @@ function Shop() {
     <section className="shopping-center">
       <div className="shopping-text">
         <h1>Welcome To The Shop</h1>
-        <p>Explore the store!</p>
       </div>
 
       <ShoppingCenter

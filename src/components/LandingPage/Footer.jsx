@@ -5,6 +5,8 @@ import {
   FaYoutube,
   FaFacebookF,
 } from "react-icons/fa";
+import { TopButton } from "../Button.jsx";
+
 
 function Footer() {
   const footerDetails = [
@@ -79,7 +81,11 @@ function Footer() {
       <span>
         <h2>CALL: 0710-766-224</h2>
         <h3>info@thegoodcompany.co.ke</h3>
+
       </span>
+    <br />
+      <TopButton />
+
     </footer>
   );
 }
