@@ -12,7 +12,7 @@ const Header = ({ logo }) => {
   ];
   const navLinks = navItems.map((link) => {
     return (
-      <a href={link.url} className="nav-link" key={link.url}>
+      <a href={link.url} className='nav-link' key={link.url}>
         {link.route}
       </a>
     );
@@ -20,8 +20,8 @@ const Header = ({ logo }) => {
 
   return (
     <header>
-      <a href="/" className="logo">
-        <img src={logo} alt="TGC_LOGO" />
+      <a href='/' className='logo'>
+        <img src={logo} alt='TGC_LOGO' />
       </a>
 
       <nav>{navLinks}</nav>

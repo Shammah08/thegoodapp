@@ -32,7 +32,7 @@
 }
 .show-card img {
   height: 300px;
-  width:100%;
+  width: 100%;
 }
 
 .show-details {
@@ -66,13 +66,13 @@
   font-weight: 600;
   color: white;
 }
-.show-name{
+.show-name {
   display: none;
 }
-.show-details h3, .show-name h3:hover {
+.show-details h3,
+.show-name h3:hover {
   animation: zoom 1s;
 }
-
 
 .recent-pod {
   display: flex;
@@ -167,7 +167,6 @@
   justify-content: space-around;
   flex-direction: column;
   background-color: #141618;
-
 }
 .video-player {
   height: 80%;
@@ -182,7 +181,6 @@
   align-items: center;
   justify-content: space-evenly;
   color: #141618;
-
 }
 .video-text h1 {
   font-size: 2rem;

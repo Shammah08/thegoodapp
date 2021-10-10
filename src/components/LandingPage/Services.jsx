@@ -1,20 +1,20 @@
-const Services = ({services}) => {
+const Services = ({ services }) => {
   const heading = {
     title: "top notch services.",
     content:
       "Our quality standards apply also in terms of service, technical expertise and advice. Our dedicated employees are happy to assist you with know-how and experience in your daily business.",
   };
   return (
-    <section className="services-section" id='services'>
-      <span className="service-title">
+    <section className='services-section' id='services'>
+      <span className='service-title'>
         <h2>{heading.title}</h2>
         <p>{heading.content}</p>
       </span>
 
-      <div className="services-container">
+      <div className='services-container'>
         {services.map((service) => {
           return (
-            <div className="service" key={service.title}>
+            <div className='service' key={service.title}>
               <h4>{service.title}</h4>
               <p>{service.content}</p>
             </div>

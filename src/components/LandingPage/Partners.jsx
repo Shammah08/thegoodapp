@@ -9,11 +9,10 @@ import ikigai from "../images/ikigai.webp";
 import ohcha from "../images/ohcha.webp";
 import redbull from "../images/redbull.webp";
 
-
 function Partners() {
   // const partnerImg = []
   const partnersList = [
-    {url: amaize,   title: "AMAIZE",},
+    { url: amaize, title: "AMAIZE" },
     { url: apa, title: "APA INSURANCE" },
     { url: safaricom, title: "SAFARICOM PLC" },
     { url: ciroc, title: "CIROC" },
@@ -25,11 +24,18 @@ function Partners() {
     { url: redbull, title: "REDBULL" },
   ];
   const partners = partnersList.map((partner) => {
-    return <img src={partner.url} alt={partner} title={partner.title} key={partner.title} />;
+    return (
+      <img
+        src={partner.url}
+        alt={partner}
+        title={partner.title}
+        key={partner.title}
+      />
+    );
   });
   return (
-    <section className="partners-container">
-      <div className="partners">{partners}</div>
+    <section className='partners-container'>
+      <div className='partners'>{partners}</div>
     </section>
   );
 }

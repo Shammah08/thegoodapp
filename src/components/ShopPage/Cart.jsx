@@ -28,34 +28,82 @@ function Cart() {
   }, [itemCount]);
 
   return (
-    <section className="checkout-section">
-      <div className="cart-items">
-        <span className="cart-intro">
+    <section className='checkout-section'>
+      <div className='cart-items'>
+        <span className='cart-intro'>
           <h1>Shopping Cart</h1>
           <h5>Price</h5>
         </span>
-        {products.map((product) => {
-          return (
-            <div className="cart-item" key={product.id}>
-              <img src={product.img} alt="Cart Item" />
-              <div className="cart-item-details">
-                <h4>{product.name}</h4>
-                <p>{product.details}</p>
-                <h5>by{product.by}</h5>
-                <strong>{product.soldOut ? "Out Of Stock" : "In Stock"}</strong>
-                <select name="quantity" id="">
-                  <option value="1">Qty:</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-              </div>
-              <span className="item-price">Ksh. {product.price}</span>
-            </div>
-          );
-        })}
+        {/* {products.map((product) => {
+          return ( */}
+        <div className='cart-item' key={5}>
+          <img src={""} alt='Cart Item' />
+          <div className='cart-item-details'>
+            <h4>{"Coffee Mug - White"}</h4>
+            <p>
+              {
+                "lorem  const handleFlutterPayment = useFlutterwave(config)  const handleFlutterPayment = useFlutterwave(config)"
+              }
+            </p>
+            <h5>by{" The Mics Are Open"}</h5>
+            <strong>{false ? "Out Of Stock" : "In Stock"}</strong>
+            <select name='quantity' id=''>
+              <option value='1'>Qty:</option>
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
+            </select>
+          </div>
+          <span className='item-price'>Ksh. {"100"}</span>
+        </div>
+        <div className='cart-item' key={58}>
+          <img src={""} alt='Cart Item' />
+          <div className='cart-item-details'>
+            <h4>{"Coffee Mug - White"}</h4>
+            <p>
+              {
+                "lorem  const handleFlutterPayment = useFlutterwave(config)  const handleFlutterPayment = useFlutterwave(config)"
+              }
+            </p>
+            <h5>by{" The Mics Are Open"}</h5>
+            <strong>{false ? "Out Of Stock" : "In Stock"}</strong>
+            <select name='quantity' id=''>
+              <option value='1'>Qty:</option>
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
+            </select>
+          </div>
+          <span className='item-price'>Ksh. {"100"}</span>
+        </div>
+        <div className='cart-item' key={65}>
+          <img src={""} alt='Cart Item' />
+          <div className='cart-item-details'>
+            <h4>{"Coffee Mug - White"}</h4>
+            <p>
+              {
+                "lorem  const handleFlutterPayment = useFlutterwave(config)  const handleFlutterPayment = useFlutterwave(config)"
+              }
+            </p>
+            <h5>by{" The Mics Are Open"}</h5>
+            <strong>{false ? "Out Of Stock" : "In Stock"}</strong>
+            <select name='quantity' id=''>
+              <option value='1'>Qty:</option>
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
+            </select>
+          </div>
+          <span className='item-price'>Ksh. {"100"}</span>
+        </div>
+        {/* );
+        })} */}
       </div>
-      <UserForm userOpen={userOpen} setUserOpen={setUserOpen} setUserDetails={setUserDetails}/>
+      <UserForm
+        userOpen={userOpen}
+        setUserOpen={setUserOpen}
+        setUserDetails={setUserDetails}
+      />
       <ProcessPayment
         totalCost={totalCost}
         itemCount={itemCount}

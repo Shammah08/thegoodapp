@@ -19,10 +19,10 @@ function UserForm({ userOpen, setUserOpen, setUserDetails }) {
         <span>
           <h5>Username: </h5>
           <input
-            type="text"
-            name="username"
-            className="form-control"
-            placeholder="Username"
+            type='text'
+            name='username'
+            className='form-control'
+            placeholder='Username'
             onChange={(e) => {
               return setDetails({ ...details, username: e.target.value });
             }}
@@ -32,10 +32,10 @@ function UserForm({ userOpen, setUserOpen, setUserDetails }) {
         <span>
           <h5>Phone: </h5>
           <input
-            type="text"
-            name="phone"
-            className="form-control"
-            placeholder="Phone Number"
+            type='text'
+            name='phone'
+            className='form-control'
+            placeholder='Phone Number'
             onChange={(e) => {
               return setDetails({
                 ...details,
@@ -48,10 +48,10 @@ function UserForm({ userOpen, setUserOpen, setUserDetails }) {
         <span>
           <h5>Email: </h5>
           <input
-            type="text"
-            className="form-control"
-            placeholder="Email"
-            name="email"
+            type='text'
+            className='form-control'
+            placeholder='Email'
+            name='email'
             onChange={(e) => {
               return setDetails({
                 ...details,
@@ -63,13 +63,12 @@ function UserForm({ userOpen, setUserOpen, setUserDetails }) {
         <span>
           {" "}
           <button
-            type="button"
-            className="btn"
-            onClick={() => setUserOpen(!userOpen)}
-          >
+            type='button'
+            className='btn'
+            onClick={() => setUserOpen(!userOpen)}>
             Cancel
           </button>
-          <button type="button" className="btn" onClick={handleClick}>
+          <button type='button' className='btn' onClick={handleClick}>
             Submit
           </button>
         </span>

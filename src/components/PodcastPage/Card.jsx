@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Card({ show, onClick }) {
   return (
-    <section className="show-card" key={show.id}>
+    <section className='show-card' key={show.id}>
       <figure>
         <img
           src={show.logo ? show.logo : show.cover}
@@ -10,7 +10,7 @@ function Card({ show, onClick }) {
           onClick={onClick}
         />
       </figure>
-      <div className="show-details">
+      <div className='show-details'>
         <span>
           {show.hosts.map((link) => {
             return (
@@ -20,10 +20,9 @@ function Card({ show, onClick }) {
             );
           })}
         </span>
-          <Link to={"shows/" + show.id} className='show-name'>
-                        <h3 >{show.id}</h3>
-
-              </Link>
+        <Link to={"shows/" + show.id} className='show-name'>
+          <h3>{show.id}</h3>
+        </Link>
         <strong>{show.tagline}</strong>
       </div>
     </section>

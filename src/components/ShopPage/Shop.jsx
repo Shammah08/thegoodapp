@@ -1,9 +1,12 @@
 import { useState } from "react";
-import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
+// import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 import "./Shop.css";
 import "./Shop.media.css";
 import { products } from "../database";
 import ShoppingCenter from "./ShoppingCenter.jsx";
+import { FaCartPlus } from "react-icons/fa";
+
+import { Link } from "react-router-dom";
 
 // const config = {
 //   public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
@@ -46,9 +49,13 @@ function Shop() {
   };
 
   return (
-    <section className="shopping-center">
-      <div className="shopping-text">
-        <h1>Welcome To The Shop</h1>
+    <section className='shopping-center'>
+      <div className='shopping-text'>
+        <h1>The Shop</h1>
+        <Link to='/shop/checkout' className='cart-link'>
+          <span className='cart-count'>{count}</span>
+          <FaCartPlus className='icon cart' />
+        </Link>
       </div>
 
       <ShoppingCenter
