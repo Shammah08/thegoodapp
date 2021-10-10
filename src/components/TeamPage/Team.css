@@ -24,6 +24,7 @@
   grid-gap: 50px;
   padding: 20px 70px;
   cursor: pointer;
+  /* background-color: green; */
 }
 .team-member {
   width: 300px;
@@ -53,13 +54,13 @@
   background-color: #141618;
   color: azure;
 }
-.team-member  h2 {
+.team-member h2 {
   font-weight: 600;
 }
-.team-member  h5 {
+.team-member h5 {
   font-weight: 500;
 }
-.team-member  .icon {
+.team-member .icon {
   font-size: 1.4rem;
   margin: 10px;
 }
@@ -67,8 +68,8 @@
   height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  justify-content: space-around;
+  /* padding: 10px; */
 }
 .profile {
   display: flex;
@@ -80,16 +81,21 @@
   height: 400px;
 }
 .profile img {
-  height: 300px;
-  width: 300px;
+  height: 90%;
+  width: 80%;
 }
 .profile h3 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
 }
 .profile span {
-  width: 60%;
-  height: 50px;
+  width: 80%;
+  height: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -102,7 +108,7 @@
 
 .user-bio {
   height: 500px;
-  width: 900px;
+  width: 60%;
   text-align: left;
   padding: 20px;
 }

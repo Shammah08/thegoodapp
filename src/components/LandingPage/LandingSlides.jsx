@@ -1,11 +1,4 @@
-import {
-  // FaChevronLeft,
-  // FaChevronRight,
-  // FaAngleDoubleDown,
-  FaAngleRight,
-  FaAngleLeft,
-  // FaEnvelopeOpenText,
-} from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 // import Loader from "../Loader";
 import { useState, useEffect } from "react";
 // import { init } from "ityped";
@@ -45,38 +38,37 @@ function LandingSlides({ allSlides }) {
   };
 
   return (
-    <section className="landing-section" id="home">
+    <section className='landing-section' id='home'>
       <div
-        className="slider"
-        style={{ transform: `translateX(-${activeSlide * 100}vw)` }}
-      >
+        className='slider'
+        style={{ transform: `translateX(-${activeSlide * 100}vw)` }}>
         {allSlides.map((slide) => {
           return (
-            <div className="slide-container" key={slide.index}>
-              <div className="container">
-                <div className="text-container">
+            <div className='slide-container' key={slide.index}>
+              <div className='container'>
+                <div className='text-container'>
                   <h2>{slide.title}</h2>
 
                   <p>{slide.desc}</p>
                   <a href={slide.url}>
-                    <button className="btn">{slide.button}</button>
+                    <button className='btn'>{slide.button}</button>
                   </a>
                 </div>
 
-                <div className="image-container">
-                  <img src={slide.image} alt="" />
+                <div className='image-container'>
+                  <img src={slide.image} alt='' />
                 </div>
               </div>
             </div>
           );
         })}
       </div>
-      <FaAngleRight
-        className="arrow right-arrow"
+      <FaChevronRight
+        className='arrow right-arrow'
         onClick={() => handleClick("right")}
       />
-      <FaAngleLeft
-        className="arrow left-arrow"
+      <FaChevronLeft
+        className='arrow left-arrow'
         onClick={() => handleClick("left")}
       />
     </section>

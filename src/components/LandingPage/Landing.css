@@ -9,12 +9,10 @@
 .slider {
   height: 110%;
   width: 100%;
-  /* overflow-x: hidden; */
   display: flex;
   position: absolute;
   left: 0;
   transition: all ease-out 0.2s;
-  /* background-color: aqua; */
 }
 .slide-container {
   width: 100vw;
@@ -42,9 +40,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  /* background-color: red; */
   z-index: 10;
-  /* background-color: rgba(44, 43, 43, 0.1); */
 }
 
 .text-container h2 {
@@ -70,7 +66,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* z-index: 10000; */
   width: 100vw;
 }
 .image-container img {
@@ -117,7 +112,7 @@ button a {
   position: absolute;
   color: whitesmoke;
   top: 45%;
-  font-size: 60px;
+  font-size: 2.2rem;
   cursor: pointer;
 }
 .left-arrow {
@@ -165,7 +160,6 @@ button a {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-position-x: -150px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -196,7 +190,7 @@ button a {
 }
 .partners {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 80px;
   height: 40%;
 }
@@ -247,6 +241,5 @@ button a {
   text-align: left;
   line-height: 25px;
   width: 100%;
-  /* background-color: red; */
-  font-size: .8rem;
+  font-size: 0.8rem;
 }

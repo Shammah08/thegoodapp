@@ -5,8 +5,7 @@ import {
   FaYoutube,
   FaFacebookF,
 } from "react-icons/fa";
-import { TopButton } from "../Button.jsx";
-
+import { TopButton } from "./Button.jsx";
 
 function Footer() {
   const footerDetails = [
@@ -28,8 +27,8 @@ function Footer() {
   ];
 
   return (
-    <footer id="contacts">
-      <div className="footer-text">
+    <footer id='contacts'>
+      <div className='footer-text'>
         <h1>Get Connected.</h1>
         <hr />
         <p>
@@ -40,52 +39,47 @@ function Footer() {
       <section>
         {footerDetails.map((detail) => {
           return (
-            <div key={detail.id} className="footer-detail">
+            <div key={detail.id} className='footer-detail'>
               <h3> {detail.title}</h3>
               <p>{detail.text}</p>
             </div>
           );
         })}
       </section>
-      <div className="social-links-container">
-        <ul className="social-links">
+      <div className='social-links-container'>
+        <ul className='social-links'>
           <a
-            href="https://www.youtube.com/channel/UC7h4tUtdH0L06sDZVmBMc4Q"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaYoutube className="icon" />
-          </a>
-          <a
-            href="https://ke.linkedin.com/company/the-good-company-ke"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedinIn className="icon" />
+            href='https://www.youtube.com/channel/UC7h4tUtdH0L06sDZVmBMc4Q'
+            target='_blank'
+            rel='noreferrer'>
+            <FaYoutube className='icon' />
           </a>
           <a
-            href="https://www.instagram.com/thegoodcompanyke/?hl=en"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaInstagram className="icon" />
+            href='https://ke.linkedin.com/company/the-good-company-ke'
+            target='_blank'
+            rel='noreferrer'>
+            <FaLinkedinIn className='icon' />
           </a>
-          <a href="/#">
-            <FaTwitter className="icon" />
+          <a
+            href='https://www.instagram.com/thegoodcompanyke/?hl=en'
+            target='_blank'
+            rel='noreferrer'>
+            <FaInstagram className='icon' />
           </a>
-          <a href="/#">
-            <FaFacebookF className="icon" />
+          <a href='/#'>
+            <FaTwitter className='icon' />
+          </a>
+          <a href='/#'>
+            <FaFacebookF className='icon' />
           </a>
         </ul>
       </div>
       <span>
         <h2>CALL: 0710-766-224</h2>
         <h3>info@thegoodcompany.co.ke</h3>
-
       </span>
-    <br />
+      <br />
       <TopButton />
-
     </footer>
   );
 }

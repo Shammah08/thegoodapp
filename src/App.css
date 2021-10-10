@@ -33,7 +33,7 @@ header {
   /* width: 100%; */
   z-index: 100;
   padding: 10px;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 nav {
   width: 850px;
@@ -90,18 +90,18 @@ footer span h3:hover {
   animation: zoom 1s infinite;
   font-size: 2.5rem;
 }
-  .btn{
-    width: 170px;
-    height: 50px;
-    outline: none;
-    border: none;
-    border-radius: 20px;
-    font-size: 1.4rem;
-    margin: 10px;
-    cursor: pointer;
-    color: white;
-    background-color: #19B5fE;
-  }
+.btn {
+  width: 170px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #19b5fe;
+}
 .btn-top {
   position: absolute;
   right: 10px;

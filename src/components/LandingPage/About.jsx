@@ -5,9 +5,7 @@ const About = () => {
   return (
     <div className='about-text' id='about'>
       <h2>A Creative Agency Focused On Vision, Brand And People.</h2>
-      <p>
-       {aboutText.text}
-      </p>
+      <p>{aboutText.text}</p>
     </div>
   );
 };

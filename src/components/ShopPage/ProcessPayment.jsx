@@ -53,12 +53,12 @@ function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
   // const getUserDetails = () => {};
 
   return (
-    <div className="checkout-container">
-      <Link to="/shop/checkout" className="cart-link">
-        <span className="cart-count">0</span>
-        <FaCartPlus className="icon cart" />
+    <div className='checkout-container'>
+      <Link to='/shop/checkout' className='cart-link'>
+        <span className='cart-count'>0</span>
+        <FaCartPlus className='icon cart' />
       </Link>
-      <div className="order-totals">
+      <div className='order-totals'>
         <span>
           <h4>Items: </h4>
           <i ref={count}>{itemCount}</i>
@@ -68,7 +68,7 @@ function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
           <i ref={total}>{totalCost}.00</i>
         </span>
       </div>
-      <button className="btn payment" onClick={() => setUserOpen(true)}>
+      <button className='btn payment' onClick={() => setUserOpen(true)}>
         Proceed to Checkout
       </button>
     </div>

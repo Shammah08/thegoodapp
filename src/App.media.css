@@ -1,83 +1,81 @@
 @media all and (max-width: 480px) {
-    .App{
-        overflow-x: hidden;
-        /* background-color: white; */
-    }
-header {
+  .App {
+    overflow-x: hidden;
+    /* background-color: white; */
+  }
+  header {
     /* flex-direction: column; */
     position: sticky;
     top: 0;
     height: 80px;
-}
-header .logo {
-  margin-left: 0px;
-  height: 70%;
-  width: 50px;
-  display: none;
-}
-nav{
+  }
+  header .logo {
+    margin-left: 0px;
+    height: 70%;
+    width: 50px;
+    display: none;
+  }
+  nav {
     width: 100%;
     height: 30px;
     /* background-color: red; */
-}
-.nav-link {
+  }
+  .nav-link {
     font-size: 8px;
     letter-spacing: normal;
     padding: 0px;
-    
-}
-footer{
+  }
+  footer {
     width: 100%;
     /* background-color: tomato; */
     padding: 50px 0;
     height: auto;
-}
-.footer-text{
+  }
+  .footer-text {
     height: 200px;
-}
-.footer-text h1{
+  }
+  .footer-text h1 {
     font-size: 2.4rem;
-}
-.footer-text h2{
+  }
+  .footer-text h2 {
     font-size: 1rem;
-    font-weight: 700
-}
-.footer-text p{
+    font-weight: 700;
+  }
+  .footer-text p {
     font-size: 1rem;
     width: 90%;
     padding: 5px;
     /* background-color: red; */
     height: 100px;
-}
-footer section{
+  }
+  footer section {
     flex-direction: column;
     height: auto;
     /* background-color: red; */
     /* width: 90%; */
-
-}
-.footer-detail h3{
+  }
+  .footer-detail h3 {
     font-size: 1.2rem;
-}
-.footer-detail p{
+  }
+  .footer-detail p {
     font-size: 1rem;
     width: 100%;
-}
-.social-links-container {
-  width: 90%;
-  /* background-color: red; */
-}
-.social-links{
+  }
+  .social-links-container {
+    width: 90%;
+    /* background-color: red; */
+  }
+  .social-links {
     justify-content: space-around;
     width: 90%;
-}
-footer span h2 {
-  font-size: 2rem;
-}
-footer span h3 {
-  padding: 10px;
-  font-size: 1.2rem;
-  text-align: center;
-  color: rgba(196, 197, 197, 0.2);
-}
+  }
+  footer span h2 {
+    font-size: 2rem;
+  }
+  footer span h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(196, 197, 197, 0.2);
+  }
 }

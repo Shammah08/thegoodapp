@@ -1,4 +1,5 @@
 import "./Team.css";
+import "./Team.media.css";
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -6,17 +7,16 @@ import {
   FaFacebookF,
   FaGithub,
 } from "react-icons/fa";
-
 import { Link } from "react-router-dom";
 
 function Members({ team }) {
   return (
-    <section className="team-container">
+    <section className='team-container'>
       {team.map((member) => {
         return (
-          <figure className="team-member" key={member.userid}>
+          <figure className='team-member' key={member.userid}>
             <Link to={"team/" + member.userid}>
-              <div className="member-image">
+              <div className='member-image'>
                 <img src={member.image} alt={member.fullName + "image"} />
               </div>
             </Link>
@@ -27,10 +27,9 @@ function Members({ team }) {
                 {member.social.instagram ? (
                   <a
                     href={`https://www.instagram.com/${member.social.instagram} `}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaInstagram className="icon" />
+                    target='_blank'
+                    rel='noreferrer'>
+                    <FaInstagram className='icon' />
                   </a>
                 ) : (
                   ""
@@ -39,10 +38,9 @@ function Members({ team }) {
                 {member.social.linkedin ? (
                   <a
                     href={`https://www.linkedin.com/in/${member.social.linkedin} `}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaLinkedinIn className="icon" />
+                    target='_blank'
+                    rel='noreferrer'>
+                    <FaLinkedinIn className='icon' />
                   </a>
                 ) : (
                   ""
@@ -50,10 +48,9 @@ function Members({ team }) {
                 {member.social.twitter ? (
                   <a
                     href={`https://www.twitter.com/${member.social.twitter} `}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaTwitter className="icon" />
+                    target='_blank'
+                    rel='noreferrer'>
+                    <FaTwitter className='icon' />
                   </a>
                 ) : (
                   ""
@@ -62,10 +59,9 @@ function Members({ team }) {
                 {member.social.facebook ? (
                   <a
                     href={`https://www.facebook.com/${member.social.facebook} `}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaFacebookF className="icon" />
+                    target='_blank'
+                    rel='noreferrer'>
+                    <FaFacebookF className='icon' />
                   </a>
                 ) : (
                   ""
@@ -74,10 +70,9 @@ function Members({ team }) {
                 {member.social.github ? (
                   <a
                     href={`https://www.github.com/${member.social.github} `}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaGithub className="icon" />
+                    target='_blank'
+                    rel='noreferrer'>
+                    <FaGithub className='icon' />
                   </a>
                 ) : (
                   ""
