@@ -304,10 +304,10 @@ export const team = [
   },
   {
     userid: 11,
-    username: "Shammah",
-    fullName: "Steve Shammah",
-    title: "Vigilante Developer",
-    bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together.The web developer behind The Company Ke application. Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company' said Shammah. Let's get it!!",
+    username: "Big O",
+    fullName: "Vigilanti Dev",
+    title: "Super Hero",
+    bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together.The web developer behind The Company Ke application. Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company' said Big O. Let's get it!!",
     image: logoRed,
     social: {
       instagram: "steveshammah",
