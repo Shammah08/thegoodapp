@@ -1,6 +1,6 @@
 const Services = ({ services }) => {
   const heading = {
-    title: "top notch services.",
+    title: "TOP NOTCH SERVICES.",
     content:
       "Our quality standards apply also in terms of service, technical expertise and advice. Our dedicated employees are happy to assist you with know-how and experience in your daily business.",
   };

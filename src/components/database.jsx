@@ -6,17 +6,18 @@ import logoRed from "./images/tgc_logo_red.jpg";
 import people from "./images/people.jpg";
 import micsAreOpen from "./images/mics-thumbnail.jpg";
 import micsAreOpenSquad from "./images/mics-squad.jpg";
-import theCookBook from "./images/the-cook-book.jpg";
+import theCookBook from "./images/the-cook-book-1.jpg";
 import daDing from "./images/dading-different.jpg";
 import lockdownSession from "./images/lockdown-session.jpg";
-import wakeUpCall from "./images/wake-up-call.jpg";
+import wakeUpCall from "./images/wake-up-call-1.jpg";
 
 // Landing Sides
 import nairobi from "./images/Nairobi.jpg";
-// import skyline from "./images/Nairobi-Night-Skyline.jpg";
+import skyline from "./images/Nairobi-Night-Skyline.jpg";
 import silverArrow from "./images/silver-arrow.jpg";
 import laptop from "./images/laptop.jpg";
 import party from "./images/party.jpg";
+import blankLaptop from "./images/blank-laptop.jpg";
 
 // Team
 import GMoney from "./images/GMoney.jpg";
@@ -46,10 +47,48 @@ import bottleLime from "./images/Water-Bottle-Lime.jpg";
 import bottleRed from "./images/Water-Bottle-Red.jpg";
 import bottleWhite from "./images/Water-Bottle-White.jpg";
 
+import amaize from "./images/amaize.webp";
+import apa from "./images/apa.webp";
+import safaricom from "./images/safaricom.webp";
+import ciroc from "./images/ciroc.webp";
+import artcaffe from "./images/artcaffe.webp";
+import prudential from "./images/prudential.webp";
+import stanbic from "./images/stanbic.webp";
+import ikigai from "./images/ikigai.webp";
+import ohcha from "./images/ohcha.webp";
+import redbull from "./images/redbull.webp";
+
+export const navLinks = [
+  { route: "welcome", url: "/#home" },
+  { route: "about", url: "/#about" },
+  { route: "services", url: "/#services" },
+  { route: "contact us", url: "/#contacts" },
+  { route: "podcasts", url: "/podcast" },
+  { route: "shop", url: "/shop" },
+  { route: "news", url: "/news" },
+  { route: "walk with g", url: "/walk" },
+  { route: "team", url: "/team" },
+];
+export const quotes = [
+  {
+    id: 1,
+    name: "Bernard Kelvin Clive",
+    quote: "the investments you make into a brand makes its name worth it",
+    img: blankLaptop,
+  },
+  {
+    id: 2,
+    name: "Martin Luther",
+    quote: "i have a dream",
+    img: skyline,
+  },
+];
 export const logos = {
   logoRed,
   logoBlue,
 };
+
+// Landing Slides
 export const landingTemplates = [
   {
     index: 1,
@@ -98,6 +137,7 @@ export const landingTemplates = [
   },
 ];
 
+// Shows
 export const shows = [
   {
     id: "micsareopen",
@@ -160,6 +200,7 @@ export const shows = [
   },
 ];
 
+// Team
 export const team = [
   {
     userid: 1,
@@ -319,6 +360,7 @@ export const team = [
   },
 ];
 
+// Services
 export const services = [
   {
     title: "Brand Equity Development",
@@ -357,6 +399,7 @@ export const services = [
   },
 ];
 
+// Products
 export const products = [
   {
     id: 1,
@@ -510,4 +553,18 @@ export const products = [
     soldOut: false,
     discount: 0,
   },
+];
+
+// Partners
+export const partners = [
+  { url: amaize, title: "AMAIZE" },
+  { url: apa, title: "APA INSURANCE" },
+  { url: safaricom, title: "SAFARICOM PLC" },
+  { url: ciroc, title: "CIROC" },
+  { url: artcaffe, title: "ARTCAFFE" },
+  { url: prudential, title: "PRUDENTIAL" },
+  { url: stanbic, title: "STANBIC BANK" },
+  { url: ikigai, title: "IKIGAI" },
+  { url: ohcha, title: "OHCHA NOODLES BAR" },
+  { url: redbull, title: "REDBULL" },
 ];

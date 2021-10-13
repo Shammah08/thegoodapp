@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 html {
   scroll-behavior: smooth;
@@ -17,11 +16,8 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   background-image: white;
-  /* display: grid;
-  grid-template-columns: 100%; */
   position: relative;
   width: 100vw;
-  /* overflow-x: hidden; */
 }
 header {
   display: flex;
@@ -30,7 +26,6 @@ header {
   position: sticky;
   top: 0;
   height: 110px;
-  /* width: 100%; */
   z-index: 100;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -41,7 +36,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 60%;
-  /* background-color: red; */
 }
 
 header .logo {
@@ -50,7 +44,6 @@ header .logo {
   margin-left: 100px;
   align-self: center;
   overflow: hidden;
-  /* background-color: red; */
 }
 .logo img {
   height: 100%;
@@ -58,7 +51,6 @@ header .logo {
 }
 .nav-link {
   color: white;
-  /* background-color: rgba(1, 175, 239, 0.5); */
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
@@ -67,11 +59,20 @@ header .logo {
   padding: 10px;
   letter-spacing: 0.3px;
 }
+.nav-link-active,
 .nav-link:hover {
   border-bottom: 2px solid rgb(1, 175, 239, 0.8);
   background-color: rgba(1, 175, 239, 0.2);
 }
-
+.burger-nav {
+  display: none;
+  height: 25px;
+}
+.burger-nav span {
+  height: 4px;
+  width: 35px;
+  background-color: white;
+}
 .icon {
   color: rgba(196, 197, 197, 0.5);
   font-size: 2rem;
@@ -193,7 +194,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
+  /* padding-top: 20px; */
   /* background-color: red; */
 }
 footer h1 {

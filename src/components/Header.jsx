@@ -1,22 +1,17 @@
+import { navLinks } from "./database";
+import { useState } from "react";
+
 const Header = ({ logo }) => {
-  const navItems = [
-    { route: "welcome", url: "/#home" },
-    { route: "about", url: "/#about" },
-    { route: "services", url: "/#services" },
-    { route: "contact us", url: "/#contacts" },
-    { route: "podcasts", url: "/podcast" },
-    { route: "shop", url: "/shop" },
-    { route: "news", url: "/news" },
-    { route: "walk with g", url: "/walk" },
-    { route: "team", url: "/team" },
-  ];
-  const navLinks = navItems.map((link) => {
-    return (
-      <a href={link.url} className='nav-link' key={link.url}>
-        {link.route}
-      </a>
-    );
-  });
+  const [activeLink, setActiveLink] = useState("welcome");
+  const [navActive, setNavActive] = useState(false);
+  const handleClick = (clicked) => {
+    setActiveLink(clicked);
+    setNavActive(!navActive);
+  };
+
+  const setNav = () => {
+    setNavActive(!navActive);
+  };
 
   return (
     <header>
@@ -24,7 +19,28 @@ const Header = ({ logo }) => {
         <img src={logo} alt='TGC_LOGO' />
       </a>
 
-      <nav>{navLinks}</nav>
+      <nav className={navActive ? "nav-active" : ""}>
+        {navLinks.map((link) => {
+          return (
+            <a
+              href={link.url}
+              className={
+                activeLink === link.route
+                  ? "nav-link nav-link-active"
+                  : "nav-link"
+              }
+              key={link.url}
+              onClick={() => handleClick(link.route)}>
+              {link.route}
+            </a>
+          );
+        })}
+      </nav>
+      <div className='burger-nav' onClick={setNav}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
   );
 };

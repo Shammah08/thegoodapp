@@ -16,7 +16,7 @@ function Container({ episode }) {
         <figcaption className='episode-details' key={episode.id.videoId}>
           <div>
             <h2>{episode.snippet.title.toUpperCase()} </h2>
-
+            {/* Check if premier video or not */}
             {episode.snippet.liveBroadcastContent === "upcoming" ? (
               <p>
                 This is a premier video <br />
@@ -44,7 +44,11 @@ function Container({ episode }) {
             </Link>
           </div>
           <span className='episode-meta' key={episode.id.videoId}>
-            <span>{episode.snippet.publishTime} | </span> <i>share</i>{" "}
+            <span>
+              {/* UTC time conversion to string */}
+              {new Date(episode.snippet.publishTime).toUTCString().slice(0, 16)}
+            </span>{" "}
+            <i>share</i>{" "}
           </span>
         </figcaption>
       </figure>
@@ -53,3 +57,5 @@ function Container({ episode }) {
 }
 
 export default Container;
+
+// replace(/T|\:\d\dZ/g, " ")}
