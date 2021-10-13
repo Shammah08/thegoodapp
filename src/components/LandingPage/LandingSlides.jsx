@@ -1,23 +1,8 @@
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-// import Loader from "../Loader";
 import { useState, useEffect } from "react";
-// import { init } from "ityped";
 
 function LandingSlides({ allSlides }) {
   const [activeSlide, setActiveSlide] = useState(0);
-
-  // const headingRef = useRef();
-
-  // useEffect(() => {
-  //   init(headingRef.current, {
-  //     showCursor: true,
-  //     backDelay: 1500,
-  //     strings: ["Developer", "and Human Being"],
-  //     backSpeed: 60,
-  //     startDelay: 500,
-  //   });
-  //   return () => {};
-  // });
   //  transition effect
   useEffect(() => {
     const timeRemaining = "15000";

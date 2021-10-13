@@ -1,23 +1,29 @@
-import blankLaptop from "../images/blank-laptop.jpg";
+import { quotes } from "../database";
+import { useState } from "react";
 
 const Quote = () => {
-  const quote = {
-    kelvinClive: {
-      name: "Bernard Kelvin Clive",
-      quote: "the investments you make into a brand makes its name worth it",
-    },
-    martinLuther: { name: "Martin Luther", quote: "i have a dream" },
-  };
+  //  eslint-disable-next-line
+  const [activeQuote, setActiveQuote] = useState(2);
+  const quote = quotes.filter((item) => {
+    return item.id === activeQuote;
+  });
+
   return (
-    <div
-      className='quote-section'
-      id='quote'
-      style={{
-        backgroundImage: `linear-gradient(360deg, rgba(0,0,0,0.5), rgba(0,0,0,0.9)),url(${blankLaptop})`,
-      }}>
-      <h2>"{quote.kelvinClive.quote}"</h2>
-      <h5>{quote.kelvinClive.name}</h5>
-    </div>
+    <>
+      {quote.map((content) => {
+        return (
+          <div
+            className='quote-section'
+            id='quote'
+            style={{
+              backgroundImage: `linear-gradient(360deg, rgba(0,0,0,0.5), rgba(0,0,0,0.9)),url(${content.img})`,
+            }}>
+            <h2>"{content.quote}"</h2>
+            <h5>{content.name}</h5>
+          </div>
+        );
+      })}
+    </>
   );
 };
 

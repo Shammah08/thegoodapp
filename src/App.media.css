@@ -5,25 +5,44 @@
   }
   header {
     /* flex-direction: column; */
+    /* position: fixed; */
     position: sticky;
     top: 0;
-    height: 80px;
+    height: 90px;
+    width: 100%;
+    padding: 0px 10px;
   }
   header .logo {
     margin-left: 0px;
-    height: 70%;
-    width: 50px;
-    display: none;
+    height: 100%;
+    width: 100px;
+    /* display: none; */
   }
   nav {
+    display: none;
+  }
+  .nav-active {
+    position: fixed;
+    /* width: 90%; */
+    display: flex;
+    top: 90px;
+    /* left: 90vw; */
     width: 100%;
-    height: 30px;
-    /* background-color: red; */
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    flex-direction: column;
   }
   .nav-link {
-    font-size: 8px;
+    font-size: 1.2rem;
     letter-spacing: normal;
     padding: 0px;
+    color: black;
+  }
+  .burger-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    cursor: pointer;
   }
   footer {
     width: 100%;
