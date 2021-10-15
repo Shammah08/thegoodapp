@@ -348,7 +348,7 @@ export const team = [
     username: "Big O",
     fullName: "Vigilanti Dev",
     title: "Super Hero",
-    bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together.The web developer behind The Company Ke application. Which is more important,asked Big Panda, 'The journey or the destination?' 'The Company' said Big O. Let's get it!!",
+    bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together.The web developer behind The Company Ke application.",
     image: logoRed,
     social: {
       instagram: "steveshammah",
@@ -567,4 +567,29 @@ export const partners = [
   { url: ikigai, title: "IKIGAI" },
   { url: ohcha, title: "OHCHA NOODLES BAR" },
   { url: redbull, title: "REDBULL" },
+];
+
+// About
+export const about = {
+  title: "A Creative Agency Focused On Vision, Brand And People.",
+  text: "We specialize in enhancing and building brand equity through tailored campaigns. We as a company share a common purpose and are united towards focusing our talents and organizing our various skills and resources to achieve the specific declared goals set by our clients. After all, you are the company you keep.",
+};
+
+//Footer
+export const footerDetails = [
+  {
+    id: 1,
+    title: "Let's Talk About Your Project",
+    text: " What are your hopes for your project? What are your fears? How do you move from concept to actuality? We are here to help you with that. Whether your brand needs a spring clean or an overhaul. Let us do the heavy lifting.",
+  },
+  {
+    id: 2,
+    title: "Have Any Query?",
+    text: "  Our dedicated staff are always ready to help. We appreciate your business and want you to bring us loads more! We welcome you to contact us for more information about any of our products or services.",
+  },
+  {
+    id: 3,
+    title: "Where We Are Located",
+    text: " Second Floor, 90 JGO James Gichuru Road Lavington Nairobi, KE",
+  },
 ];

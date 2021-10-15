@@ -5,26 +5,11 @@ import {
   FaYoutube,
   FaFacebookF,
 } from "react-icons/fa";
+import { footerDetails } from "./database";
 import { TopButton } from "./Button.jsx";
 
 function Footer() {
-  const footerDetails = [
-    {
-      id: 1,
-      title: "Let's Talk About Your Project",
-      text: " What are your hopes for your project? What are your fears? How do you move from concept to actuality? We are here to help you with that. Whether your brand needs a spring clean or an overhaul. Let us do the heavy lifting.",
-    },
-    {
-      id: 2,
-      title: "Have Any Query?",
-      text: "  Our dedicated staff are always ready to help. We appreciate your business and want you to bring us loads more! We welcome you to contact us for more information about any of our products or services.",
-    },
-    {
-      id: 3,
-      title: "Where We Are Located",
-      text: " Second Floor, 90 JGO James Gichuru Road Lavington Nairobi, KE",
-    },
-  ];
+  
 
   return (
     <footer id='contacts'>
