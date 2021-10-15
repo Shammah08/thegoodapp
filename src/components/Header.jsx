@@ -1,18 +1,6 @@
 import { navLinks } from "./database";
-import { useState } from "react";
 
-const Header = ({ logo }) => {
-  const [activeLink, setActiveLink] = useState("welcome");
-  const [navActive, setNavActive] = useState(false);
-  const handleClick = (clicked) => {
-    setActiveLink(clicked);
-    setNavActive(!navActive);
-  };
-
-  const setNav = () => {
-    setNavActive(!navActive);
-  };
-
+const Header = ({ logo, onClick, setNav, activeLink, navActive }) => {
   return (
     <header>
       <a href='/' className='logo'>
@@ -30,12 +18,14 @@ const Header = ({ logo }) => {
                   : "nav-link"
               }
               key={link.url}
-              onClick={() => handleClick(link.route)}>
+              onClick={() => onClick(link.route)}>
               {link.route}
             </a>
           );
         })}
       </nav>
+
+      {/* burger nav */}
       <div className='burger-nav' onClick={setNav}>
         <span></span>
         <span></span>

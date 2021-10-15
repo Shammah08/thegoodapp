@@ -13,12 +13,23 @@ import Cart from "./components/ShopPage/Cart.jsx";
 import News from "./components/NewsPage/News.jsx";
 import Header from "./components/Header.jsx";
 import MemberProfile from "./components/TeamPage/MemberProfile";
+import { useState } from "react";
 
 function App() {
+    const [activeLink, setActiveLink] = useState("welcome");
+  const [navActive, setNavActive] = useState(false);
+  const handleClick = (clicked) => {
+    setActiveLink(clicked);
+    setNavActive(!navActive);
+  };
+
+  const setNav = () => {
+    setNavActive(!navActive);
+  };
   return (
     <div className="App">
       <Router>
-        <Header logo={logos.logoBlue} onChange={false} />
+        <Header logo={logos.logoBlue} onClick={handleClick} setNav={setNav} navActive={navActive} activeLink={activeLink} />
         <Switch>
           <Route path="/" exact>
             <LandingPage />
