@@ -5,8 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Deployment Link
 
 https://thecompanyke.netlify.app/
-In the project directory, you can run:![TGC](https://user-images.githubusercontent.com/71287999/137575657-4fdd21b8-6556-4de1-b1cc-9ff77e9788ca.JPG)
 
+![TGC](https://user-images.githubusercontent.com/71287999/137575657-4fdd21b8-6556-4de1-b1cc-9ff77e9788ca.JPG)
+
+In the project directory, you can run:
 
 ## Available Scripts
 
