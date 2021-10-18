@@ -1,6 +1,6 @@
 import "./Podcast.css";
 import "./Podcast.media.css";
-import RecentVideo from "./RecentVideo";
+import AllVideos from "./AllVideos.jsx";
 import ChannelContainer from "./ChannelContainer";
 import { useState, useEffect } from "react";
 import { shows } from "../database";
@@ -8,7 +8,7 @@ import { shows } from "../database";
 function Podcast() {
   const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY_BACKUP; // SR-Key
   const channelID = process.env.REACT_APP_CHANNEL_ID; //TGC
-  const videoCount = 150;
+  const videoCount = 50;
 
   const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${videoCount}`;
   const [allVideos, setAllVideos] = useState([]);
@@ -56,7 +56,7 @@ function Podcast() {
   return (
     <>
       <ChannelContainer shows={shows} onClick={handleClick} />
-      <RecentVideo videos={displayVideos} />
+      <AllVideos videos={displayVideos} />
     </>
   );
 }

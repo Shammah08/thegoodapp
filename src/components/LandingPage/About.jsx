@@ -1,6 +1,5 @@
 import { about } from "../database";
 
-console.log(about);
 const About = () => {
   return (
     <div className='about-text' id='about'>

@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Quote = () => {
   //  eslint-disable-next-line
-  const [activeQuote, setActiveQuote] = useState(2);
+  const [activeQuote, setActiveQuote] = useState(1);
   const quote = quotes.filter((item) => {
     return item.id === activeQuote;
   });

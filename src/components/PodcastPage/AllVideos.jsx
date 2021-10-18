@@ -1,6 +1,6 @@
 import Youtube from "./Youtube";
 
-function RecentVideo({ videos, onClick }) {
+function AllVideos({ videos, onClick }) {
   // console.log('VIDEOS ON CLICK',  videos)
   return (
     <section className='recent-pod' onClick={onClick}>
@@ -23,4 +23,4 @@ function RecentVideo({ videos, onClick }) {
   );
 }
 
-export default RecentVideo;
+export default AllVideos;
