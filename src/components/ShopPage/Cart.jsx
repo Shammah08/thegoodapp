@@ -20,7 +20,7 @@ const Cart = () => {
     const prices = cart.map((item) => {
       return item.price;
     });
-    const total = prices ? prices.reduce((a, b) => a + b) : 0;
+    const total = prices.length > 1 ? prices.reduce((a, b) => a + b) : 0;
 
     setTotalCost(total);
     setItemCount(cart.length);
