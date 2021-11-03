@@ -46,11 +46,9 @@
 .text-container h2 {
   font-size: 6rem;
   color: white;
-  /* animation: text-animation 6s infinite forwards; */
 }
 .text-container p {
   font-size: 1.6rem;
-  /* animation: text-animation 7s 1s infinite alternate-reverse; */
 }
 .text-container span {
   font-size: 12px;
@@ -59,7 +57,7 @@
   cursor: pointer;
 }
 .image-container {
-  flex: 8;
+  /* flex: 8; */
   height: 100%;
   width: 100vw;
   display: flex;

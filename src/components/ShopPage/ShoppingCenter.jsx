@@ -1,7 +1,20 @@
 import { FaCartArrowDown, FaSearchDollar } from "react-icons/fa";
+import { useContext } from "react";
+import CartContext from "../../contexts/cart-context";
+import ProductsContext from "../../contexts/products-context";
 import { Link } from "react-router-dom";
 
-function ShoppingCenter({ handleClick, products, count }) {
+function ShoppingCenter() {
+  const { cart, addItem } = useContext(CartContext);
+  const { products } = useContext(ProductsContext);
+
+  const addToCart = (itemId) => {
+    // filter ordered item from products
+    const orderItem = products.filter((product) => product.id === itemId);
+
+    // destructure orders object from mapped list
+    addItem(...orderItem);
+  };
   return (
     <section className='shop-section'>
       {/* <a href="/shop/checkout" className="cart-link"></a> */}
@@ -27,7 +40,7 @@ function ShoppingCenter({ handleClick, products, count }) {
               <span className='product-options'>
                 <FaCartArrowDown
                   className='cart-option'
-                  onClick={handleClick}
+                  onClick={() => addToCart(product.id)}
                 />
 
                 <Link
