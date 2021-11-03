@@ -1,4 +1,4 @@
-@media all and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .team-text {
     width: 90%;
     height: 200px;

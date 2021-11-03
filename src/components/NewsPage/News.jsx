@@ -1,7 +1,7 @@
 import Loader from "../Loader";
 import "./News.css";
 
-function News() {
+const News = () => {
   return (
     <section className='news-container'>
       <Loader />
@@ -11,6 +11,6 @@ function News() {
       </div>
     </section>
   );
-}
+};
 
 export default News;
