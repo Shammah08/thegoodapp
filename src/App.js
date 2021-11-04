@@ -1,6 +1,6 @@
 import "./App.css";
 import "./App.media.css";
-import { useState } from "react";
+import { useContext } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { logos } from "./components/database.jsx";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
@@ -15,51 +15,58 @@ import News from "./components/NewsPage/News.jsx";
 import Header from "./components/Header.jsx";
 import MemberProfile from "./components/TeamPage/MemberProfile";
 import ProductState from "./contexts/ProductState";
+import AppState from "./contexts/AppState";
+import AppContext from "./contexts/app-context";
 
-function App() {
-  const [activeLink, setActiveLink] = useState("welcome");
-  const [navActive, setNavActive] = useState(false);
-  const handleClick = (clicked) => {
-    setActiveLink(clicked);
-    setNavActive(!navActive);
-  };
+const App = () => {
+  const { products, setIsAuth, setNav } = useContext(AppContext);
 
-  const setNav = () => {
-    setNavActive(!navActive);
-  };
+  // const [activeLink, setActiveLink] = useState("welcome");
+  // const [navActive, setNavActive] = useState(false);
+  // const handleClick = (clicked) => {
+  //   setActiveLink(clicked);
+  //   setNavActive(!navActive);
+  // };
+
+  // const setNav = () => {
+  //   setNavActive(!navActive);
+  // };
   return (
     <div className='App'>
-      <Router>
-        <Header
-          logo={logos.logoBlue}
-          onClick={handleClick}
-          setNav={setNav}
-          navActive={navActive}
-          activeLink={activeLink}
-        />
-        <Switch>
-          <Route path='/' exact>
-            <LandingPage />
-          </Route>
-          <Route path='/walk' component={WalkPage} />
-          <Route path='/team' component={Team} exact />
-          <Route path='/team/:userid' component={MemberProfile} />
-          <Route path='/podcast' exact component={Podcast} />
-          <Route path='/show/:url/:title' component={Show} />
-          <Route path='/news' component={News} />
-
-          {/* Enclosed in products context state */}
-          <ProductState>
-            <Route path='/shop' exact>
-              <Shop />
-              <Route path='/shop/:id/:name' component={Product} />
-              <Route path='/shop/checkout' component={Checkout} />
+      <AppState>
+        <Router>
+          <Header
+            logo={logos.logoBlue}
+            // onClick={}
+            // setNav={setNav}
+            // activeUser={activeUser}
+            // navActive={navActive}
+            // activeLink={activeLink}
+          />
+          <Switch>
+            <Route path='/' exact>
+              <LandingPage />
             </Route>
-          </ProductState>
-        </Switch>
-      </Router>
+            <Route path='/walk' component={WalkPage} />
+            <Route path='/team' component={Team} exact />
+            <Route path='/team/:userid' component={MemberProfile} />
+            <Route path='/podcast' exact component={Podcast} />
+            <Route path='/show/:url/:title' component={Show} />
+            <Route path='/news' component={News} />
+
+            {/* Enclosed in products context state */}
+            <ProductState>
+              <Route path='/shop' exact>
+                <Shop />
+                <Route path='/shop/:id/:name' component={Product} />
+                <Route path='/shop/checkout' component={Checkout} />
+              </Route>
+            </ProductState>
+          </Switch>
+        </Router>
+      </AppState>
     </div>
   );
-}
+};
 
 export default App;

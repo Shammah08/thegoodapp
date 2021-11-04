@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
-import { FaCartPlus } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { FaCartPlus } from "react-icons/fa";
+// import { Link } from "react-router-dom";
 
 import { logos } from "../database.jsx";
 

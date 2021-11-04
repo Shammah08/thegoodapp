@@ -5,19 +5,18 @@ import ProductsContext from "../../contexts/products-context";
 import { Link } from "react-router-dom";
 
 function ShoppingCenter() {
-  const { cart, addItem } = useContext(CartContext);
+  const { addItem } = useContext(CartContext);
   const { products } = useContext(ProductsContext);
 
   const addToCart = (itemId) => {
     // filter ordered item from products
     const orderItem = products.filter((product) => product.id === itemId);
 
-    // destructure orders object from mapped list
+    // destructure orders object from mapped list and add to cart
     addItem(...orderItem);
   };
   return (
     <section className='shop-section'>
-      {/* <a href="/shop/checkout" className="cart-link"></a> */}
       <div className='products'>
         {products.map((product) => {
           return (
