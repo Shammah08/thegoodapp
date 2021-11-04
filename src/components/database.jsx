@@ -554,6 +554,22 @@ export const products = [
     discount: 0,
   },
 ];
+export const productsImages = {
+  coffeeMug,
+  coffeeMugWhite,
+  coffeeMugBlack,
+  maoBlack,
+  maoWhite,
+  coasters,
+  coastersRound,
+  bottleNewBlack,
+  bottleNewBlue,
+  bottleBlue,
+  bottleCharcoal,
+  bottleLime,
+  bottleRed,
+  bottleWhite,
+};
 
 // Partners
 export const partners = [

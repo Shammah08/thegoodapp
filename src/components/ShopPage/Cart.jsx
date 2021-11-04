@@ -1,6 +1,6 @@
 import ProcessPayment from "./ProcessPayment.jsx";
 import UserForm from "./UserForm.jsx";
-import { products } from "../database";
+// import { products } from "../database";
 import { useState, useEffect, useContext } from "react";
 import CartContext from "../../contexts/cart-context";
 

@@ -54,10 +54,6 @@ function ProcessPayment({ totalCost, itemCount, setUserOpen, userDetails }) {
 
   return (
     <div className='checkout-container'>
-      <Link to='/shop/checkout' className='cart-link'>
-        <span className='cart-count'>0</span>
-        <FaCartPlus className='icon cart' />
-      </Link>
       <div className='order-totals'>
         <span>
           <h4>Items: </h4>

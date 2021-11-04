@@ -1,6 +1,7 @@
 import { useReducer } from "react";
 import productsReducer from "../reducers/ProductReducer";
 import ProductContext from "./products-context";
+import { productsImages } from "../components/database";
 
 const ProductState = (props) => {
   const initialState = {
@@ -8,7 +9,7 @@ const ProductState = (props) => {
       {
         id: 1,
         name: "Coffee Mug - Black Inside",
-        // img: coffeeMug,
+        img: productsImages.coffeeMug,
         price: 750,
         details: "The Mics Are Open Coffee Mug - Black Inside",
         by: "The Mics Are Open",
@@ -19,7 +20,7 @@ const ProductState = (props) => {
       {
         id: 2,
         name: "Coffee Mug - White Inside",
-        // img: coffeeMugWhite,
+        img: productsImages.coffeeMugWhite,
         price: 700,
         details: "The Mics Are Open Coffee Mug - White Inside",
         by: "The Mics Are Open",
@@ -30,7 +31,7 @@ const ProductState = (props) => {
       {
         id: 4,
         name: "Coffee Mug - Black",
-        // img: coffeeMugBlack,
+        img: productsImages.coffeeMugBlack,
         price: 700,
         details: "The Mics Are Open Coffee Mug - Black",
         by: "The Mics Are Open",
@@ -41,7 +42,7 @@ const ProductState = (props) => {
       {
         id: 5,
         name: "Mics Are Open Tee - Black",
-        // img: maoBlack,
+        img: productsImages.maoBlack,
         price: 1200,
         details: "The Mics Are Open T/Shirt",
         by: "The Mics Are Open",
@@ -51,7 +52,7 @@ const ProductState = (props) => {
       {
         id: 6,
         name: "Mics Are Open Tee - White",
-        // img: maoWhite,
+        img: productsImages.maoWhite,
         price: 1100,
         details: "The Mics Are Open T/Shirt",
         by: "The Mics Are Open",
@@ -62,7 +63,7 @@ const ProductState = (props) => {
       {
         id: 7,
         name: "Water Bottle - Black",
-        // img: bottleNewBlack,
+        img: productsImages.bottleNewBlack,
         price: 1000,
         details: "The Mics Are Open Water Bottle - Black",
         by: "The Mics Are Open",
@@ -73,7 +74,7 @@ const ProductState = (props) => {
       {
         id: 8,
         name: "Water Bottle - Blue",
-        // img: bottleNewBlue,
+        img: productsImages.bottleNewBlue,
         price: 1000,
         details: "The Mics Are Open Water Bottle - Blue",
         by: "The Mics Are Open",
@@ -83,7 +84,7 @@ const ProductState = (props) => {
       {
         id: 9,
         name: "Water Bottle - Charcoal",
-        // img: bottleCharcoal,
+        img: productsImages.bottleCharcoal,
         price: 1000,
         details: "The Mics Are Open Water Bottle - Charcoal",
         by: "The Mics Are Open",
@@ -94,7 +95,7 @@ const ProductState = (props) => {
       {
         id: 10,
         name: "Water Bottle - Blue",
-        // img: bottleBlue,
+        img: productsImages.bottleBlue,
         price: 950,
         details: "The Mics Are Open Water Bottle - Blue",
         by: "The Mics Are Open",
@@ -106,7 +107,7 @@ const ProductState = (props) => {
       {
         id: 11,
         name: "Water Bottle - Lime",
-        // img: bottleLime,
+        img: productsImages.bottleLime,
         price: 950,
         details: "The Mics Are Open Water Bottle - Lime",
         by: "The Mics Are Open",
@@ -117,7 +118,7 @@ const ProductState = (props) => {
       {
         id: 12,
         name: "Water Bottle - Red",
-        // img: bottleRed,
+        img: productsImages.bottleRed,
         price: 950,
         details: "The Mics Are Open Water Bottle - Red",
         by: "The Mics Are Open",
@@ -128,7 +129,7 @@ const ProductState = (props) => {
       {
         id: 13,
         name: "Water Bottle - White",
-        // img: bottleWhite,
+        img: productsImages.bottleWhite,
         price: 950,
         details: "The Mics Are Open Water Bottle - White",
         by: "The Mics Are Open",
@@ -139,7 +140,7 @@ const ProductState = (props) => {
       {
         id: 14,
         name: "Coaster - Round",
-        // img: coasters,
+        img: productsImages.coasters,
         price: 1000,
         details: "The Mics Are Open Caster - Round",
         new: false,
@@ -149,7 +150,7 @@ const ProductState = (props) => {
       {
         id: 15,
         name: "Coaster - Rounded Edges",
-        // img: coastersRound,
+        img: productsImages.coastersRound,
         price: 1100,
         details: "The Mics Are Open Caster - Rounded Edges",
         by: "The Mics Are Open",
