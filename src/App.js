@@ -19,7 +19,7 @@ import AppState from "./contexts/AppState";
 import AppContext from "./contexts/app-context";
 
 const App = () => {
-  const { products, setIsAuth, setNav } = useContext(AppContext);
+  // const { products, setIsAuth, setNav } = useContext(AppContext);
 
   // const [activeLink, setActiveLink] = useState("welcome");
   // const [navActive, setNavActive] = useState(false);

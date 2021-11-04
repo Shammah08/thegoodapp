@@ -18,7 +18,8 @@ const Header = ({ logo, onClick, setNav, activeLink, navActive }) => {
                   : "nav-link"
               }
               key={link.url}
-              onClick={() => onClick(link.route)}>
+              // onClick={() => onClick(link.route)}
+            >
               {link.route}
             </a>
           );
