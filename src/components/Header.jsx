@@ -1,6 +1,15 @@
 import { navLinks } from "./database";
+import { useContext } from "react";
+import AppContext from "../contexts/app-context";
 
-const Header = ({ logo, onClick, setNav, activeLink, navActive }) => {
+const Header = ({ logo, navActive }) => {
+  const { activeUser, setNav, setIsAuth } = useContext(AppContext);
+  // console.log(activeUser);
+  // console.log(activeUser);
+
+  const handleClick = (route) => {
+    setNav(route);
+  };
   return (
     <header>
       <a href='/' className='logo'>
@@ -13,13 +22,12 @@ const Header = ({ logo, onClick, setNav, activeLink, navActive }) => {
             <a
               href={link.url}
               className={
-                activeLink === link.route
+                activeUser.activeLink === link.route
                   ? "nav-link nav-link-active"
                   : "nav-link"
               }
               key={link.url}
-              // onClick={() => onClick(link.route)}
-            >
+              onClick={() => handleClick(link.route)}>
               {link.route}
             </a>
           );
@@ -27,7 +35,9 @@ const Header = ({ logo, onClick, setNav, activeLink, navActive }) => {
       </nav>
 
       {/* burger nav */}
-      <div className='burger-nav' onClick={setNav}>
+      <div
+        className='burger-nav' //onClick={setNav}
+      >
         <span></span>
         <span></span>
         <span></span>

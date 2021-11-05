@@ -13,7 +13,7 @@ const cartReducer = (state, action) => {
         cart: state.cart.filter((item) => item.id !== action.payload),
       };
     case "UPDATE CART":
-      return {};
+      return state;
     default:
       return state;
   }

@@ -11,9 +11,15 @@ const AppReducer = (state, action) => {
         auth: false,
       };
     case "NAVIGATE":
+      console.log(action.payload);
+      console.log("Change Url");
       return {
         ...state,
-        activeLink: action.payload,
+        // activeUser: { ...activeUser, activeLink: action.payload },
       };
+    default:
+      return state;
   }
 };
+
+export default AppReducer;

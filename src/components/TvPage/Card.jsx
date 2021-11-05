@@ -3,12 +3,17 @@ import { Link } from "react-router-dom";
 function Card({ show, onClick }) {
   return (
     <section className='show-card' key={show.id}>
-      <figure>
-        <img
+      <figure onClick={onClick} title={`${show.title}`}>
+        {/* <img
           src={show.logo ? show.logo : show.cover}
           alt={`${show.title} cover`}
-          onClick={onClick}
-        />
+          
+        />  */}
+        <figcaption>
+          <h1 onClick={onClick} title={`${show.title}`}>
+            {show.title}
+          </h1>
+        </figcaption>{" "}
       </figure>
       <div className='show-details'>
         <span>

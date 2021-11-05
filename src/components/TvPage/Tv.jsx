@@ -1,11 +1,11 @@
-import "./Podcast.css";
-import "./Podcast.media.css";
+import "./Tv.css";
+import "./Tv.media.css";
 import AllVideos from "./AllVideos.jsx";
 import ChannelContainer from "./ChannelContainer";
 import { useState, useEffect } from "react";
 import { shows } from "../database";
 
-function Podcast() {
+function Tv() {
   const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY_BACKUP; // SR-Key
   const channelID = process.env.REACT_APP_CHANNEL_ID; //TGC
   const videoCount = 50;
@@ -39,7 +39,7 @@ function Podcast() {
 
   const handleClick = (e) => {
     setDisplayVideos(allVideos);
-    const name = e.target.alt.slice(0, 5);
+    const name = e.target.title.slice(0, 5);
     let filteredVideos;
     if (!allVideos === false) {
       filteredVideos = allVideos.filter((episode) => {
@@ -61,4 +61,4 @@ function Podcast() {
   );
 }
 
-export default Podcast;
+export default Tv;

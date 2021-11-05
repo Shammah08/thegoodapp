@@ -10,6 +10,7 @@ import theCookBook from "./images/the-cook-book-1.jpg";
 import daDing from "./images/dading-different.jpg";
 import lockdownSession from "./images/lockdown-session.jpg";
 import wakeUpCall from "./images/wake-up-call-1.jpg";
+import goodBanner from "./images/good-tv-banner.JPG";
 
 // Landing Sides
 import nairobi from "./images/Nairobi.jpg";
@@ -63,7 +64,7 @@ export const navLinks = [
   { route: "about", url: "/#about" },
   { route: "services", url: "/#services" },
   { route: "contact us", url: "/#contacts" },
-  { route: "podcasts", url: "/podcast" },
+  { route: "the good tv", url: "/tv" },
   { route: "shop", url: "/shop" },
   { route: "news", url: "/news" },
   { route: "walk with g", url: "/walk" },
@@ -86,6 +87,7 @@ export const quotes = [
 export const logos = {
   logoRed,
   logoBlue,
+  goodBanner,
 };
 
 // Landing Slides
