@@ -1,13 +1,12 @@
 import "./App.css";
 import "./App.media.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import WalkPage from "./components/WalkWithG/WalkPage.jsx";
 import Team from "./components/TeamPage/Team.jsx";
 import Shop from "./components/ShopPage/Shop.jsx";
 import Podcast from "./components/TvPage/Tv.jsx";
 import Show from "./components/TvPage/Show.jsx";
-import Product from "./components/ShopPage/Product.jsx";
 import Checkout from "./components/ShopPage/Checkout.jsx";
 import News from "./components/NewsPage/News.jsx";
 import Header from "./components/Header.jsx";
@@ -34,10 +33,10 @@ const App = () => {
           <ProductState>
             <Route path='/shop' exact>
               <Shop />
-              <Route path='/shop/:id/:name' component={Product} />
               <Route path='/shop/checkout' component={Checkout} />
             </Route>
           </ProductState>
+          {/*  */}
         </Switch>
       </Router>
     </div>

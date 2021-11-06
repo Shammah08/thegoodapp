@@ -1,5 +1,6 @@
 import ProcessPayment from "./ProcessPayment.jsx";
 import UserForm from "./UserForm.jsx";
+import CartItem from "./CartItem.jsx";
 // import { products } from "../database";
 import { useState, useEffect, useContext } from "react";
 import CartContext from "../../contexts/cart-context";
@@ -9,7 +10,6 @@ const Cart = () => {
   const [itemCount, setItemCount] = useState(0);
   const [userOpen, setUserOpen] = useState(false);
   const { cart } = useContext(CartContext);
-  console.log("CART:", cart);
 
   const [userDetails, setUserDetails] = useState({
     username: "",
@@ -31,33 +31,18 @@ const Cart = () => {
   }, [cart]);
 
   return (
-    <section className='checkout-section'>
+    <section className='cart-section'>
       <div className='cart-items'>
         <span className='cart-intro'>
           <h1>Shopping Cart</h1>
           <h5>Price</h5>
         </span>
         {cart.map((item) => {
-          return (
-            <div className='cart-item' key={item.id}>
-              <img src={item.img} alt='Cart Item' />
-              <div className='cart-item-details'>
-                <h4>{item.name}</h4>
-                <p>{item.detail}</p>
-                <h5>by{item.by}</h5>
-                <strong>{item.soldOut ? "Out Of Stock" : "In Stock"}</strong>
-                <select name='quantity' id=''>
-                  <option value='1'>Qty:</option>
-                  <option value='1'>1</option>
-                  <option value='2'>2</option>
-                  <option value='3'>3</option>
-                </select>
-              </div>
-              <span className='item-price'>Ksh. {item.price}</span>
-            </div>
-          );
+          return <CartItem item={item} />;
         })}
       </div>
+
+      {/* Check if auth == true and display either of the components */}
       <UserForm
         userOpen={userOpen}
         setUserOpen={setUserOpen}
@@ -66,7 +51,6 @@ const Cart = () => {
       <ProcessPayment
         totalCost={totalCost}
         itemCount={itemCount}
-        // onSubmit={handleSubmit}
         userOpen={userOpen}
         setUserOpen={setUserOpen}
         userDetails={userDetails}
