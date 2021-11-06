@@ -165,12 +165,7 @@ const ProductState = (props) => {
   const addItem = (item) => {
     dispatch({ type: "ADD TO CART", payload: item });
   };
-  // const deleteItem = (itemId) => {
-  //   dispatch({ type: "DELETE FROM CART", payload: itemId });
-  // };
-  // const editItem = (itemId) => {
-  //   dispatch({ type: "EDIT CART", payload: itemId });
-  // };
+
   return (
     <ProductContext.Provider value={{ products: state.products, addItem }}>
       {props.children}

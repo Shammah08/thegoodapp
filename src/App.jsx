@@ -1,8 +1,6 @@
 import "./App.css";
 import "./App.media.css";
-import { useContext } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { logos } from "./components/database.jsx";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import WalkPage from "./components/WalkWithG/WalkPage.jsx";
 import Team from "./components/TeamPage/Team.jsx";
@@ -16,12 +14,11 @@ import Header from "./components/Header.jsx";
 import MemberProfile from "./components/TeamPage/MemberProfile";
 import ProductState from "./contexts/ProductState";
 
-
 const App = () => {
   return (
     <div className='App'>
       <Router>
-        <Header logo={logos.logoBlue} />
+        <Header />
         <Switch>
           <Route path='/' exact>
             <LandingPage />

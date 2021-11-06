@@ -1,19 +1,25 @@
 import { navLinks } from "./database";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import AppContext from "../contexts/app-context";
+import { logos } from "../components/database";
 
-const Header = ({ logo, navActive }) => {
-  const { activeUser, setNav, setIsAuth } = useContext(AppContext);
-  // console.log(activeUser);
-  // console.log(activeUser);
+const Header = ({ navActive }) => {
+  const { activeUser, setNav } = useContext(AppContext);
+  const [linkState, setLinkState] = useState("");
+  useEffect(() => {
+    setLinkState(activeUser.activeLink);
+    return () => {};
+  }, []);
 
-  const handleClick = (route) => {
-    setNav(route);
+  const handleClick = (clicked) => {
+    setNav(clicked);
+    setLinkState(clicked);
   };
+
   return (
     <header>
       <a href='/' className='logo'>
-        <img src={logo} alt='TGC_LOGO' />
+        <img src={logos.logoBlue} alt='TGC_LOGO' />
       </a>
 
       <nav className={navActive ? "nav-active" : ""}>
@@ -22,7 +28,7 @@ const Header = ({ logo, navActive }) => {
             <a
               href={link.url}
               className={
-                activeUser.activeLink === link.route
+                linkState === link.route
                   ? "nav-link nav-link-active"
                   : "nav-link"
               }

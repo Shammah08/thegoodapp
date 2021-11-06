@@ -1,11 +1,8 @@
 import { useReducer } from "react";
 import AppReducer from "../reducers/AppReducer";
 import AppContext from "./app-context";
-// import { productsImages } from "../components/database";
 
 const AppState = (props) => {
-  //   const [isAuth, setisAuth] = useState(false);
-  //   const [navActive, setNavActive] = useState(false);
   const initialState = {
     activeUser: { auth: false, activeLink: "welcome" },
   };
@@ -17,7 +14,6 @@ const AppState = (props) => {
   const setIsAuth = () => {
     dispatch({ type: "LOG IN" });
   };
-  const greetings = "Hello from App";
 
   return (
     <AppContext.Provider
@@ -28,4 +24,3 @@ const AppState = (props) => {
 };
 
 export default AppState;
-
