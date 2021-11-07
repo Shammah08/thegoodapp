@@ -1,29 +1,22 @@
 const AppReducer = (state, action) => {
   switch (action.type) {
-    case "LOG IN":
+    case "AUTH":
+      console.log("AUTH STATUS", action.payload);
       return {
         ...state,
-        auth: true,
-      };
-    case "LOG OUT":
-      return {
-        ...state,
-        auth: false,
+        auth: action.payload,
       };
     case "NAVIGATE":
-      // console.log("Change Url: ", action.payload);
-      // console.log(...state);
       return {
         ...state,
-        ...state.activeUser,
-        ...{ activeLink: action.payload },
+        activeLink: action.payload,
       };
-
-    // ...state,{...state.activeUser, activeLink: ''}
-    // ...state,
-    // activeUser: {...state.activeUser, action.payload}
-    // activeUser: { ...activeUser, activeLink: action.payload },
-
+    case "SET USER DETAILS":
+      // console.log("User Details", action.payload);
+      return {
+        ...state,
+        userDetails: action.payload,
+      };
     default:
       return state;
   }

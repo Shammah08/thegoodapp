@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import CartContext from "../../contexts/cart-context";
 
-function CartItem({ item }) {
+const CartItem = ({ item }) => {
   // console.log(onClick, cartCount);
   // const [cartCount, setCartCount] = useState(0);
   const { deleteItem } = useContext(CartContext);
@@ -42,6 +42,6 @@ function CartItem({ item }) {
       <span className='item-price'>Ksh. {item.price}</span>
     </div>
   );
-}
+};
 
 export default CartItem;

@@ -1,7 +1,7 @@
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
-function LandingSlides({ allSlides }) {
+const LandingSlides = ({ allSlides }) => {
   const [activeSlide, setActiveSlide] = useState(0);
   //  transition effect
   useEffect(() => {
@@ -58,6 +58,6 @@ function LandingSlides({ allSlides }) {
       />
     </section>
   );
-}
+};
 
 export default LandingSlides;

@@ -1,6 +1,6 @@
 import { partners } from "../database";
 
-function Partners() {
+const Partners = () => {
   return (
     <section className='partners-container'>
       <div className='partners'>
@@ -17,6 +17,6 @@ function Partners() {
       </div>
     </section>
   );
-}
+};
 
 export default Partners;

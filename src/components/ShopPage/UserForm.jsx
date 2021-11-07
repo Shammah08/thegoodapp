@@ -1,23 +1,28 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import appContext from "../../contexts/app-context";
 
-function UserForm({ userOpen, setUserOpen, setUserDetails }) {
-  const [details, setDetails] = useState([]);
-  // const usernameRef = useRef('');
-  // const phoneRef = useRef('');
-  // const emailRef = useRef('');
-  // console.log(usernameRef, emailRef, phoneRef);
+const UserForm = ({ userOpen, setUserOpen }) => {
+  const [details, setDetails] = useState({});
+  const { setIsAuth, setUserDetails } = useContext(appContext);
+
+  // useEffect(() => {
+  //   setUserDetails(details);
+
+  //   return () => {};
+  // }, []);
 
   const handleClick = () => {
-    // setDetails({ usernameRef.current, phoneRef, emailRef });
     setUserDetails(details);
-    console.log("User Details: ", details);
+    setUserOpen(!userOpen);
+    setIsAuth(true);
   };
+
   return (
     <section className={"user-details" + (userOpen ? " user-active" : "")}>
       <h3>Fill in your information to proceed to checkout.</h3>
       <form>
         <span>
-          <h5>Username: </h5>
+          <h5>Full name: </h5>
           <input
             type='text'
             name='username'
@@ -75,6 +80,6 @@ function UserForm({ userOpen, setUserOpen, setUserDetails }) {
       </form>
     </section>
   );
-}
+};
 
 export default UserForm;

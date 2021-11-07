@@ -9,6 +9,7 @@ const Header = ({ navActive }) => {
   useEffect(() => {
     setLinkState(activeUser.activeLink);
     return () => {};
+    // eslint-disable-next-line
   }, []);
 
   const handleClick = (clicked) => {
