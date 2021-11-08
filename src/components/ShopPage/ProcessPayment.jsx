@@ -3,7 +3,7 @@ import CartContext from "../../contexts/cart-context";
 import AppContext from "../../contexts/app-context";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
-const ProcessPayment = ({ setUserOpen }) => {
+const ProcessPayment = ({ setUserOpen, active, setactive }) => {
   // user details from context
   const { activeUser } = useContext(AppContext);
   const { auth } = activeUser;
@@ -12,8 +12,9 @@ const ProcessPayment = ({ setUserOpen }) => {
   // cart items from context
   const { cart } = useContext(CartContext);
 
+  // get individual prices
   const prices = cart.map((item) => {
-    return item.price;
+    return item.price * item.quantity;
   });
   const total = prices.length > 0 ? prices.reduce((a, b) => a + b) : 0;
 
@@ -39,11 +40,12 @@ const ProcessPayment = ({ setUserOpen }) => {
       description: `Payment for items in cart ${{ ...cart }}`,
       logo: "",
     },
+    callback: (data) => {
+      console.log(data);
+    },
   };
 
-  let handleFlutterPayment;
-
-  handleFlutterPayment = useFlutterwave(config);
+  const handleFlutterPayment = useFlutterwave(config);
 
   const handleClick = (e) => {
     if (auth && email) {
@@ -88,7 +90,7 @@ const ProcessPayment = ({ setUserOpen }) => {
       ) : (
         <div className='empty-cart'>
           <h2>No Items in the cart.</h2>
-          <a href='#'>Continue Shopping</a>
+          <strong onClick={() => setactive(!active)}>Continue Shopping</strong>
         </div>
       )}
     </>

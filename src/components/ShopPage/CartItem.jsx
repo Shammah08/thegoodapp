@@ -2,19 +2,19 @@ import { useState, useContext } from "react";
 import CartContext from "../../contexts/cart-context";
 
 const CartItem = ({ item }) => {
-  // console.log(onClick, cartCount);
-  // const [cartCount, setCartCount] = useState(0);
-  const { deleteItem } = useContext(CartContext);
-  const [count, setCount] = useState(1);
+  const { deleteItem, addItem } = useContext(CartContext);
+  const [count, setCount] = useState(item.quantity);
 
   const handleClick = (e) => {
-    e.preventDefault();
-    switch (e.target.innerHTML) {
-      case "+":
+    switch (e.target.value) {
+      case "ADD QUANTITY":
         setCount(count + 1);
+        addItem(item.id, "ADD");
         break;
-      case "-":
+      case "REDUCE QUANTITY":
         setCount(count - 1);
+        addItem(item.id, "REDUCE");
+
         break;
       default:
         break;
@@ -33,13 +33,17 @@ const CartItem = ({ item }) => {
         <h5>by{item.by}</h5>
         <strong>{item.soldOut ? "Out Of Stock" : "In Stock"}</strong>
         <span className='quantity-count'>
-          <span onClick={handleClick}>-</span>
-          <span>{count}</span>
-          <span onClick={handleClick}>+</span>
+          <button onClick={handleClick} value='REDUCE QUANTITY'>
+            -
+          </button>
+          <span>{item.quantity}</span>
+          <button onClick={handleClick} value='ADD QUANTITY'>
+            +
+          </button>
         </span>
-        <span onClick={() => handleDelete(item.id)}>Remove Item</span>
+        <i onClick={() => handleDelete(item.id)}>Remove Item</i>
       </div>
-      <span className='item-price'>Ksh. {item.price}</span>
+      <span className='item-price'>Ksh. {item.price * item.quantity}</span>
     </div>
   );
 };

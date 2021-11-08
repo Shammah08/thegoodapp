@@ -13,12 +13,14 @@ const Shop = () => {
     <CartState>
       <section className='shopping-center'>
         <ShoppingHeader active={active} setactive={setactive} />
-        {active ? <ShoppingCenter active={active} /> : <Cart active={active} />}
+        {active ? (
+          <ShoppingCenter active={active} />
+        ) : (
+          <Cart active={active} setactive={setactive} />
+        )}
       </section>
     </CartState>
   );
 };
-
-
 
 export default Shop;

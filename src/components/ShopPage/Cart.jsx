@@ -5,7 +5,7 @@ import { useState, useContext } from "react";
 import CartContext from "../../contexts/cart-context";
 // import AppContext from "../../contexts/app-context.jsx";
 
-const Cart = () => {
+const Cart = ({ active, setactive }) => {
   const [userOpen, setUserOpen] = useState(false);
   const { cart } = useContext(CartContext);
   // const { activeUser } = useContext(AppContext);
@@ -22,7 +22,12 @@ const Cart = () => {
         })}
       </div>
       <UserForm userOpen={userOpen} setUserOpen={setUserOpen} />
-      <ProcessPayment userOpen={userOpen} setUserOpen={setUserOpen} />
+      <ProcessPayment
+        userOpen={userOpen}
+        setUserOpen={setUserOpen}
+        active={active}
+        setactive={setactive}
+      />
     </section>
   );
 };
