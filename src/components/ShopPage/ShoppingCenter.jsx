@@ -8,12 +8,13 @@ function ShoppingCenter() {
   const { addItem } = useContext(CartContext);
   const { products } = useContext(ProductsContext);
 
-  const addToCart = (itemId) => {
+  const addToCart = (product) => {
     // filter ordered item from products
-    const orderItem = products.filter((product) => product.id === itemId);
+    // const orderItem = products.filter((product) => product.id === itemId);
 
     // destructure orders object from mapped list and add to cart
-    addItem(...orderItem);
+    // addItem(...orderItem);
+    addItem(product);
   };
   return (
     <section className='shop-section'>
@@ -39,7 +40,7 @@ function ShoppingCenter() {
               <span className='product-options'>
                 <FaCartArrowDown
                   className='cart-option'
-                  onClick={() => addToCart(product.id)}
+                  onClick={() => addToCart(product)}
                 />
 
                 <Link

@@ -5,9 +5,8 @@ const cartReducer = (state, action) => {
     case "ADD ITEM":
       updatedCart = [...state.cart];
       updatedItemIndex = updatedCart.findIndex(
-        (item) => item.id === action.payload.id
+        (product) => product.id === action.payload.id
       );
-      console.log(updatedCart);
 
       if (updatedItemIndex < 0) {
         updatedCart.push({ ...action.payload, quantity: 1 });
@@ -18,26 +17,28 @@ const cartReducer = (state, action) => {
       }
       return { ...state, cart: updatedCart };
 
-    case "REMOVE ITEM":
+    case "REDUCE ITEM":
       updatedCart = [...state.cart];
       updatedItemIndex = updatedCart.findIndex(
-        (item) => item.id === action.payload.id
+        (product) => product.id === action.payload.id
       );
-
-      if (updatedItemIndex < 0) {
-        return {
-          ...state,
-          cart: state.cart.filter((item) => item.id !== action.payload),
-        };
-      } else {
-        const updatedItem = { ...updatedCart[updatedItemIndex] };
+      const updatedItem = { ...updatedCart[updatedItemIndex] };
+      if (updatedItem.quantity > 1) {
         updatedItem.quantity--;
         updatedCart[updatedItemIndex] = updatedItem;
+        return { ...state, cart: updatedCart };
+      } else {
         return {
           ...state,
-          cart: updatedCart,
+          cart: state.cart.filter((item) => item.id !== action.payload.id),
         };
       }
+
+    case "REMOVE ITEM":
+      return {
+        ...state,
+        cart: state.cart.filter((item) => item.id !== action.payload),
+      };
 
     default:
       return state;
