@@ -1,4 +1,4 @@
-import "./Tv.css";
+import "./Tv.scss";
 import "./Tv.media.css";
 import AllVideos from "./AllVideos.jsx";
 import ChannelContainer from "./ChannelContainer";

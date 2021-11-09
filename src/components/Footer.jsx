@@ -8,9 +8,7 @@ import {
 import { footerDetails } from "./database";
 import { TopButton } from "./Button.jsx";
 
-function Footer() {
-  
-
+const Footer = () => {
   return (
     <footer id='contacts'>
       <div className='footer-text'>
@@ -67,6 +65,6 @@ function Footer() {
       <TopButton />
     </footer>
   );
-}
+};
 
 export default Footer;

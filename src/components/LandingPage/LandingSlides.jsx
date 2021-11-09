@@ -1,5 +1,6 @@
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import Slide from "./Slide";
 
 const LandingSlides = ({ allSlides }) => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -27,26 +28,9 @@ const LandingSlides = ({ allSlides }) => {
       <div
         className='slider'
         style={{ transform: `translateX(-${activeSlide * 100}vw)` }}>
-        {allSlides.map((slide) => {
-          return (
-            <div className='slide-container' key={slide.index}>
-              <div className='container'>
-                <div className='text-container'>
-                  <h2>{slide.title}</h2>
-
-                  <p>{slide.desc}</p>
-                  <a href={slide.url}>
-                    <button className='btn'>{slide.button}</button>
-                  </a>
-                </div>
-
-                <div className='image-container'>
-                  <img src={slide.image} alt='' />
-                </div>
-              </div>
-            </div>
-          );
-        })}
+        {allSlides.map((slide) => (
+          <Slide slide={slide} />
+        ))}
       </div>
       <FaChevronRight
         className='arrow right-arrow'

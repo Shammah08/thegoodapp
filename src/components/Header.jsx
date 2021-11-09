@@ -30,7 +30,7 @@ const Header = ({ navActive }) => {
               href={link.url}
               className={
                 linkState === link.route
-                  ? "nav-link nav-link-active"
+                  ? "nav-link active"
                   : "nav-link"
               }
               key={link.url}
