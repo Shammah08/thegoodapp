@@ -5,8 +5,9 @@ import {
   FaYoutube,
   FaFacebookF,
 } from "react-icons/fa";
-import { footerDetails } from "./database";
-import { TopButton } from "./Button.jsx";
+import { footerDetails } from "../database";
+import { TopButton } from "../Button";
+import "./footer.scss";
 
 const Footer = () => {
   return (

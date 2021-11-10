@@ -4,7 +4,7 @@ import forest from "./images/forest.webp";
 import "./Walk.css";
 import "./Walk.media.css";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 function WalkPage() {
   return (

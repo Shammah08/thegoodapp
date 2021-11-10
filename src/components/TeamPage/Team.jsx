@@ -1,6 +1,6 @@
 import { team } from "../database";
 import Members from "./Members";
-import Footer from "../Footer.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 function Team() {
   // console.log(team);

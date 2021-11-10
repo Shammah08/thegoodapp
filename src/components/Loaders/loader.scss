@@ -1,0 +1,51 @@
+@import "../../global.scss";
+
+.loader {
+  height: calc(100vh - 110px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  background-color: $grey;
+  overflow: hidden;
+
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 4s;
+    outline: none;
+    border: none;
+    animation: zoom 2.5s infinite forwards ease-in-out;
+
+    &:nth-child(1) {
+      background-color: $gold;
+      left: 0;
+      top: 50%;
+      height: 600px;
+      width: 600px;
+      animation-direction: alternate-reverse;
+    }
+    &:nth-child(2) {
+      background-color: $defaultRed;
+      height: 600px;
+      width: 600px;
+      right: 0%;
+      top: 50%;
+      animation-direction: alternate;
+    }
+
+    &:nth-child(3) {
+      background-color: $defaultBlue;
+      animation-direction: reverse;
+      left: 27%;
+      height: 700px;
+      width: 700px;
+      top: 4%;
+    }
+  }
+}

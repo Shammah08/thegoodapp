@@ -1,5 +1,6 @@
-import Loader from "../Loader";
+import Loader from "../Loaders/Loader";
 import "./News.css";
+import Footer from "../Footer/Footer";
 
 const News = () => {
   return (
@@ -9,6 +10,7 @@ const News = () => {
         <h1>Latest News.</h1>
         <p>Coming Soon</p>
       </div>
+      <Footer />
     </section>
   );
 };

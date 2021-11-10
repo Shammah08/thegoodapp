@@ -1,63 +1,63 @@
 // Logos
-import logoBlue from "./images/tgc_logo_blue.jpg";
-import logoRed from "./images/tgc_logo_red.jpg";
+import logoBlue from "../images/tgc_logo_blue.jpg";
+import logoRed from "../images/tgc_logo_red.jpg";
 
 // Show Covers
-import people from "./images/people.jpg";
-import micsAreOpen from "./images/mics-thumbnail.jpg";
-import micsAreOpenSquad from "./images/mics-squad.jpg";
-import theCookBook from "./images/the-cook-book-1.jpg";
-import daDing from "./images/dading-different.jpg";
-import lockdownSession from "./images/lockdown-session.jpg";
-import wakeUpCall from "./images/wake-up-call-1.jpg";
-import goodBanner from "./images/good-tv-banner.JPG";
+import people from "../images/people.jpg";
+import micsAreOpen from "../images/mics-thumbnail.jpg";
+import micsAreOpenSquad from "../images/mics-squad.jpg";
+import theCookBook from "../images/the-cook-book-1.jpg";
+import daDing from "../images/dading-different.jpg";
+import lockdownSession from "../images/lockdown-session.jpg";
+import wakeUpCall from "../images/wake-up-call-1.jpg";
+import goodBanner from "../images/good-tv-banner.JPG";
 
 // Landing Sides
-import nairobi from "./images/Nairobi.jpg";
-import skyline from "./images/Nairobi-Night-Skyline.jpg";
-import silverArrow from "./images/silver-arrow.jpg";
-import laptop from "./images/laptop.jpg";
-import party from "./images/party.jpg";
-import blankLaptop from "./images/blank-laptop.jpg";
+import nairobi from "../images/Nairobi.jpg";
+import skyline from "../images/Nairobi-Night-Skyline.jpg";
+import silverArrow from "../images/silver-arrow.jpg";
+import laptop from "../images/laptop.jpg";
+import party from "../images/party.jpg";
+import blankLaptop from "../images/blank-laptop.jpg";
 
 // Team
-import GMoney from "./images/GMoney.jpg";
-import Andy from "./images/Andy.jpg";
-import Kevin from "./images/Kevin.jpg";
-import Michael from "./images/Michael.png";
-import Ramadhani from "./images/Ramadhani.png";
-import Calvin from "./images/Calvin.jpg";
-import Neville from "./images/Neville.jpg";
-import Grauchi from "./images/Grauchi.jpg";
-import Ashley from "./images/ashley.jpg";
-import Quellie from "./images/quellie.jpg";
+import GMoney from "../images/GMoney.jpg";
+import Andy from "../images/Andy.jpg";
+import Kevin from "../images/Kevin.jpg";
+import Michael from "../images/Michael.png";
+import Ramadhani from "../images/Ramadhani.png";
+import Calvin from "../images/Calvin.jpg";
+import Neville from "../images/Neville.jpg";
+import Grauchi from "../images/Grauchi.jpg";
+import Ashley from "../images/ashley.jpg";
+import Quellie from "../images/quellie.jpg";
 
 // Shop Products
-import coffeeMug from "./images/Coffee-Mug-1.jpg";
-import coffeeMugWhite from "./images/Coffee-Mug-White.jpg";
-import coffeeMugBlack from "./images/Coffee-Mug-Magic.jpg";
-import maoBlack from "./images/mics-shirt-black.jpg";
-import maoWhite from "./images/mics-shirt-white.jpg";
-import coasters from "./images/Round-Coasters-White.jpg";
-import coastersRound from "./images/Round-Coasters.jpg";
-import bottleNewBlack from "./images/New-Bottles-Black.jpg";
-import bottleNewBlue from "./images/New-Bottles-Blue.jpg";
-import bottleBlue from "./images/Water-Bottle-Blue.jpg";
-import bottleCharcoal from "./images/Water-Bottle-Charcoal.jpg";
-import bottleLime from "./images/Water-Bottle-Lime.jpg";
-import bottleRed from "./images/Water-Bottle-Red.jpg";
-import bottleWhite from "./images/Water-Bottle-White.jpg";
+import coffeeMug from "../images/Coffee-Mug-1.jpg";
+import coffeeMugWhite from "../images/Coffee-Mug-White.jpg";
+import coffeeMugBlack from "../images/Coffee-Mug-Magic.jpg";
+import maoBlack from "../images/mics-shirt-black.jpg";
+import maoWhite from "../images/mics-shirt-white.jpg";
+import coasters from "../images/Round-Coasters-White.jpg";
+import coastersRound from "../images/Round-Coasters.jpg";
+import bottleNewBlack from "../images/New-Bottles-Black.jpg";
+import bottleNewBlue from "../images/New-Bottles-Blue.jpg";
+import bottleBlue from "../images/Water-Bottle-Blue.jpg";
+import bottleCharcoal from "../images/Water-Bottle-Charcoal.jpg";
+import bottleLime from "../images/Water-Bottle-Lime.jpg";
+import bottleRed from "../images/Water-Bottle-Red.jpg";
+import bottleWhite from "../images/Water-Bottle-White.jpg";
 
-import amaize from "./images/amaize.webp";
-import apa from "./images/apa.webp";
-import safaricom from "./images/safaricom.webp";
-import ciroc from "./images/ciroc.webp";
-import artcaffe from "./images/artcaffe.webp";
-import prudential from "./images/prudential.webp";
-import stanbic from "./images/stanbic.webp";
-import ikigai from "./images/ikigai.webp";
-import ohcha from "./images/ohcha.webp";
-import redbull from "./images/redbull.webp";
+import amaize from "../images/amaize.webp";
+import apa from "../images/apa.webp";
+import safaricom from "../images/safaricom.webp";
+import ciroc from "../images/ciroc.webp";
+import artcaffe from "../images/artcaffe.webp";
+import prudential from "../images/prudential.webp";
+import stanbic from "../images/stanbic.webp";
+import ikigai from "../images/ikigai.webp";
+import ohcha from "../images/ohcha.webp";
+import redbull from "../images/redbull.webp";
 
 export const navLinks = [
   { route: "welcome", url: "/#home" },

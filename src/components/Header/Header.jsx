@@ -1,7 +1,7 @@
-import { navLinks } from "./database";
 import { useContext, useEffect, useState } from "react";
-import AppContext from "../contexts/app-context";
-import { logos } from "../components/database";
+import AppContext from "../../contexts/app-context";
+import { logos, navLinks } from "../database";
+import "./header.scss";
 
 const Header = ({ navActive }) => {
   const { activeUser, setNav } = useContext(AppContext);
@@ -29,9 +29,7 @@ const Header = ({ navActive }) => {
             <a
               href={link.url}
               className={
-                linkState === link.route
-                  ? "nav-link active"
-                  : "nav-link"
+                linkState === link.route ? "nav-link active" : "nav-link"
               }
               key={link.url}
               onClick={() => handleClick(link.route)}>
