@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
-import { logos } from "../database.jsx";
-// Pod container
+import { logos } from "../database";
 
-function Container({ episode }) {
+const Container = ({ episode }) => {
   return (
     <div className='episodes-container' key={episode.snippet.title}>
       <figure className='channel-episode' key={episode.snippet.title}>
@@ -14,8 +12,8 @@ function Container({ episode }) {
         )}
 
         <figcaption className='episode-details' key={episode.id.videoId}>
-          <div>
-            <h2>{episode.snippet.title.toUpperCase()} </h2>
+          <div className='cover-img'>
+            <h2>{episode.snippet.title} </h2>
             {/* Check if premier video or not */}
             {episode.snippet.liveBroadcastContent === "upcoming" ? (
               <p>
@@ -30,18 +28,15 @@ function Container({ episode }) {
               </p>
             )}
 
-            <Link
-              to={`/show/${episode.id.videoId}/${episode.snippet.title}/${episode.snippet.description}`}>
-              {episode.snippet.liveBroadcastContent === "upcoming" ? (
-                <button className='btn-small' value={episode.snippet.title}>
-                  Set Reminder{" "}
-                </button>
-              ) : (
-                <button className='btn-small' value={episode.snippet.title}>
-                  Watch Now{" "}
-                </button>
-              )}
-            </Link>
+            {episode.snippet.liveBroadcastContent === "upcoming" ? (
+              <button className='btn-small' value={episode.snippet.title}>
+                Set Reminder{" "}
+              </button>
+            ) : (
+              <button className='btn-small' value={episode.snippet.title}>
+                Watch Now{" "}
+              </button>
+            )}
           </div>
           <span className='episode-meta' key={episode.id.videoId}>
             <span>
@@ -54,8 +49,6 @@ function Container({ episode }) {
       </figure>
     </div>
   );
-}
+};
 
 export default Container;
-
-// replace(/T|\:\d\dZ/g, " ")}

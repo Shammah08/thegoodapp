@@ -1,8 +1,8 @@
-import "./Shop.css";
+import "./shop.scss";
 import "./Shop.media.css";
-import ShoppingHeader from "./ShoppingHeader.jsx";
-import ShoppingCenter from "./ShoppingCenter.jsx";
-import Cart from "./Cart.jsx";
+import ShoppingHeader from "./ShoppingHeader";
+import ShoppingCenter from "./ShoppingCenter";
+import Cart from "./Cart";
 import CartState from "../../contexts/CartState";
 import { useState } from "react";
 

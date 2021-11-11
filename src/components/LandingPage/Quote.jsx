@@ -14,7 +14,7 @@ const Quote = () => {
         return (
           <div
             className='quote-section'
-            key={Math.random * 100}
+            key={content.id}
             id='quote'
             style={{
               backgroundImage: `linear-gradient(360deg, rgba(0,0,0,0.5), rgba(0,0,0,0.9)),url(${content.img})`,

@@ -1,14 +1,12 @@
-import ProcessPayment from "./ProcessPayment.jsx";
-import UserForm from "./UserForm.jsx";
-import CartItem from "./CartItem.jsx";
+import ProcessPayment from "./ProcessPayment";
+import UserForm from "./UserForm";
+import CartItem from "./CartItem";
 import { useState, useContext } from "react";
 import CartContext from "../../contexts/cart-context";
-// import AppContext from "../../contexts/app-context.jsx";
 
 const Cart = ({ active, setactive }) => {
-  const [userOpen, setUserOpen] = useState(false);
+  const [userFormOpen, setUserFormOpen] = useState(false);
   const { cart } = useContext(CartContext);
-  // const { activeUser } = useContext(AppContext);
 
   return (
     <section className='cart-section'>
@@ -21,10 +19,10 @@ const Cart = ({ active, setactive }) => {
           return <CartItem item={item} />;
         })}
       </div>
-      <UserForm userOpen={userOpen} setUserOpen={setUserOpen} />
+      <UserForm userOpen={userFormOpen} setUserOpen={setUserFormOpen} />
       <ProcessPayment
-        userOpen={userOpen}
-        setUserOpen={setUserOpen}
+        userOpen={userFormOpen}
+        setUserOpen={setUserFormOpen}
         active={active}
         setactive={setactive}
       />

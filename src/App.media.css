@@ -1,9 +1,9 @@
 /* Phone */
 @media all and (max-width: 480px) {
-  .App {
-    /* overflow-x: hidden; */
-    /* background-color: white; */
-  }
+  /* .App {
+    overflow-x: hidden; 
+    background-color: white;
+  } */
   header {
     /* flex-direction: column; */
     /* position: fixed; */

@@ -7,7 +7,6 @@ import WalkPage from "./components/WalkWithG/WalkPage";
 import Team from "./components/TeamPage/Team";
 import Shop from "./components/ShopPage/Shop";
 import Podcast from "./components/TvPage/Tv";
-import Show from "./components/TvPage/Show";
 import Checkout from "./components/ShopPage/Checkout";
 import News from "./components/NewsPage/News";
 import Header from "./components/Header/Header";
@@ -27,7 +26,6 @@ const App = () => {
           <Route path='/team' component={Team} exact />
           <Route path='/team/:userid' component={MemberProfile} />
           <Route path='/tv' exact component={Podcast} />
-          <Route path='/show/:url/:title' component={Show} />
           <Route path='/news' component={News} />
 
           {/* Enclosed in products context state */}

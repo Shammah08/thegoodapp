@@ -1,5 +1,5 @@
 import Loader from "../Loaders/Loader";
-import "./News.css";
+import "./news.scss";
 import Footer from "../Footer/Footer";
 
 const News = () => {

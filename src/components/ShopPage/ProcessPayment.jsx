@@ -16,15 +16,17 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
   const prices = cart.map((item) => {
     return item.price * item.quantity;
   });
+  // total cart items cost
   const total = prices.length > 0 ? prices.reduce((a, b) => a + b) : 0;
 
+  // flutterwave payment config file
   const config = {
     public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
     tx_ref: Date.now(),
     amount: total,
     currency: "KES",
     payment_options: "card,mobilemoney,ussd",
-    // specified redirect URL
+    // specified redirect URL after payment submission
     redirect_url: "/shop",
     meta: {
       consumer_phone: phone,

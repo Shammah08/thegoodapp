@@ -1,6 +1,6 @@
 import Container from "./Container";
 
-function Youtube({ videos }) {
+const Youtube = ({ videos }) => {
   return (
     <>
       {videos.map((episode) => {
@@ -8,6 +8,6 @@ function Youtube({ videos }) {
       })}
     </>
   );
-}
+};
 
 export default Youtube;

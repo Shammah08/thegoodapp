@@ -1,4 +1,4 @@
-import "./Team.css";
+import "./team.scss";
 import "./Team.media.css";
 import {
   FaInstagram,

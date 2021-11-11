@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 
 function userProfile({ match }) {
-  const urlId = Number(match.params.userid);
+  const urlId = parseInt(match.params.userid);
   const userProfile = team.filter((user) => {
     return user.userid === urlId;
   });
