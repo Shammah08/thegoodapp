@@ -1,6 +1,7 @@
 import { logos } from "../database";
 
-const Container = ({ episode }) => {
+const Container = ({ episode, onClick }) => {
+
   return (
     <div className='episodes-container' key={episode.snippet.title}>
       <figure className='channel-episode' key={episode.snippet.title}>
@@ -29,11 +30,17 @@ const Container = ({ episode }) => {
             )}
 
             {episode.snippet.liveBroadcastContent === "upcoming" ? (
-              <button className='btn-small' value={episode.snippet.title}>
+              <button
+                className='btn-small'
+                value={episode.snippet.title}
+                onClick={() => onClick(episode)}>
                 Set Reminder{" "}
               </button>
             ) : (
-              <button className='btn-small' value={episode.snippet.title}>
+              <button
+                className='btn-small'
+                value={episode.snippet.title}
+                onClick={() => onClick(episode)}>
                 Watch Now{" "}
               </button>
             )}

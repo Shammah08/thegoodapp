@@ -1,7 +1,7 @@
-import { logos } from "../database";
+import { logos, shows } from "../database";
 import { Link } from "react-router-dom";
 
-const ChannelContainer = ({ shows, onClick }) => {
+const Shows = ({ onClick }) => {
   return (
     <>
       {/* The Good TV Banner */}
@@ -43,4 +43,4 @@ const ChannelContainer = ({ shows, onClick }) => {
   );
 };
 
-export default ChannelContainer;
+export default Shows;

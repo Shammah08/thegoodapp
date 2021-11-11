@@ -102,28 +102,26 @@
       }
     }
   }
-}
 
-.recent-pod {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 90vw;
-  position: relative;
+  .recent-pod {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    position: relative;
 
-  .redirect-title {
-    position: absolute;
-    top: 0%;
-    left: 10%;
-    font-size: 2rem;
-    width: 100%;
-    padding: 10px;
-    font-weight: 500;
+    .redirect-title {
+      font-size: 1.4rem;
+      width: 100%;
+      padding: 10px;
+      font-weight: 500;
 
-    a {
-      color: $lightBlack;
+      a {
+        color: $defaultBlue;
+      }
     }
   }
 }
@@ -257,27 +255,35 @@
 
   .related-videos {
     height: 200px;
-    width: 90%;
+    width: 80%;
     background-color: $lightGrey;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    // overflow: hidden;
+    overflow: hidden;
 
     .video {
-      height: 150px;
-      width: 200px;
+      height: 180px;
+      width: 250px;
       display: flex;
       flex-direction: column;
-      background-color: $defaultBlue;
       border: 1px solid $lightBlack;
       margin-left: 5px;
       cursor: pointer;
 
       img {
         height: 80%;
+        // width: auto;
+        object-fit: cover;
         background-color: black;
+      }
+      h2 {
+        height: 20%;
+        // padding: 20px;
+        font-size: 0.8rem;
+        width: 100%;
+        // background-color: $defaultBlue;
       }
     }
   }

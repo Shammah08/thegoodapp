@@ -1,19 +1,13 @@
 import "./tv.scss";
 import "./Tv.media.css";
-import AllVideos from "./AllVideos.jsx";
-import ChannelContainer from "./ChannelContainer";
+import Youtube from "./Youtube";
+import Shows from "./Shows";
 import { useState } from "react";
-import { shows } from "../database";
 import YoutubeState from "../../contexts/YoutubeState";
-
 
 const Tv = () => {
   // const [allVideos, setAllVideos] = useState([]);
-  const [displayVideos, setDisplayVideos] = useState([]);
-
- 
-
-  // Filter videos based on title
+   // Filter videos based on title
   const handleClick = (e) => {
     // setDisplayVideos(allVideos);
     // const name = e.target.title.slice(0, 5);
@@ -33,8 +27,8 @@ const Tv = () => {
   return (
     <YoutubeState>
       <section className='podcast-container'>
-        <ChannelContainer shows={shows} onClick={handleClick} />
-        <AllVideos videos={displayVideos} />
+        <Shows onClick={handleClick} />
+        <Youtube />
       </section>
     </YoutubeState>
   );
