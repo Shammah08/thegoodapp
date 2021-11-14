@@ -1,12 +1,12 @@
 import Form from "./Form";
 import IntroText from "./IntroText";
 import forest from "./images/forest.webp";
-import "./Walk.css";
-import "./Walk.media.css";
+import "./walk.scss";
+// import "./Walk.media.css";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import Footer from "../Footer/Footer.jsx";
 
-function WalkPage() {
+const WalkPage = () => {
   return (
     <section className='walk-container'>
       <div className='walk-section'>
@@ -21,6 +21,6 @@ function WalkPage() {
       <Footer />
     </section>
   );
-}
+};
 
 export default WalkPage;

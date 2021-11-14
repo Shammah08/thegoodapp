@@ -1,6 +1,6 @@
 import { useReducer, useEffect, useState } from "react";
 import YoutubeContext from "./youtube-context";
-import YoutubeReducer from "../reducers/YoutubeReducer";
+// import YoutubeReducer from "../reducers/YoutubeReducer";
 
 // youtube API config
 const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; // SR-Key
@@ -14,7 +14,7 @@ const YoutubeState = (props) => {
   const initialState = {
     allVideos: [],
   };
-  const [state, dispatch] = useReducer(YoutubeReducer, initialState);
+  // const [state, dispatch] = useReducer(YoutubeReducer, initialState);
 
   useEffect(() => {
     fetchData().catch((error) => {
@@ -35,18 +35,17 @@ const YoutubeState = (props) => {
     const data = await response.json();
 
     // set allVideos Initial state
-    state.allVideos = data.items;
-    setVideos(state.allVideos);
+    initialState.allVideos = data.items;
+    setVideos(initialState.allVideos);
   };
 
-  const filterVideos = (show) => {
-    dispatch({ type: "FILTER VIDEO", payload: show });
-  };
+  // const filterVideos = (show) => {
+  //   dispatch({ type: "FILTER VIDEO", payload: show });
+  // };
   return (
     <YoutubeContext.Provider
       value={{
         allVideos: Videos,
-        filterVideos,
       }}>
       {props.children}
     </YoutubeContext.Provider>

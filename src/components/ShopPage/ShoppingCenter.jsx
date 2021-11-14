@@ -9,13 +9,9 @@ function ShoppingCenter() {
   const { products } = useContext(ProductsContext);
 
   const addToCart = (product) => {
-    // filter ordered item from products
-    // const orderItem = products.filter((product) => product.id === itemId);
-
-    // destructure orders object from mapped list and add to cart
-    // addItem(...orderItem);
     addItem(product);
   };
+  
   return (
     <section className='shop-section'>
       <div className='products'>

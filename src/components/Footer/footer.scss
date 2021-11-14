@@ -9,14 +9,26 @@ footer {
   align-items: center;
   justify-content: center;
 
+  @include screen-res(phone) {
+    height: auto;
+    padding: 50px 0;
+  }
   .footer-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 250px;
 
+    @include screen-res(phone) {
+      height: 150px;
+    }
+
     h1 {
       font-size: 6rem;
+
+      @include screen-res(phone) {
+        font-size: 2.4rem;
+      }
     }
 
     hr {
@@ -30,6 +42,12 @@ footer {
       width: 600px;
       font-size: 1.2rem;
       color: rgba(196, 197, 197, 0.4);
+
+      @include screen-res(phone) {
+        font-size: 1rem;
+        width: 90%;
+        padding: 5px;
+      }
     }
   }
 
@@ -38,6 +56,11 @@ footer {
     justify-content: space-around;
     width: 90%;
     height: 300px;
+
+    @include screen-res(phone) {
+      flex-direction: column;
+      height: auto;
+    }
 
     .footer-detail {
       text-align: left;
@@ -52,12 +75,21 @@ footer {
         font-weight: 600;
         width: 100%;
         margin-bottom: 10px;
+
+        @include screen-res(phone) {
+          font-size: 1.2rem;
+        }
       }
 
       p {
         font-size: 1.2rem;
         color: rgba(196, 197, 197, 0.4);
         line-height: 35px;
+
+        @include screen-res(phone) {
+          font-size: 1rem;
+          width: 100%;
+        }
       }
     }
   }
@@ -69,6 +101,11 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+
+    @include screen-res(phone) {
+      justify-content: space-around;
+      width: 80vw;
+    }
   }
 
   span {
@@ -76,6 +113,10 @@ footer {
 
     h2 {
       font-size: 3rem;
+
+      @include screen-res(phone) {
+        font-size: 2rem;
+      }
     }
     h3 {
       padding: 10px;
@@ -83,6 +124,10 @@ footer {
       transition: animation ease-in-out 1s;
       font-size: 1.6rem;
       text-align: center;
+
+      @include screen-res(phone) {
+        font-size: 1.2rem;
+      }
     }
   }
 }

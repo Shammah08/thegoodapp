@@ -2,12 +2,12 @@ import { team } from "../database";
 import Members from "./Members";
 import Footer from "../Footer/Footer";
 
-function Team() {
+const Team = () => {
   // console.log(team);
   return (
-    <main id='team-page'>
+    <section className='team-section'>
       <div className='team-text'>
-        <h1>All-Star Team.</h1>
+        <h1>All-Star Team</h1>
         <p>
           Our talented & experienced team delivers amazing results. We have a
           can-do attitude backed up by years of experience delivering high-end,
@@ -17,8 +17,8 @@ function Team() {
 
       <Members team={team} />
       <Footer />
-    </main>
+    </section>
   );
-}
+};
 
 export default Team;

@@ -40,9 +40,7 @@ const Header = ({ navActive }) => {
       </nav>
 
       {/* burger nav */}
-      <div
-        className='burger-nav' //onClick={setNav}
-      >
+      <div className='burger-nav' onClick={setNav}>
         <span></span>
         <span></span>
         <span></span>

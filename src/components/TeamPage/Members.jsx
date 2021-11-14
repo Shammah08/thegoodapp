@@ -1,5 +1,5 @@
 import "./team.scss";
-import "./Team.media.css";
+// import "./Team.media.css";
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Members({ team }) {
+const Members = ({ team }) => {
   return (
     <section className='team-container'>
       {team.map((member) => {
@@ -84,5 +84,5 @@ function Members({ team }) {
       })}
     </section>
   );
-}
+};
 export default Members;

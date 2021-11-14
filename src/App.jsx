@@ -1,5 +1,4 @@
 import "./app.scss";
-import "./app.media.css";
 import "./global.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";

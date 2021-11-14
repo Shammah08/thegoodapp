@@ -7,7 +7,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-function userProfile({ match }) {
+const userProfile = ({ match }) => {
   const urlId = parseInt(match.params.userid);
   const userProfile = team.filter((user) => {
     return user.userid === urlId;

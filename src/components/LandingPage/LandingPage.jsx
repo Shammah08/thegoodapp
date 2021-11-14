@@ -5,7 +5,6 @@ import Partners from "./Partners";
 import Services from "./Services";
 import Footer from "../Footer/Footer";
 import "./landing.scss";
-import "./landing.media.css";
 import { landingTemplates, services } from "../database";
 
 const LandingPage = () => {

@@ -1,5 +1,4 @@
 import "./shop.scss";
-import "./Shop.media.css";
 import ShoppingHeader from "./ShoppingHeader";
 import ShoppingCenter from "./ShoppingCenter";
 import Cart from "./Cart";

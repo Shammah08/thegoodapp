@@ -1,5 +1,4 @@
 import "./tv.scss";
-import "./Tv.media.css";
 import Youtube from "./Youtube";
 import Shows from "./Shows";
 import { useState } from "react";
@@ -7,7 +6,7 @@ import YoutubeState from "../../contexts/YoutubeState";
 
 const Tv = () => {
   // const [allVideos, setAllVideos] = useState([]);
-   // Filter videos based on title
+  // Filter videos based on title
   const handleClick = (e) => {
     // setDisplayVideos(allVideos);
     // const name = e.target.title.slice(0, 5);
