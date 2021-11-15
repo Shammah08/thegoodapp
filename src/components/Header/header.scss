@@ -9,7 +9,8 @@ header {
   height: 110px;
   z-index: 100;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
+  // background-color: rgba(0, 0, 0, 0.2);
+  background-color: $lightGrey;
 
   .logo {
     width: 110px;
@@ -20,6 +21,9 @@ header {
     @include screen-res(phone) {
       margin-left: 30px;
     }
+    @include screen-res(tablet) {
+      margin-left: 10px;
+    }
 
     img {
       height: 100%;
@@ -29,39 +33,57 @@ header {
   }
 
   nav {
-    width: 850px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 60%;
+    margin: 0;
 
-    &.nav-active {
+    &.mobile-active {
       display: flex;
     }
     @include screen-res(phone) {
       display: none;
-      position: absolute;
+      position: fixed;
       top: 110px;
-      height: 80vh;
+      left: 0;
+      height: calc(100vh - 110px);
       width: 100%;
       flex-direction: column;
       background-color: $lightBlack;
+      margin: 0;
+    }
+    @include screen-res(tablet) {
+      min-width: 550px;
+    }
+
+    @include screen-res(desktop) {
+      width: 850px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60%;
     }
 
     .nav-link {
       color: white;
-      font-size: 12px;
       text-decoration: none;
       text-transform: uppercase;
-      transition: all ease-in-out 0.2s;
       font-weight: 500;
       padding: 10px;
-      letter-spacing: 0.3px;
 
       @include screen-res(phone) {
         font-size: 1.4rem;
         letter-spacing: normal;
         padding: 0px;
+      }
+
+      @include screen-res(tablet) {
+        font-size: 0.7rem;
+      }
+      @include screen-res(desktop) {
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
       }
 
       &:hover,

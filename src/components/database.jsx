@@ -347,10 +347,10 @@ export const team = [
   },
   {
     userid: 11,
-    username: "Big O",
-    fullName: "Vigilanti Dev",
+    username: "Godzilla",
+    fullName: "Godzilla",
     title: "Super Hero",
-    bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together. One time for love, two times for peace. Godzilla crashing y'all villas. Godzilla only God's iller.",
+    bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together. Web developer behind the application.",
     image: logoRed,
     social: {
       instagram: "steveshammah",

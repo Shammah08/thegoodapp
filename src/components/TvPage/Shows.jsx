@@ -33,7 +33,6 @@ const Shows = ({ onClick }) => {
                   </span>
                   <strong>{show.tagline}</strong>
                 </div>
-                */
               </div>
             );
           })}

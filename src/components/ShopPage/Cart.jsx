@@ -12,7 +12,7 @@ const Cart = ({ active, setactive }) => {
     <section className='cart-section'>
       <div className='cart-items'>
         <span className='cart-intro'>
-          <h1>Shopping Cart</h1>
+          <h1>Cart</h1>
           <h5>Price</h5>
         </span>
         {cart.map((item) => {

@@ -5,9 +5,6 @@ import CartContext from "../../contexts/cart-context";
 const ShoppingHeader = ({ active, setactive }) => {
   const { cart } = useContext(CartContext);
 
-  // const handleClick = () => {
-  //   setactive(!active);
-  // };
 
   return (
     <div className='shopping-text'>

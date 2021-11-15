@@ -5,12 +5,6 @@ const UserForm = ({ userOpen, setUserOpen }) => {
   const [details, setDetails] = useState({});
   const { setIsAuth, setUserDetails } = useContext(appContext);
 
-  // useEffect(() => {
-  //   setUserDetails(details);
-
-  //   return () => {};
-  // }, []);
-
   const handleClick = () => {
     setUserDetails(details);
     setUserOpen(!userOpen);
@@ -19,8 +13,8 @@ const UserForm = ({ userOpen, setUserOpen }) => {
 
   return (
     <section className={"user-details" + (userOpen ? " user-active" : "")}>
-      <h3>Fill in your information to proceed to checkout.</h3>
       <form>
+        <h3>Fill in your information to proceed to checkout.</h3>
         <span>
           <h5>Full name: </h5>
           <input

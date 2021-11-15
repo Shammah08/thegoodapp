@@ -11,7 +11,7 @@ function ShoppingCenter() {
   const addToCart = (product) => {
     addItem(product);
   };
-  
+
   return (
     <section className='shop-section'>
       <div className='products'>
@@ -37,6 +37,7 @@ function ShoppingCenter() {
                 <FaCartArrowDown
                   className='cart-option'
                   onClick={() => addToCart(product)}
+                  
                 />
 
                 <Link

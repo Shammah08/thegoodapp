@@ -19,7 +19,7 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
   // total cart items cost
   const total = prices.length > 0 ? prices.reduce((a, b) => a + b) : 0;
 
-  // flutterwave payment config file
+  // flutterwave payment config object
   const config = {
     public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
     tx_ref: Date.now(),
@@ -30,7 +30,7 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
     redirect_url: "/shop",
     meta: {
       consumer_phone: phone,
-      consumer_mac: "92a3-912ba-1192a",
+      consumer_mac: "XXXX-XXX-XXXX",
     },
     customer: {
       email: email,
@@ -38,7 +38,7 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
       name: username,
     },
     customizations: {
-      title: "The Good Company",
+      title: "The Good Company Ke",
       description: `Payment for items in cart ${{ ...cart }}`,
       logo: "",
     },
@@ -80,13 +80,17 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
           </div>
           {/* check if user is authenticated and email is present */}
           {auth && email ? (
-            <button className='btn payment' onClick={handleClick}>
-              Proceed to Checkout
-            </button>
-          ) : (
-            <button className='btn payment' onClick={handleClick}>
+            <button className='btn' onClick={handleClick}>
               Checkout
             </button>
+          ) : (
+            <>
+              <button className='btn auth' onClick={handleClick}>
+                Proceed
+              </button>
+              <br />
+              <i>Provide your details to proceed to checkout.</i>
+            </>
           )}
         </div>
       ) : (
