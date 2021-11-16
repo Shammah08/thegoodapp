@@ -1,5 +1,4 @@
 import "./team.scss";
-// import "./Team.media.css";
 import {
   FaInstagram,
   FaLinkedinIn,

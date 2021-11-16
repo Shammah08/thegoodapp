@@ -16,7 +16,7 @@ const Cart = ({ active, setactive }) => {
           <h5>Price</h5>
         </span>
         {cart.map((item) => {
-          return <CartItem item={item} />;
+          return <CartItem item={item} key={item.id} />;
         })}
       </div>
       <UserForm userOpen={userFormOpen} setUserOpen={setUserFormOpen} />

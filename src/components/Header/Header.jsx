@@ -30,7 +30,7 @@ const Header = () => {
         <img src={logos.logoBlue} alt='TGC_LOGO' />
       </a>
 
-      <nav className={mobileNav && "mobile-active"}>
+      <nav className={mobileNav ? "mobile-active" : ""}>
         {navLinks.map((link) => {
           return (
             <a

@@ -1,4 +1,5 @@
 import { team } from "../database";
+import Footer from "../Footer/Footer";
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -7,7 +8,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-const userProfile = ({ match }) => {
+const MemberProfile = ({ match }) => {
   const urlId = parseInt(match.params.userid);
   const userProfile = team.filter((user) => {
     return user.userid === urlId;
@@ -16,7 +17,7 @@ const userProfile = ({ match }) => {
     <>
       {userProfile.map((user) => {
         return (
-          <section className='team-user-profile'>
+          <section className='team-user-profile' key={user.userid}>
             <div className='user-bio'>
               <h2>{user.fullName}</h2>
               <h5>{user.title} at The Good Co.</h5>
@@ -90,8 +91,10 @@ const userProfile = ({ match }) => {
           </section>
         );
       })}
+
+      <Footer />
     </>
   );
-}
+};
 
-export default userProfile;
+export default MemberProfile;

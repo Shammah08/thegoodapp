@@ -5,14 +5,21 @@ import { useState } from "react";
 import YoutubeState from "../../contexts/YoutubeState";
 
 const Tv = () => {
-  const [filteredVideos, setfilteredVideos] = useState("");
-  console.log("Filter", filteredVideos);
+  const [filterTitle, setFilterTitle] = useState("");
+  const [activeWindow, setActiveWindow] = useState(true);
 
   return (
     <YoutubeState>
       <section className='podcast-container'>
-        <Shows setfilteredVideos={setfilteredVideos} />
-        <Youtube filteredVideos={filteredVideos} />
+        <Shows
+          setFilterTitle={setFilterTitle}
+          setActiveWindow={setActiveWindow}
+        />
+        <Youtube
+          filterTitle={filterTitle}
+          activeWindow={activeWindow}
+          setActiveWindow={setActiveWindow}
+        />
       </section>
     </YoutubeState>
   );

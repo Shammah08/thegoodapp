@@ -3,21 +3,24 @@ import Player from "./Player";
 import YoutubeContext from "../../contexts/youtube-context";
 import { useState, useContext, useEffect } from "react";
 
-const Youtube = ({ filteredVideos }) => {
-  const [activeWindow, setActiveWindow] = useState(true);
+const Youtube = ({ filterTitle, activeWindow, setActiveWindow }) => {
   const [activeVideo, setActiveVideo] = useState({});
   const [displayVideos, setDisplayVideos] = useState([]);
 
   const { allVideos } = useContext(YoutubeContext);
 
-  const filter = allVideos.filter((video) => {
+  // Filter shows based on clicked show-title
+  const filteredVideos = allVideos.filter((video) => {
     const title = video.snippet.title.slice(0, 10);
-    return title.includes(filteredVideos.slice(0, 10));
+    return title.includes(filterTitle.slice(0, 8));
   });
   useEffect(() => {
-    filter ? setDisplayVideos(filter) : setDisplayVideos(allVideos);
+    filteredVideos
+      ? setDisplayVideos(filteredVideos)
+      : setDisplayVideos(allVideos);
     return () => {};
-  }, [filter.length]);
+    // eslint-disable-next-line
+  }, [filteredVideos.length]);
 
   const handleClick = (video) => {
     setActiveVideo(video);
@@ -30,7 +33,11 @@ const Youtube = ({ filteredVideos }) => {
         <section className='recent-pod'>
           {displayVideos.length > 0 ? (
             displayVideos.map((video) => (
-              <Container episode={video} onClick={handleClick} />
+              <Container
+                episode={video}
+                onClick={handleClick}
+                key={Math.random() * 1000}
+              />
             ))
           ) : (
             <h1 className='redirect-title'>

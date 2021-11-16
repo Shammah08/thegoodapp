@@ -14,13 +14,13 @@ const AppState = (props) => {
     dispatch({ type: "NAVIGATE", payload: route });
   };
   const setIsAuth = (status) => {
-    console.log("Log in attempt: ", status);
+    
     dispatch({ type: "AUTH", payload: status });
   };
   const setUserDetails = ({ username, phone, email }) => {
     dispatch({ type: "SET USER DETAILS", payload: { username, phone, email } });
   };
-  // console.log("State Context: ", state);
+  
 
   return (
     <AppContext.Provider

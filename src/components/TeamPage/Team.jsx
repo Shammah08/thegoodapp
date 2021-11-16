@@ -3,7 +3,6 @@ import Members from "./Members";
 import Footer from "../Footer/Footer";
 
 const Team = () => {
-  // console.log(team);
   return (
     <section className='team-section'>
       <div className='team-text'>

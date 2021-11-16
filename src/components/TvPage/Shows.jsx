@@ -1,6 +1,12 @@
 import { logos, shows } from "../database";
 
-const Shows = ({ setfilteredVideos }) => {
+const Shows = ({ setFilterTitle, setActiveWindow }) => {
+  const handleClick = (title) => {
+    setFilterTitle(title);
+
+    // Return to main window
+    setActiveWindow(true);
+  };
   return (
     <>
       {/* The Good TV Banner */}
@@ -17,7 +23,7 @@ const Shows = ({ setfilteredVideos }) => {
                 <img
                   src={show.logo ? show.logo : show.cover}
                   alt={show.title}
-                  onClick={() => setfilteredVideos(show.title)}
+                  onClick={() => handleClick(show.title)}
                 />
               </div>
             );

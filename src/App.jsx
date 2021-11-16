@@ -6,7 +6,6 @@ import WalkPage from "./components/WalkWithG/WalkPage";
 import Team from "./components/TeamPage/Team";
 import Shop from "./components/ShopPage/Shop";
 import Podcast from "./components/TvPage/Tv";
-import Checkout from "./components/ShopPage/Checkout";
 import News from "./components/NewsPage/News";
 import Header from "./components/Header/Header";
 import MemberProfile from "./components/TeamPage/MemberProfile";
@@ -31,7 +30,6 @@ const App = () => {
           <ProductState>
             <Route path='/shop' exact>
               <Shop />
-              <Route path='/shop/checkout' component={Checkout} />
             </Route>
           </ProductState>
           {/*  */}

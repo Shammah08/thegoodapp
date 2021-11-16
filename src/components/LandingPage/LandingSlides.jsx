@@ -29,7 +29,7 @@ const LandingSlides = ({ allSlides }) => {
         className='slider'
         style={{ transform: `translateX(-${activeSlide * 100}vw)` }}>
         {allSlides.map((slide) => (
-          <Slide slide={slide} />
+          <Slide slide={slide} key={Math.random() * 1000} />
         ))}
       </div>
       <FaChevronRight

@@ -26,7 +26,6 @@ const YoutubeState = (props) => {
 
   const fetchData = async () => {
     let response = await fetch(url);
-    console.log(response);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

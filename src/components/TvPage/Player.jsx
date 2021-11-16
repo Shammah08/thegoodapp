@@ -1,4 +1,3 @@
-import RelatedVideos from "./RelatedVideos";
 import { FaChevronLeft } from "react-icons/fa";
 
 const Player = ({ episode, setActiveWindow, activeWindow }) => {
@@ -27,8 +26,6 @@ const Player = ({ episode, setActiveWindow, activeWindow }) => {
           </p>
         </div>
       </div>
-      {/* Related Videos */}
-      <RelatedVideos title={episode.snippet.title} />
     </section>
   );
 };
