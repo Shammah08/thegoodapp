@@ -1,15 +1,36 @@
+@import "../../global.scss";
 .news-container {
   height: 100vh;
-}
-.news-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.news-text h1 {
-  font-size: 6rem;
-}
-.news-text p {
-  font-size: 2rem;
+
+  .news-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    h1 {
+      @include screen-res(phone) {
+        font-size: 3rem;
+      }
+      @include screen-res(tablet) {
+        font-size: 4rem;
+      }
+      @include screen-res(desktop) {
+        font-size: 6rem;
+      }
+    }
+
+    p {
+      @include screen-res(phone) {
+        font-size: 1rem;
+      }
+      @include screen-res(tablet) {
+        font-size: 1.6rem;
+      }
+      @include screen-res(desktop) {
+        font-size: 2rem;
+      }
+    }
+  }
 }

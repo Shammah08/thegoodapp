@@ -1,9 +1,14 @@
 import RelatedVideos from "./RelatedVideos";
+import { FaChevronLeft } from "react-icons/fa";
 
-const Player = ({ episode }) => {
+const Player = ({ episode, setActiveWindow, activeWindow }) => {
   const url = ` https://www.youtube.com/embed/${episode.id.videoId}?autoplay=1`;
   return (
     <section className='video-player-container' id='#'>
+      <span onClick={() => setActiveWindow(!activeWindow)}>
+        <FaChevronLeft className='icon' />
+        <strong>Back</strong>
+      </span>
       <div className='player-section'>
         <iframe
           className='video-player'
@@ -22,7 +27,6 @@ const Player = ({ episode }) => {
           </p>
         </div>
       </div>
-
       {/* Related Videos */}
       <RelatedVideos title={episode.snippet.title} />
     </section>

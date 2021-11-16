@@ -23,7 +23,6 @@
         object-fit: cover;
         height: 100%;
         width: 100%;
-        /* display: none; */
 
         @include screen-res(phone) {
           object-fit: contain;
@@ -33,32 +32,43 @@
 
     .cards {
       height: 30%;
-      min-width: 100%;
       display: flex;
       justify-content: space-between;
       padding: 20px;
       align-items: center;
 
+      @include screen-res(phone) {
+        width: 90%;
+        padding: 10px;
+        justify-content: space-around;
+      }
+
+      @include screen-res(tablet) {
+        width: 90%;
+        padding: 10px;
+      }
+
+      @include screen-res(desktop) {
+        width: 80%;
+        justify-content: space-around;
+      }
+
       .show-card {
-        height: 90px;
-        width: 250px;
-        border: none;
+        height: 100px;
+        width: 100px;
         border-radius: 10px;
-        /* position: relative; */
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex-direction: column;
         cursor: pointer;
-        /* overflow: hidden; */
-        background-color: $darkBlue;
+        overflow: hidden;
         transition: all ease-out 0.3s;
 
         @include screen-res(phone) {
-          height: 40px;
-          width: 90px;
-          // margin-right: 5px;
-          // justify-content: space-around;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
         }
 
         &:hover {
@@ -72,13 +82,18 @@
           color: white;
           height: 50%;
           transition: all ease-out 0.2s;
-          // background-color: yellow;
+          display: none;
 
           @include screen-res(phone) {
             font-size: 0.8rem;
             height: 100%;
             padding: 5px;
           }
+        }
+        img {
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
         }
 
         .show-details {
@@ -90,6 +105,7 @@
           justify-content: space-between;
           flex-direction: column;
           color: white;
+          display: none;
 
           @include screen-res(phone) {
             display: none;
@@ -156,35 +172,67 @@
   justify-content: space-between;
   margin-top: 20px;
 
+  @include screen-res(phone) {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  @include screen-res(tablet) {
+    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @include screen-res(desktop) {
+    height: 300px;
+    width: 600px;
+  }
+
   .channel-episode {
     display: flex;
     align-items: center;
-    height: 230px;
-    width: 600px;
     overflow: hidden;
     margin: 10px;
     border-radius: 10px;
     color: $lightBlack;
     background-color: $lightGrey;
     cursor: pointer;
+    height: 100%;
 
     @include screen-res(phone) {
-      width: 100%;
-      height: auto;
       flex-direction: column;
+      flex: 1;
+    }
+
+    @include screen-res(tablet) {
+      flex-direction: column;
+      height: 400px;
+    }
+
+    @include screen-res(desktop) {
+      flex-direction: initial;
     }
 
     img {
-      width: 45%;
       background-color: $lightBlack;
       transition: all ease-in-out 2s;
-      object-fit: fill;
-      height: 100%;
 
       @include screen-res(phone) {
         width: 100%;
+        height: 30%;
+        object-fit: cover;
+      }
+
+      @include screen-res(tablet) {
+        width: 100%;
         height: 50%;
         object-fit: cover;
+      }
+
+      @include screen-res(desktop) {
+        width: 45%;
+        height: 100%;
+        object-fit: fill;
       }
     }
   }
@@ -194,20 +242,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
     height: 100%;
     position: relative;
     padding: 5px;
+    width: 80%;
 
     @include screen-res(phone) {
       width: 90%;
     }
-    .cover-img {
+
+    .episode-text {
       height: 90%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
+
+      @include screen-res(phone) {
+        width: 100%;
+      }
+
+      @include screen-res(tablet) {
+        width: 100%;
+      }
     }
 
     h2 {
@@ -221,15 +278,35 @@
 
     p {
       font-size: 0.7rem;
-      line-height: 22px;
       font-weight: 500;
-      min-height: 40%;
       text-align: left;
       padding: 10px;
+
+      @include screen-res(phone) {
+        visibility: hidden;
+        height: 60px;
+      }
+      @include screen-res(tablet) {
+        height: 80px;
+        line-height: 18px;
+        padding: 0px;
+        overflow: hidden;
+      }
+      @include screen-res(desktop) {
+        min-height: 40%;
+        line-height: 22px;
+      }
     }
 
     button {
       color: white;
+
+      @include screen-res(phone) {
+        height: 35px;
+      }
+      @include screen-res(tablet) {
+        height: 40px;
+      }
     }
 
     .episode-meta {
@@ -251,30 +328,60 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px;
   background-color: $lightBlack;
 
   @include screen-res(phone) {
-    height: 80vh;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    cursor: pointer;
+
+    > * {
+      color: white;
+    }
+
+    strong {
+      font-size: 1.4rem;
+    }
   }
 
   .player-section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    // flex-direction: column;
     width: 100%;
 
+    @include screen-res(phone) {
+      flex-direction: column;
+    }
+
+    @include screen-res(tablet) {
+      flex-direction: column;
+    }
+
+    @include screen-res(desktop) {
+      flex-direction: initial;
+    }
+
     .video-player {
-      height: 70vh;
-      width: 60%;
       border: none;
 
       @include screen-res(phone) {
-        height: 40%;
+        height: 40vh;
         width: 90%;
+      }
+      @include screen-res(tablet) {
+        width: 90%;
+      }
+
+      @include screen-res(desktop) {
+        height: 70vh;
+        width: 60%;
       }
     }
     .video-text {
@@ -284,10 +391,19 @@
       width: 30%;
       padding: 2px;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-around;
 
       @include screen-res(phone) {
-        height: 30%;
+        height: 10%;
+        width: 90%;
+      }
+
+      @include screen-res(tablet) {
+        width: 90%;
+      }
+
+      @include screen-res(desktop) {
+        width: 60%;
       }
 
       h1 {
@@ -297,14 +413,33 @@
 
         @include screen-res(phone) {
           font-size: 1.6rem;
+          width: 100%;
+        }
+        @include screen-res(tablet) {
+          font-size: 1.8rem;
+          width: 80%;
+        }
+
+        @include screen-res(desktop) {
+          width: 60%;
         }
       }
 
       p {
-        font-size: 1rem;
         letter-spacing: 2px;
         line-height: 30px;
         color: $lightGrey;
+
+        @include screen-res(phone) {
+          font-size: 0.8rem;
+        }
+        @include screen-res(tablet) {
+          font-size: 0.8rem;
+        }
+
+        @include screen-res(desktop) {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -318,6 +453,7 @@
     justify-content: space-around;
     padding: 10px;
     overflow: hidden;
+    margin-top: 30px;
 
     .video {
       height: 180px;
@@ -330,16 +466,13 @@
 
       img {
         height: 80%;
-        // width: auto;
         object-fit: cover;
         background-color: black;
       }
       h2 {
         height: 20%;
-        // padding: 20px;
         font-size: 0.8rem;
         width: 100%;
-        // background-color: $defaultBlue;
       }
     }
   }

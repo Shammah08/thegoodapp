@@ -1,11 +1,10 @@
 import { logos, shows } from "../database";
-import { Link } from "react-router-dom";
 
-const Shows = ({ onClick }) => {
+const Shows = ({ setfilteredVideos }) => {
   return (
     <>
       {/* The Good TV Banner */}
-      <section className='channels-section'>
+      <section className='channels-section' id='shows'>
         <div className='banner'>
           <img src={logos.goodBanner} alt='' />
         </div>
@@ -14,25 +13,12 @@ const Shows = ({ onClick }) => {
         <section className='cards' key={Math.random * 100}>
           {shows.map((show) => {
             return (
-              <div className='show-card' key={show.id}>
-                <h1
-                  className='show-name'
-                  onClick={onClick}
-                  title={`${show.title}`}>
-                  {show.title}
-                </h1>
-                <div className='show-details' key={Math.random * 100}>
-                  <span>
-                    {show.hosts.map((link) => {
-                      return (
-                        <Link to={"team/" + link.id}>
-                          <h3 key={link.name}>{link.name} </h3>
-                        </Link>
-                      );
-                    })}
-                  </span>
-                  <strong>{show.tagline}</strong>
-                </div>
+              <div className='show-card' key={show.id} title={show.title}>
+                <img
+                  src={show.logo ? show.logo : show.cover}
+                  alt={show.title}
+                  onClick={() => setfilteredVideos(show.title)}
+                />
               </div>
             );
           })}

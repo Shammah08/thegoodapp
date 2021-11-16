@@ -3,30 +3,35 @@ import Player from "./Player";
 import YoutubeContext from "../../contexts/youtube-context";
 import { useState, useContext, useEffect } from "react";
 
-const Youtube = () => {
+const Youtube = ({ filteredVideos }) => {
   const [activeWindow, setActiveWindow] = useState(true);
   const [activeVideo, setActiveVideo] = useState({});
   const [displayVideos, setDisplayVideos] = useState([]);
 
   const { allVideos } = useContext(YoutubeContext);
-  console.log("VIDEOS ON CLICK", allVideos);
+
+  const filter = allVideos.filter((video) => {
+    const title = video.snippet.title.slice(0, 10);
+    return title.includes(filteredVideos.slice(0, 10));
+  });
   useEffect(() => {
-    setDisplayVideos(allVideos);
+    filter ? setDisplayVideos(filter) : setDisplayVideos(allVideos);
     return () => {};
-  }, [allVideos]);
+  }, [filter.length]);
 
   const handleClick = (video) => {
-    console.log("Clicked");
     setActiveVideo(video);
     setActiveWindow(!activeWindow);
   };
-  console.log("DIsplay videos: ", displayVideos);
+
   return (
     <>
       {activeWindow ? (
         <section className='recent-pod'>
           {displayVideos.length > 0 ? (
-            displayVideos.map((video) => <Container episode={video} onClick={handleClick} />)
+            displayVideos.map((video) => (
+              <Container episode={video} onClick={handleClick} />
+            ))
           ) : (
             <h1 className='redirect-title'>
               VISIT{" "}
@@ -42,7 +47,11 @@ const Youtube = () => {
           )}
         </section>
       ) : (
-        <Player episode={activeVideo} />
+        <Player
+          episode={activeVideo}
+          setActiveWindow={setActiveWindow}
+          activeWindow={activeWindow}
+        />
       )}
     </>
   );

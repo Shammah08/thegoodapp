@@ -19,6 +19,7 @@ import silverArrow from "../images/silver-arrow.jpg";
 import laptop from "../images/laptop.jpg";
 import party from "../images/party.jpg";
 import blankLaptop from "../images/blank-laptop.jpg";
+import trail from "../images/forest.webp";
 
 // Team
 import GMoney from "../images/GMoney.jpg";
@@ -199,6 +200,16 @@ export const shows = [
     cover: people,
     logo: daDing,
     tagline: "A Space For Young Dads ",
+  },
+  {
+    id: "kanairo",
+    category: "podcast",
+    title: "Kanairo ",
+    hosts: [{ name: "Lyrical Jumper", id: "" }],
+    date: "Wednesday @ 12pm",
+    cover: people,
+    logo: people,
+    tagline: "Conversations",
   },
 ];
 
@@ -611,3 +622,5 @@ export const footerDetails = [
     text: " Second Floor, 90 JGO James Gichuru Road Lavington Nairobi, KE",
   },
 ];
+
+export const forest = trail;

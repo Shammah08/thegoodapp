@@ -253,6 +253,14 @@
       @include screen-res(phone) {
         width: 90%;
       }
+      @include screen-res(tablet) {
+        width: 90%;
+        // font-size: 2rem;
+      }
+
+      @include screen-res(desktop) {
+        width: 70%;
+      }
 
       .cart-item {
         height: 120px;

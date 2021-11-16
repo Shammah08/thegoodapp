@@ -1,8 +1,7 @@
 import Form from "./Form";
 import IntroText from "./IntroText";
-import forest from "./images/forest.webp";
+import { forest } from "../database";
 import "./walk.scss";
-// import "./Walk.media.css";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import Footer from "../Footer/Footer.jsx";
 

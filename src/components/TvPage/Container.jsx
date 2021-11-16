@@ -1,7 +1,6 @@
 import { logos } from "../database";
 
 const Container = ({ episode, onClick }) => {
-
   return (
     <div className='episodes-container' key={episode.snippet.title}>
       <figure className='channel-episode' key={episode.snippet.title}>
@@ -13,7 +12,7 @@ const Container = ({ episode, onClick }) => {
         )}
 
         <figcaption className='episode-details' key={episode.id.videoId}>
-          <div className='cover-img'>
+          <div className='episode-text'>
             <h2>{episode.snippet.title} </h2>
             {/* Check if premier video or not */}
             {episode.snippet.liveBroadcastContent === "upcoming" ? (
@@ -37,12 +36,14 @@ const Container = ({ episode, onClick }) => {
                 Set Reminder{" "}
               </button>
             ) : (
-              <button
-                className='btn-small'
-                value={episode.snippet.title}
-                onClick={() => onClick(episode)}>
-                Watch Now{" "}
-              </button>
+              <a href='#shows'>
+                <button
+                  className='btn-small'
+                  value={episode.snippet.title}
+                  onClick={() => onClick(episode)}>
+                  Watch Now{" "}
+                </button>
+              </a>
             )}
           </div>
           <span className='episode-meta' key={episode.id.videoId}>

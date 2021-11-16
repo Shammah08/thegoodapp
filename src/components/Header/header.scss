@@ -55,6 +55,7 @@ header {
     }
     @include screen-res(tablet) {
       min-width: 550px;
+      padding-right: 5px;
     }
 
     @include screen-res(desktop) {
@@ -80,9 +81,10 @@ header {
 
       @include screen-res(tablet) {
         font-size: 0.7rem;
+        padding: 0px;
       }
       @include screen-res(desktop) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         letter-spacing: 0.3px;
       }
 

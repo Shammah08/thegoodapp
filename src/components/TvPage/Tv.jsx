@@ -5,29 +5,14 @@ import { useState } from "react";
 import YoutubeState from "../../contexts/YoutubeState";
 
 const Tv = () => {
-  // const [allVideos, setAllVideos] = useState([]);
-  // Filter videos based on title
-  const handleClick = (e) => {
-    // setDisplayVideos(allVideos);
-    // const name = e.target.title.slice(0, 5);
-    // let filteredVideos;
-    // if (!allVideos === false) {
-    //   filteredVideos = allVideos.filter((episode) => {
-    //     const title = episode.snippet.title.slice(0, 10);
-    //     return title.includes(name);
-    //   });
-    // } else {
-    //   filteredVideos = allVideos;
-    //   return filteredVideos;
-    // }
-    // setDisplayVideos(filteredVideos);
-  };
+  const [filteredVideos, setfilteredVideos] = useState("");
+  console.log("Filter", filteredVideos);
 
   return (
     <YoutubeState>
       <section className='podcast-container'>
-        <Shows onClick={handleClick} />
-        <Youtube />
+        <Shows setfilteredVideos={setfilteredVideos} />
+        <Youtube filteredVideos={filteredVideos} />
       </section>
     </YoutubeState>
   );
