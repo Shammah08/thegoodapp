@@ -173,7 +173,7 @@
   margin-top: 20px;
 
   @include screen-res(phone) {
-    width: 80%;
+    width: 90%;
     flex-direction: column;
   }
 
@@ -300,13 +300,8 @@
 
     button {
       color: white;
-
-      @include screen-res(phone) {
-        height: 35px;
-      }
-      @include screen-res(tablet) {
-        height: 40px;
-      }
+      z-index: 10;
+      height: 40px;
     }
 
     .episode-meta {

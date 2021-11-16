@@ -28,7 +28,6 @@ const MemberProfile = ({ match }) => {
                     user.username}
               </p>
             </div>
-
             <div className='profile'>
               <img src={user.image} alt={user.fullName} />
               <h3>{user.username}</h3>

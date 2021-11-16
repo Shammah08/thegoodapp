@@ -16,6 +16,9 @@
     position: absolute;
     left: 0;
     transition: all ease-out 0.2s;
+    @include screen-res(phone) {
+      overflow-y: hidden;
+    }
 
     .slide-container {
       width: 100vw;

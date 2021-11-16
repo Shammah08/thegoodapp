@@ -48,6 +48,13 @@
     padding: 20px 70px;
     cursor: pointer;
 
+    @include screen-res(phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     @include screen-res(desktop) {
       grid-template-columns: auto auto auto auto;
     }
@@ -65,9 +72,10 @@
       position: relative;
       border-radius: 5px;
       box-shadow: 10px 10px 10px $lightBlack;
+      // background-color: aqua;
 
       @include screen-res(phone) {
-        width: 100%;
+        width: 80vw;
       }
 
       .member-image {
@@ -119,6 +127,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-radius: 50%;
 
   @include screen-res(phone) {
     flex-direction: column;
