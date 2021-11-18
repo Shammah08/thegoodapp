@@ -162,13 +162,13 @@
 
       input {
         border: none;
-        border-bottom: 1px solid $lightBlack;
+        border-bottom: 1px solid $defaultRed;
         outline: none;
         font-size: 1rem;
         background-color: none;
         transition: all ease-in 0.2s;
 
-        & :focus {
+        &:focus {
           border-bottom: 2px solid $defaultBlue;
         }
 

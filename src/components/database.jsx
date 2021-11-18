@@ -64,7 +64,7 @@ export const navLinks = [
   { route: "welcome", url: "/#home" },
   { route: "about", url: "/#about" },
   { route: "services", url: "/#services" },
-  { route: "contact us", url: "/#contacts" },
+  { route: "contact us", url: "#contacts" },
   { route: "the good tv", url: "/tv" },
   { route: "shop", url: "/shop" },
   { route: "news", url: "/news" },
