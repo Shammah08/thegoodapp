@@ -1,4 +1,4 @@
-import "./tv.scss";
+import "./Tv.scss";
 import Youtube from "./Youtube";
 import Shows from "./Shows";
 import { useState } from "react";
