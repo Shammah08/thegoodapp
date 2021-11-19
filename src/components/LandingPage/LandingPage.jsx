@@ -9,7 +9,7 @@ import { landingTemplates, services } from "../database";
 
 const LandingPage = () => {
   return (
-    <main>
+    <main className='landing'>
       <LandingSlides allSlides={landingTemplates} />
       <About />
       <Quote />

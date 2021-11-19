@@ -36,14 +36,12 @@ const Container = ({ episode, onClick }) => {
                 Set Reminder{" "}
               </button>
             ) : (
-              <a href='#shows'>
-                <button
-                  className='btn-small'
-                  value={episode.snippet.title}
-                  onClick={() => onClick(episode)}>
-                  Watch Now{" "}
-                </button>
-              </a>
+              <button
+                className='btn-small'
+                value={episode.snippet.title}
+                onClick={() => onClick(episode)}>
+                Watch Now{" "}
+              </button>
             )}
           </div>
           <span className='episode-meta' key={episode.id.videoId}>

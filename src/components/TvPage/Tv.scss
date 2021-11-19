@@ -38,7 +38,7 @@
       align-items: center;
 
       @include screen-res(phone) {
-        width: 90%;
+        width: 95%;
         padding: 10px;
         justify-content: space-around;
       }
@@ -66,9 +66,11 @@
         transition: all ease-out 0.3s;
 
         @include screen-res(phone) {
-          height: 60px;
-          width: 60px;
+          height: 70px;
+          width: 70px;
           border-radius: 50%;
+          margin-left: 5px;
+          outline: none;
         }
 
         &:hover {

@@ -4,12 +4,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: sticky !important;
   top: 0;
   height: 110px;
   z-index: 100;
   padding: 10px;
-  // background-color: rgba(0, 0, 0, 0.2);
   background-color: $lightGrey;
 
   .logo {
@@ -109,7 +108,7 @@ header {
   }
   .burger-nav span {
     height: 4px;
-    width: 35px;
+    width: 40px;
     background-color: $lightBlack;
   }
 }

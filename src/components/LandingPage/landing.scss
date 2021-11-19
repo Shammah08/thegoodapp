@@ -8,6 +8,8 @@
   position: relative;
   height: 105vh;
   margin-top: -150px;
+  width: 100vw;
+  overflow-x: hidden !important;
 
   .slider {
     height: 110%;
@@ -16,12 +18,9 @@
     position: absolute;
     left: 0;
     transition: all ease-out 0.2s;
-    @include screen-res(phone) {
-      overflow-y: hidden;
-    }
 
     .slide-container {
-      width: 100vw;
+      width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
@@ -100,14 +99,20 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          overflow: hidden;
-          width: 100vw;
+
+          @include screen-res(phone) {
+            position: relative;
+          }
 
           img {
             height: 100%;
             width: 100%;
             object-fit: cover;
             animation: changeImage 20s infinite alternate;
+
+            @include screen-res(phone) {
+              animation: none;
+            }
 
             // Scale image during transition
             @keyframes changeImage {
