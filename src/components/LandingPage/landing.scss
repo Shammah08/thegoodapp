@@ -9,7 +9,7 @@
   height: 105vh;
   margin-top: -150px;
   width: 100vw;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 
   .slider {
     height: 110%;
@@ -31,6 +31,7 @@
         height: 100%;
         background-color: white;
         position: relative;
+        overflow: hidden !important;
 
         .text-container {
           flex: 4;
@@ -99,16 +100,14 @@
           display: flex;
           align-items: center;
           justify-content: center;
-
-          @include screen-res(phone) {
-            position: relative;
-          }
+          overflow: hidden !important;
 
           img {
             height: 100%;
             width: 100%;
             object-fit: cover;
             animation: changeImage 20s infinite alternate;
+            overflow: hidden !important;
 
             @include screen-res(phone) {
               animation: none;
