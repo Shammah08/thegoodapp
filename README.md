@@ -10,6 +10,7 @@ https://thecompanyke.netlify.app/
 ![The Good Co.](https://user-images.githubusercontent.com/71287999/142758967-d1127846-7734-4f29-9429-3eb22e3b734e.JPG)
 
 App configuration:
+
 Get youtube API key from https://console.developers.google.com/ for the TV section which fetch's videos from youtube
 
 Get flutterwave API key from https://dashboard.flutterwave.com/ to handle payment in the shop section of the application.
