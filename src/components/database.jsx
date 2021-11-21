@@ -10,7 +10,7 @@ import theCookBook from "../images/the-cook-book-1.jpg";
 import daDing from "../images/dading-different.jpg";
 import lockdownSession from "../images/lockdown-session.jpg";
 import wakeUpCall from "../images/wake-up-call.jpg";
-import goodBanner from "../images/good-tv-banner.jpg";
+import goodBanner from "../images/good-tv-banner.JPG";
 
 // Landing Sides
 import nairobi from "../images/Nairobi.jpg";
