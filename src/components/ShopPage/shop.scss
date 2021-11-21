@@ -2,7 +2,8 @@
 
 .shopping-center {
   color: $lightBlack;
-  // Shop Header
+  position: relative;
+
   .shopping-text {
     font-size: 2.2rem;
     font-weight: 500;
@@ -46,6 +47,48 @@
         color: white;
         margin: 2px;
         font-size: 1rem;
+      }
+    }
+  }
+  // Product Large Image
+  .product-image-container {
+    height: 80vh;
+    width: 60vw;
+    display: none;
+    overflow: hidden;
+    margin-top: 50px;
+
+    &.active {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      background-color: $lightBlack;
+      border-radius: 6px;
+    }
+
+    @include screen-res(phone) {
+      width: 90vw;
+      height: 70vh;
+    }
+
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+
+    .icon {
+      color: $defaultBlue;
+      position: absolute;
+      right: 1%;
+
+      &:hover {
+        color: $defaultRed;
       }
     }
   }

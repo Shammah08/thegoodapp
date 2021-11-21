@@ -2,9 +2,8 @@ import { FaCartArrowDown, FaSearchDollar } from "react-icons/fa";
 import { useContext } from "react";
 import CartContext from "../../contexts/cart-context";
 import ProductsContext from "../../contexts/products-context";
-import { Link } from "react-router-dom";
 
-function ShoppingCenter() {
+const ShoppingCenter = ({ setActiveProduct }) => {
   const { addItem } = useContext(CartContext);
   const { products } = useContext(ProductsContext);
 
@@ -37,14 +36,14 @@ function ShoppingCenter() {
                 <FaCartArrowDown
                   className='cart-option'
                   onClick={() => addToCart(product)}
-                  
                 />
 
-                <Link
-                  to={`/shop/${product.id}/${product.name}/`}
-                  className='link'>
-                  <FaSearchDollar className='cart-option' />
-                </Link>
+                <a href='#product'>
+                  <FaSearchDollar
+                    className='cart-option'
+                    onClick={() => setActiveProduct(product.img)}
+                  />
+                </a>
               </span>
               <span className='product-details'>
                 <h3>{product.name}</h3>
@@ -54,9 +53,8 @@ function ShoppingCenter() {
           );
         })}
       </div>
-      ;
     </section>
   );
-}
+};
 
 export default ShoppingCenter;

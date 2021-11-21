@@ -9,7 +9,7 @@ const CartItem = ({ item }) => {
       <div className='cart-item-details'>
         <h4>{item.name}</h4>
         <p>{item.detail}</p>
-        <h5>by{item.by}</h5>
+        <h5>by {item.by}</h5>
         <strong>{item.soldOut ? "Out Of Stock" : "In Stock"}</strong>
         <span className='quantity-count'>
           <button onClick={() => reduceItem(item)}>-</button>

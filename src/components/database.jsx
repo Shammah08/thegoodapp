@@ -4,13 +4,13 @@ import logoRed from "../images/tgc_logo_red.jpg";
 
 // Show Covers
 import people from "../images/people.jpg";
-import micsAreOpen from "../images/mics-thumbnail.jpg";
+import micsAreOpen from "../images/mics-are-open.jpg";
 import micsAreOpenSquad from "../images/mics-squad.jpg";
 import theCookBook from "../images/the-cook-book-1.jpg";
 import daDing from "../images/dading-different.jpg";
 import lockdownSession from "../images/lockdown-session.jpg";
-import wakeUpCall from "../images/wake-up-call-1.jpg";
-import goodBanner from "../images/good-tv-banner.JPG";
+import wakeUpCall from "../images/wake-up-call.jpg";
+import goodBanner from "../images/good-tv-banner.jpg";
 
 // Landing Sides
 import nairobi from "../images/Nairobi.jpg";
@@ -197,7 +197,7 @@ export const shows = [
     title: "DADing Different ",
     hosts: [{ name: "Some Dads", id: "" }],
     date: "Wednesday @ 12pm",
-    cover: people,
+    cover: daDing,
     logo: daDing,
     tagline: "A Space For Young Dads ",
   },
@@ -207,8 +207,8 @@ export const shows = [
     title: "Kanairo ",
     hosts: [{ name: "Lyrical Jumper", id: "" }],
     date: "Wednesday @ 12pm",
-    cover: people,
-    logo: people,
+    cover: skyline,
+    logo: skyline,
     tagline: "Conversations",
   },
 ];
@@ -623,4 +623,5 @@ export const footerDetails = [
   },
 ];
 
+// Walk Page Image
 export const forest = trail;
