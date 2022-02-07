@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../../contexts/app-context";
 import { logos, navLinks } from "../database";
+import { Link } from "react-router-dom";
+
 import "./header.scss";
 
 const Header = () => {
@@ -33,15 +35,15 @@ const Header = () => {
       <nav className={mobileNav ? "mobile-active" : ""}>
         {navLinks.map((link) => {
           return (
-            <a
-              href={link.url}
+            <Link
+              to={link.url}
               className={
                 linkState === link.route ? "nav-link active" : "nav-link"
               }
               key={link.url}
               onClick={() => handleClick(link.route)}>
               {link.route}
-            </a>
+            </Link>
           );
         })}
       </nav>

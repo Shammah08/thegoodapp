@@ -2,6 +2,7 @@
 
 .team-section {
   padding-top: 20px;
+  background-color: white;
 
   .team-text {
     width: 70%;
@@ -121,58 +122,74 @@
   }
 }
 
-.team-user-profile {
-  min-height: calc(100vh - 110px);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.user-profile-wrapper {
+  background-color: white;
+  padding: 10px;
 
-  @include screen-res(phone) {
-    flex-direction: column;
-    justify-content: flex-start;
-    height: auto;
-  }
-}
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 500px;
-  height: 400px;
-
-  @include screen-res(phone) {
-    height: 500px;
-    margin-bottom: 50px;
-  }
-
-  img {
-    height: 90%;
-    width: 80%;
-  }
-
-  h3 {
-    font-size: 1.6rem;
-    font-weight: 600;
+  .btn {
     height: 50px;
+    width: 200px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 0;
   }
 
-  span {
-    width: 80%;
+  .user-profile {
+    min-height: calc(100vh - 110px);
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: $lightBlack;
-    padding: 5px;
+    justify-content: space-around;
 
-    .icon {
-      color: $defaultRed;
+    @include screen-res(phone) {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: auto;
+    }
 
-      &:hover {
-        color: $defaultBlue;
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 500px;
+      height: 400px;
+
+      @include screen-res(phone) {
+        height: 500px;
+        margin-bottom: 50px;
+      }
+
+      img {
+        height: 90%;
+        width: 80%;
+      }
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      span {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $lightBlack;
+        padding: 5px;
+
+        .icon {
+          color: $defaultRed;
+
+          &:hover {
+            color: $defaultBlue;
+          }
+        }
       }
     }
   }

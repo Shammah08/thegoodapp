@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Slide = ({ slide }) => {
   return (
     <div className='slide-container' key={slide.index}>
@@ -6,9 +8,9 @@ const Slide = ({ slide }) => {
           <h2>{slide.title}</h2>
 
           <p>{slide.desc}</p>
-          <a href={slide.url}>
+          <Link to={slide.url}>
             <button className='btn'>{slide.button}</button>
-          </a>
+          </Link>
         </div>
 
         <div className='image-container'>

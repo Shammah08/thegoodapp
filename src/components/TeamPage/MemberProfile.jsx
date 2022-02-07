@@ -7,6 +7,7 @@ import {
   FaFacebookF,
   FaGithub,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MemberProfile = ({ match }) => {
   const urlId = parseInt(match.params.userid);
@@ -14,10 +15,13 @@ const MemberProfile = ({ match }) => {
     return user.userid === urlId;
   });
   return (
-    <>
+    <section className="user-profile-wrapper">
+      <Link to='/team' className='btn'>
+        Go Back
+      </Link>
       {userProfile.map((user) => {
         return (
-          <section className='team-user-profile' key={user.userid}>
+          <section className='user-profile' key={user.userid}>
             <div className='user-bio'>
               <h2>{user.fullName}</h2>
               <h5>{user.title} at The Good Co.</h5>
@@ -92,7 +96,7 @@ const MemberProfile = ({ match }) => {
       })}
 
       <Footer />
-    </>
+    </section>
   );
 };
 
