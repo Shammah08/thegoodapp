@@ -1,4 +1,6 @@
-const Services = ({ services }) => {
+import { services } from "../database";
+
+const Services = () => {
   const heading = {
     title: "TOP NOTCH SERVICES.",
     content:

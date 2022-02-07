@@ -118,7 +118,7 @@ export const landingTemplates = [
     desc: "We have over 20 years of event management experience. From concept to delivery, we have got you covered.",
     button: "Learn More",
     startAnimation: "",
-    url: "podcast",
+    url: "tv",
   },
   {
     index: 4,

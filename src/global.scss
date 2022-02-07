@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800&display=swap");
 
+// Default colors
+$defaultRed: #ff0845;
+$darkRed: #ed1c24;
+$darkBlue: #051229;
+$lightBlack: #141618;
+$grey: rgba(196, 197, 197, 1);
+$lightGrey: rgba(196, 197, 197, 0.5);
+$defaultBlue: #01adee;
+$gold: #fbcc41;
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +20,8 @@ html {
   transition: ease-in 0.2s;
   overflow-x: hidden !important;
   font-family: "Montserrat", sans-serif;
+  background-color: $grey;
 }
-
-// Default colors
-$defaultRed: #ff0845;
-$darkRed: #ed1c24;
-$darkBlue: #051229;
-$lightBlack: #141618;
-$grey: rgba(196, 197, 197, 1);
-$lightGrey: rgba(196, 197, 197, 0.5);
-$defaultBlue: #01adee;
-$gold: #fbcc41;
 
 // media queries
 @mixin screen-res($res) {

@@ -1,4 +1,4 @@
-const Slide = ({slide}) => {
+const Slide = ({ slide }) => {
   return (
     <div className='slide-container' key={slide.index}>
       <div className='container'>
