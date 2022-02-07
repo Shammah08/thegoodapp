@@ -32,7 +32,7 @@ import Neville from "../images/Neville.jpg";
 import Grauchi from "../images/Grauchi.jpg";
 import Ashley from "../images/ashley.jpg";
 import Quellie from "../images/quellie.jpg";
-
+import Shammah from "../images/shammah-avatar.jpg";
 // Shop Products
 import coffeeMug from "../images/Coffee-Mug-1.jpg";
 import coffeeMugWhite from "../images/Coffee-Mug-White.jpg";
@@ -137,6 +137,16 @@ export const landingTemplates = [
     button: "About Us",
     startAnimation: "",
     url: "team",
+  },
+
+  {
+    index: 6,
+    image: Shammah,
+    title: "BY SHAMMAH",
+    desc: " Website has been made by Steve Shammah using the React JS framework. The website utislizes some of react's powerful features. It a clone of the official website of the Good Company.",
+    button: "View Profile",
+    startAnimation: "",
+    url: "team/11",
   },
 ];
 
@@ -254,7 +264,6 @@ export const team = [
       instagram: "kevinokeyo",
       facebook: "#",
       twitter: "kevinokeyo_",
-      github: "#",
       linkedin: "",
     },
   },
@@ -358,16 +367,15 @@ export const team = [
   },
   {
     userid: 11,
-    username: "Godzilla",
-    fullName: "Godzilla",
+    username: "Shammah",
+    fullName: "Steve Shammah",
     title: "Super Hero",
     bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together. Web developer behind the application.",
-    image: logoRed,
+    image: Shammah,
     social: {
       instagram: "steveshammah",
-      facebook: "",
       twitter: "steveshammah_",
-      github: "Shammah08/thegoodapp",
+      github: "steveshammah/thegoodapp",
       linkedin: "steve-shammah-252b62191",
     },
   },
