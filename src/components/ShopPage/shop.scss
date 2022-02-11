@@ -2,6 +2,7 @@
 
 .shopping-center {
   color: $lightBlack;
+  background-color: white;
   position: relative;
 
   .shopping-text {
@@ -259,6 +260,7 @@
     align-items: center;
     justify-content: space-around;
     padding-top: 20px;
+    background-color: white;
 
     .cart-intro {
       width: 100%;

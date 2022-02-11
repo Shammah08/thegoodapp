@@ -7,7 +7,7 @@ const NewsPage = () => {
   return (
     <section className='news-container'>
       <div className='container'>
-        <h1>Latest News.</h1>
+        <h1>Latest News</h1>
 
         <div className='news-wrapper'>
           {landingTemplates.map((slide) => {

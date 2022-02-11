@@ -2,6 +2,7 @@ import Container from "./Container";
 import Player from "./Player";
 import YoutubeContext from "../../contexts/youtube-context";
 import { useState, useContext, useEffect } from "react";
+import Footer from "../Footer/Footer";
 
 const Youtube = ({ filterTitle, activeWindow, setActiveWindow }) => {
   const [activeVideo, setActiveVideo] = useState({});
@@ -40,17 +41,20 @@ const Youtube = ({ filterTitle, activeWindow, setActiveWindow }) => {
               />
             ))
           ) : (
-            <h1 className='redirect-title'>
-              VISIT{" "}
-              <a
-                href='https://www.youtube.com/user/TheGMONEYTV'
-                target='_blank'
-                rel='noreferrer'>
-                {" "}
-                THE GOOD COMPANY KE
-              </a>{" "}
-              YOUTUBE CHANNEL FOR MORE.
-            </h1>
+            <div style={{ minWidth: "100vw" }}>
+              <h1 className='redirect-title'>
+                VISIT{" "}
+                <a
+                  href='https://www.youtube.com/user/TheGMONEYTV'
+                  target='_blank'
+                  rel='noreferrer'>
+                  {" "}
+                  THE GOOD COMPANY KE
+                </a>{" "}
+                YOUTUBE CHANNEL FOR MORE.
+              </h1>
+              <Footer />
+            </div>
           )}
         </section>
       ) : (

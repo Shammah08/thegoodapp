@@ -65,12 +65,17 @@ button a {
   height: 50px;
   outline: none;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: 1.4rem;
   margin: 10px;
   cursor: pointer;
   color: white;
   background-color: $defaultBlue;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 .btn-top {
   position: absolute;

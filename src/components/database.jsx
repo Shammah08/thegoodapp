@@ -142,9 +142,9 @@ export const landingTemplates = [
   {
     index: 6,
     image: Shammah,
-    title: "BY SHAMMAH",
-    desc: " Website has been made by Steve Shammah using the React JS framework. The website utislizes some of react's powerful features. It a clone of the official website of the Good Company.",
-    button: "View Profile",
+    title: "WEBSITE BY SHAMMAH",
+    desc: " Made by Steve Shammah using the React JS. It a clone of the official website of the Good Company KE.",
+    button: " Shammah",
     startAnimation: "",
     url: "team/11",
   },

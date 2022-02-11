@@ -28,9 +28,9 @@ const Header = () => {
 
   return (
     <header>
-      <a href='/' className='logo'>
+      <Link to='/' className='logo'>
         <img src={logos.logoBlue} alt='TGC_LOGO' />
-      </a>
+      </Link>
 
       <nav className={mobileNav ? "mobile-active" : ""}>
         {navLinks.map((link) => {
