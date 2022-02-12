@@ -1,13 +1,35 @@
 import "./news.scss";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
-import { landingTemplates } from "../database";
+import { landingTemplates, news } from "../database";
+import { FaHackerNewsSquare } from "react-icons/fa";
 
 const NewsPage = () => {
   return (
     <section className='news-container'>
       <div className='container'>
         <h1>Latest News</h1>
+
+        <div className='news-wrapper'>
+          {news.map((article) => {
+            return (
+              <Link
+                to={`/news/${article.id}`}
+                className='news'
+                key={article.id}>
+                <img src={article.image} alt='' />
+
+                <div className='news-text'>
+                  <h3>{article.title}</h3>
+                  <p>{article.desc}</p>
+                  <span>
+                    <i>By: {article.author}</i> <i>Posted: 1 Feb 2022</i>
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
 
         <div className='news-wrapper'>
           {landingTemplates.map((slide) => {

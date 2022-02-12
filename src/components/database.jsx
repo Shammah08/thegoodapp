@@ -368,8 +368,8 @@ export const team = [
   {
     userid: 11,
     username: "Shammah",
-    fullName: "Steve Shammah",
-    title: "Super Hero",
+    fullName: "Shammah Odhiambo",
+    title: "Big O",
     bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together. Web developer behind the application.",
     image: Shammah,
     social: {
@@ -611,6 +611,37 @@ export const about = {
   title: "A Creative Agency Focused On Vision, Brand And People.",
   text: "We specialize in enhancing and building brand equity through tailored campaigns. We as a company share a common purpose and are united towards focusing our talents and organizing our various skills and resources to achieve the specific declared goals set by our clients. After all, you are the company you keep.",
 };
+
+// News
+export const news = [
+  {
+    id: 10,
+    title: "4 Reasons Why UX Design is Good FOr Business",
+    datePosted: ["12", "02", "2022"],
+    author: "Kevin Okeyo",
+    content:
+      "Bringing more than 25 years of international experience to the Good Company is something Anthony Gray aka G Money does with aplomb! Having been an integral part of the radio and music industry in the UK, his decade of working in Kenya has given him a unique perspective into what works for the local market. As a media brand himself, he has worked with major local and international brands from Safaricom to Ciroc he has brought his know how to the fore in all his endeavors. As the Head of Presenters of 103.5 Homeboyz Radio, he has used his knowledge to help shape the sound of Nairobi. Whether it’s dropping jams in the hottest clubs or training the next generation of presenters, G Money has always had his finger on the pulse of the next trend. G Money has also had a hand in some of the biggest events in Kenya, whether it’s concert management or club events, his knowledge of event management is highly sought after and he recently works on the hugely successful Chronixx event and most recently Jameson Live. The only question left for us to ask him is “when do you sleep”?",
+    image: GMoney,
+  },
+  {
+    id: 11,
+    title: "Brand Equity",
+    datePosted: ["07", "02", "2022"],
+    author: "Kevin Okeyo",
+    content:
+      "Bringing more than 25 years of international experience to the Good Company is something Anthony Gray aka G Money does with aplomb! Having been an integral part of the radio and music industry in the UK, his decade of working in Kenya has given him a unique perspective into what works for the local market. As a media brand himself, he has worked with major local and international brands from Safaricom to Ciroc he has brought his know how to the fore in all his endeavors. As the Head of Presenters of 103.5 Homeboyz Radio, he has used his knowledge to help shape the sound of Nairobi. Whether it’s dropping jams in the hottest clubs or training the next generation of presenters, G Money has always had his finger on the pulse of the next trend. G Money has also had a hand in some of the biggest events in Kenya, whether it’s concert management or club events, his knowledge of event management is highly sought after and he recently works on the hugely successful Chronixx event and most recently Jameson Live. The only question left for us to ask him is “when do you sleep”?",
+    image: GMoney,
+  },
+  {
+    id: 12,
+    title: "What is Brand Equity and Why Is It Valuable In Business?",
+    datePosted: ["12", "02", "2022"],
+    author: "Kevin Okeyo",
+    content:
+      "Bringing more than 25 years of international experience to the Good Company is something Anthony Gray aka G Money does with aplomb! Having been an integral part of the radio and music industry in the UK, his decade of working in Kenya has given him a unique perspective into what works for the local market. As a media brand himself, he has worked with major local and international brands from Safaricom to Ciroc he has brought his know how to the fore in all his endeavors. As the Head of Presenters of 103.5 Homeboyz Radio, he has used his knowledge to help shape the sound of Nairobi. Whether it’s dropping jams in the hottest clubs or training the next generation of presenters, G Money has always had his finger on the pulse of the next trend. G Money has also had a hand in some of the biggest events in Kenya, whether it’s concert management or club events, his knowledge of event management is highly sought after and he recently works on the hugely successful Chronixx event and most recently Jameson Live. The only question left for us to ask him is “when do you sleep”?",
+    image: GMoney,
+  },
+];
 
 //Footer
 export const footerDetails = [

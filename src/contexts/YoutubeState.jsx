@@ -16,7 +16,7 @@ const YoutubeState = (props) => {
 
   useEffect(() => {
     fetchData().catch((error) => {
-      console.log("The Following Error Occurred", error.message);
+      console.log("The Following Error Occurred (YT-Func): ", error.message);
       return;
     });
 

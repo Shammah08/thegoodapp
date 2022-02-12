@@ -1,13 +1,26 @@
+import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { landingTemplates } from "../database";
+import { landingTemplates, news } from "../database";
 import Footer from "../Footer/Footer";
 import "./news.scss";
 
 const NewsArticle = () => {
   const { articleId } = useParams();
-  const article = landingTemplates.find(
+  const [article, setArticle] = useState({});
+  const slide = landingTemplates.find(
     (story) => story.index === parseInt(articleId)
   );
+  const blog = news.find((story) => story.id === parseInt(articleId));
+
+  useEffect(() => {
+    if (blog) {
+      setArticle(blog);
+    } else {
+      setArticle(slide);
+    }
+    return () => {};
+  }, []);
+
   return (
     <section className='article-wrapper'>
       <Link to='/news' className='btn'>

@@ -32,19 +32,34 @@ const Header = () => {
         <img src={logos.logoBlue} alt='TGC_LOGO' />
       </Link>
 
-      <nav className={mobileNav ? "mobile-active" : ""}>
+      <nav className={mobileNav && "mobile-active"}>
+        {/* Check if url links to an ID on page */}
         {navLinks.map((link) => {
-          return (
-            <Link
-              to={link.url}
-              className={
-                linkState === link.route ? "nav-link active" : "nav-link"
-              }
-              key={link.url}
-              onClick={() => handleClick(link.route)}>
-              {link.route}
-            </Link>
-          );
+          if (link.url.includes("#")) {
+            return (
+              <a
+                href={link.url}
+                className={
+                  linkState === link.route ? "nav-link active" : "nav-link"
+                }
+                key={link.url}
+                onClick={() => handleClick(link.route)}>
+                {link.route}
+              </a>
+            );
+          } else {
+            return (
+              <Link
+                to={link.url}
+                className={
+                  linkState === link.route ? "nav-link active" : "nav-link"
+                }
+                key={link.url}
+                onClick={() => handleClick(link.route)}>
+                {link.route}
+              </Link>
+            );
+          }
         })}
       </nav>
 
