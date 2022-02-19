@@ -1,6 +1,11 @@
 import "./app.scss";
 import "./global.scss";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Routes,
+} from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import WalkPage from "./components/WalkWithG/WalkPage";
 import Team from "./components/TeamPage/Team";
@@ -17,7 +22,7 @@ const App = () => {
     <div className='App'>
       <Router>
         <Header />
-        <Switch>
+        <Routes>
           <Route path='/' exact>
             <LandingPage />
           </Route>
@@ -35,7 +40,7 @@ const App = () => {
             </Route>
           </ProductState>
           {/*  */}
-        </Switch>
+        </Routes>
       </Router>
     </div>
   );

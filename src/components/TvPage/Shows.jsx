@@ -1,4 +1,6 @@
-import { logos, shows } from "../database";
+import { logos } from "../database";
+import ShowCards from "./ShowCards";
+// import ShowsWrapper from "./ShowsWrapper";
 
 const Shows = ({ setFilterTitle, setActiveWindow }) => {
   const handleClick = (title) => {
@@ -14,22 +16,10 @@ const Shows = ({ setFilterTitle, setActiveWindow }) => {
         <div className='banner'>
           <img src={logos.goodBanner} alt='' />
         </div>
-
-        {/* Channel Cards */}
-        <section className='cards' key={Math.random * 100}>
-          {shows.map((show) => {
-            return (
-              <div className='show-card' key={show.id} title={show.title}>
-                <img
-                  src={show.logo ? show.logo : show.cover}
-                  alt={show.title}
-                  onClick={() => handleClick(show.title)}
-                />
-              </div>
-            );
-          })}
-        </section>
       </section>
+
+      {/* Channel Cards */}
+      <ShowCards handleClick={handleClick} />
     </>
   );
 };
