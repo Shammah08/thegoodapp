@@ -1,11 +1,7 @@
 import "./app.scss";
 import "./global.scss";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Routes,
-} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+
 import LandingPage from "./components/LandingPage/LandingPage";
 import WalkPage from "./components/WalkWithG/WalkPage";
 import Team from "./components/TeamPage/Team";
@@ -19,29 +15,27 @@ import ProductState from "./contexts/ProductState";
 
 const App = () => {
   return (
-    <div className='App'>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path='/' exact>
-            <LandingPage />
-          </Route>
-          <Route path='/walk' component={WalkPage} />
-          <Route path='/team' component={Team} exact />
-          <Route path='/team/:userid' component={MemberProfile} />
-          <Route path='/tv' exact component={Podcast} />
-          <Route path='/news' exact component={NewsPage} />
-          <Route path='/news/:articleId' component={NewsArticle} />
+    <div className="App">
+      <Header />
+      <Switch>
+        <Route path="/" exact>
+          <LandingPage />
+        </Route>
+        <Route path="/walk" component={WalkPage} />
+        <Route path="/team" component={Team} exact />
+        <Route path="/team/:userid" component={MemberProfile} />
+        <Route path="/tv" exact component={Podcast} />
+        <Route path="/news" exact component={NewsPage} />
+        <Route path="/news/:articleId" component={NewsArticle} />
 
-          {/* Enclosed in products context state */}
-          <ProductState>
-            <Route path='/shop' exact>
-              <Shop />
-            </Route>
-          </ProductState>
-          {/*  */}
-        </Routes>
-      </Router>
+        {/* Enclosed in products context state */}
+        <ProductState>
+          <Route path="/shop" exact>
+            <Shop />
+          </Route>
+        </ProductState>
+        {/*  */}
+      </Switch>
     </div>
   );
 };
