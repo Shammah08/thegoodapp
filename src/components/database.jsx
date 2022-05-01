@@ -13,12 +13,13 @@ import wakeUpCall from "../images/wake-up-call.jpg";
 import goodBanner from "../images/good-tv-banner.JPG";
 
 // Landing Sides
-import nairobi from "../images/Nairobi.jpg";
+import nairobi from "../images/nairobi.webp";
+import nairobi2 from "../images/nairobi_2.jpg";
 import skyline from "../images/Nairobi-Night-Skyline.jpg";
-import silverArrow from "../images/silver-arrow.jpg";
-import laptop from "../images/laptop.jpg";
-import party from "../images/party.jpg";
-import blankLaptop from "../images/blank-laptop.jpg";
+import silverArrow from "../images/silver-arrow.webp";
+import laptop from "../images/laptop.webp";
+import party from "../images/dance-club.webp";
+import blankLaptop from "../images/laptop-2.jpg";
 import trail from "../images/forest.webp";
 
 // Team
@@ -141,8 +142,8 @@ export const landingTemplates = [
 
   {
     index: 6,
-    image: Shammah,
-    title: "WEBSITE BY SHAMMAH",
+    image: nairobi2,
+    title: "WEBSITE BY Big O",
     desc: " Made by Steve Shammah using the React JS. It a clone of the official website of the Good Company KE.",
     button: " Shammah",
     startAnimation: "",
@@ -169,16 +170,6 @@ export const shows = [
     tagline: "The Mics Are Bloodclat Open",
   },
   {
-    id: "lockdown",
-    category: "mixes",
-    title: "Lockdown Session",
-    hosts: [{ name: "Dj Grauchi", id: 5 }],
-    date: "Friday @ 10pm",
-    cover: lockdownSession,
-    logo: "",
-    tagline: "Must Be Nice",
-  },
-  {
     id: "wakeupcall",
     category: "mixes",
     title: "The Wake Up Call",
@@ -186,7 +177,37 @@ export const shows = [
     date: "Saturday @ 9am",
     cover: wakeUpCall,
     logo: "",
-    tagline: "Plug Someone",
+    tagline: "Do Da Ting",
+  },
+  {
+    id: "lockdown",
+    category: "mixes",
+    title: "Lockdown Sessions",
+    hosts: [{ name: "Dj Grauchi", id: 5 }],
+    date: "Friday @ 10pm",
+    cover: lockdownSession,
+    logo: "",
+    tagline: "Lockdown Session In Session",
+  },
+  {
+    id: "selfmade",
+    category: "podcast",
+    title: "Self Made ",
+    hosts: [{ name: "Lyrical Jumper", id: "" }],
+    date: "Wednesday @ 12pm",
+    cover: GMoney,
+    logo: GMoney,
+    tagline: "Self Made",
+  },
+  {
+    id: "truth",
+    category: "podcast",
+    title: "The Truth ",
+    hosts: [{ name: "G Money", id: 1 }],
+    date: "Thursday @ 1pm",
+    cover: GMoney,
+    logo: GMoney,
+    tagline: "The Truth",
   },
   {
     id: "thecookbook",

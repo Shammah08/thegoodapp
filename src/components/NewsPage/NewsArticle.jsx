@@ -18,16 +18,17 @@ const NewsArticle = () => {
     } else {
       setArticle(slide);
     }
-    return () => {};
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <section className='article-wrapper'>
-      <Link to='/news' className='btn'>
+    <section className="article-wrapper">
+      <Link to="/news" className="btn">
         Go Back
       </Link>
-      <div className='article'>
-        <img src={article.image} alt='' />
+      <div className="article">
+        <img src={article.image} alt="" />
         <h2>{article.title}</h2>
         <p>{article.desc}</p>
       </div>

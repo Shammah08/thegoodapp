@@ -2,24 +2,24 @@ import "./news.scss";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { landingTemplates, news } from "../database";
-import { FaHackerNewsSquare } from "react-icons/fa";
 
 const NewsPage = () => {
   return (
-    <section className='news-container'>
-      <div className='container'>
+    <section className="news-container">
+      <div className="container">
         <h1>Latest News</h1>
 
-        <div className='news-wrapper'>
+        <div className="news-wrapper">
           {news.map((article) => {
             return (
               <Link
                 to={`/news/${article.id}`}
-                className='news'
-                key={article.id}>
-                <img src={article.image} alt='' />
+                className="news"
+                key={article.id}
+              >
+                <img src={article.image} alt="" />
 
-                <div className='news-text'>
+                <div className="news-text">
                   <h3>{article.title}</h3>
                   <p>{article.desc}</p>
                   <span>
@@ -31,16 +31,17 @@ const NewsPage = () => {
           })}
         </div>
 
-        <div className='news-wrapper'>
+        <div className="news-wrapper">
           {landingTemplates.map((slide) => {
             return (
               <Link
                 to={`/news/${slide.index}`}
-                className='news'
-                key={slide.index}>
-                <img src={slide.image} alt='' />
+                className="news"
+                key={slide.index}
+              >
+                <img src={slide.image} alt="" />
 
-                <div className='news-text'>
+                <div className="news-text">
                   <h3>{slide.title}</h3>
                   <p>{slide.desc}</p>
                   <span>

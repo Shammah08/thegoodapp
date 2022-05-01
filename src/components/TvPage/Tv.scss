@@ -3,6 +3,10 @@
 .podcast-container {
   overflow: hidden;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   .channels-section {
     display: flex;
@@ -11,7 +15,8 @@
     flex-direction: column;
     align-items: center;
     background-color: $defaultRed;
-    height: 40vh;
+    height: 30vh;
+    width: 100%;
 
     @include screen-res(phone) {
       height: 140px;
@@ -33,30 +38,8 @@
     }
   }
 
-  .recent-pod {
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 90%;
-    position: relative;
-
-    .redirect-title {
-      font-size: 1.6rem;
-      width: 100%;
-      padding: 10px;
-      font-weight: 500;
-      margin: 100px 0;
-
-      a {
-        color: $defaultBlue;
-      }
-    }
-  }
-  .cards-container {
-    height: 40vh;
+  .channel-badge-container {
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -64,6 +47,8 @@
     padding: 20px;
     background-color: $darkBlue;
     width: 100%;
+    position: sticky;
+    top: 0;
 
     @include screen-res(phone) {
       width: 95%;
@@ -79,7 +64,7 @@
       justify-content: space-around;
     }
 
-    .cards-text {
+    .channel-badge-text {
       color: $grey;
       min-height: 50px;
       // flex: 1;
@@ -88,12 +73,12 @@
         font-size: 2rem;
       }
     }
-    .cards {
+    .channel-badges {
       display: flex;
       justify-content: space-around;
       width: 100%;
 
-      .show-card {
+      .channel-badge {
         height: 200px;
         width: 200px;
         // border-radius: 50%;
@@ -104,6 +89,7 @@
         cursor: pointer;
         overflow: hidden;
         transition: all ease-out 0.3s;
+        text-decoration: none;
 
         @include screen-res(phone) {
           height: 70px;
@@ -116,7 +102,7 @@
         &:hover {
           box-shadow: 2px 2px 2px $darkBlue;
         }
-        .show-img-wrapper {
+        .channel-badge-img-wrapper {
           height: 150px;
           width: 150px;
           border-radius: 50%;
@@ -130,8 +116,8 @@
           }
         }
 
-        .show-name {
-          font-size: 1.2rem;
+        .channel-badge-name {
+          font-size: 1rem;
           display: flex;
           align-items: center;
           color: $grey;
@@ -143,201 +129,219 @@
           }
         }
 
-        .show-details {
-          height: 50%;
-          width: 100%;
-          background-color: #051229;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+        // .show-details {
+        //   height: 50%;
+        //   width: 100%;
+        //   // background-color: #051229;
+        //   background: red;
+        //   display: flex;
+        //   align-items: center;
+        //   justify-content: space-between;
+        //   flex-direction: column;
+        //   color: white;
+        //   display: none;
+
+        //   @include screen-res(phone) {
+        //     display: none;
+        //   }
+
+        //   span {
+        //     width: 100%;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: space-evenly;
+        //     height: 50%;
+        //   }
+
+        //   strong {
+        //     font-size: 0.8rem;
+        //     font-weight: 600;
+        //     color: white;
+        //   }
+        //   a {
+        //     text-decoration: none;
+        //   }
+
+        //   h3 {
+        //     font-weight: 600;
+        //     font-size: 0.8rem;
+        //     color: $defaultRed;
+
+        //     &:hover,
+        //     .show-name:hover {
+        //       animation: zoom 1s infinite;
+        //       color: white;
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+
+  .shows-container {
+    height: 50vh;
+    text-align: left;
+    box-shadow: 5px 5px 5px $grey;
+    // background-color: green;
+    display: flex;
+    // align-content: space-between;
+    align-items: flex-start;
+    // justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 90%;
+
+    .show-title {
+      // color: lime;
+      font-size: 2rem;
+      padding: 10px;
+    }
+
+    .shows-wrapper {
+      // background-color: red;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%;
+      width: 90%;
+
+      .show-card {
+        border-radius: 6px;
+        height: 200px;
+        width: 250px;
+        overflow: hidden;
+        box-shadow: 2px 2px 15px 2px #333;
+        display: flex;
+        flex-direction: column;
+
+        @include screen-res(phone) {
           flex-direction: column;
-          color: white;
-          display: none;
+          flex: 1;
+        }
 
-          @include screen-res(phone) {
-            display: none;
-          }
+        @include screen-res(tablet) {
+          flex-direction: column;
+          height: 300px;
+        }
 
-          span {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 50%;
-          }
+        @include screen-res(desktop) {
+          // flex-direction: initial;
+        }
 
-          strong {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: white;
-          }
-          a {
-            text-decoration: none;
-          }
+        img {
+          background-color: $lightBlack;
+          transition: all ease-in-out 2s;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
 
-          h3 {
-            font-weight: 600;
-            font-size: 0.8rem;
-            color: $defaultRed;
+          // @include screen-res(phone) {
+          //   width: 100%;
+          //   height: 50%;
+          // }
 
-            &:hover,
-            .show-name:hover {
-              animation: zoom 1s infinite;
-              color: white;
-            }
-          }
+          // @include screen-res(tablet) {
+          //   width: 100%;
+          //   height: 50%;
+          // }
+
+          // @include screen-res(desktop) {
+          //   width: 100%;
+          //   height: 100%;
+          // }
         }
       }
-    }
-  }
-}
 
-.episodes-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-
-  @include screen-res(phone) {
-    width: 90%;
-    flex-direction: column;
-  }
-
-  @include screen-res(tablet) {
-    width: 50%;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  @include screen-res(desktop) {
-    height: 300px;
-    width: 600px;
-  }
-
-  .channel-episode {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    margin: 10px;
-    border-radius: 10px;
-    color: $lightBlack;
-    background-color: $lightGrey;
-    cursor: pointer;
-    height: 100%;
-
-    @include screen-res(phone) {
-      flex-direction: column;
-      flex: 1;
-    }
-
-    @include screen-res(tablet) {
-      flex-direction: column;
-      height: 400px;
-    }
-
-    @include screen-res(desktop) {
-      flex-direction: initial;
-    }
-
-    img {
-      background-color: $lightBlack;
-      transition: all ease-in-out 2s;
-
-      @include screen-res(phone) {
-        width: 100%;
-        height: 30%;
-        object-fit: cover;
-      }
-
-      @include screen-res(tablet) {
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-      }
-
-      @include screen-res(desktop) {
-        width: 45%;
+      .show-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         height: 100%;
-        object-fit: fill;
+        position: relative;
+        padding: 5px;
+
+        @include screen-res(phone) {
+          width: 90%;
+        }
+
+        .show-text {
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+
+          @include screen-res(phone) {
+            width: 100%;
+          }
+
+          @include screen-res(tablet) {
+            width: 100%;
+          }
+        }
+
+        h2 {
+          font-size: 0.8rem;
+          font-weight: 600;
+          width: 100%;
+          letter-spacing: 1px;
+          line-height: 20px;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 0.7rem;
+          font-weight: 500;
+          text-align: left;
+          padding: 10px;
+
+          @include screen-res(phone) {
+            visibility: hidden;
+            height: 60px;
+          }
+          @include screen-res(tablet) {
+            height: 80px;
+            line-height: 18px;
+            padding: 0px;
+            overflow: hidden;
+          }
+          @include screen-res(desktop) {
+            min-height: 40%;
+            line-height: 22px;
+          }
+        }
+
+        button {
+          color: white;
+          z-index: 10;
+          height: 40px;
+        }
+
+        .show-meta {
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          padding: 10px;
+          width: 100%;
+          font-size: 10px;
+        }
+        // }
       }
     }
-  }
-
-  .episode-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    position: relative;
-    padding: 5px;
-    width: 80%;
-
-    @include screen-res(phone) {
-      width: 90%;
-    }
-
-    .episode-text {
-      height: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-
-      @include screen-res(phone) {
-        width: 100%;
-      }
-
-      @include screen-res(tablet) {
-        width: 100%;
-      }
-    }
-
-    h2 {
-      font-size: 0.8rem;
-      font-weight: 600;
+    // }
+    .redirect-title {
+      font-size: 1rem;
       width: 100%;
-      letter-spacing: 1px;
-      line-height: 20px;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-size: 0.7rem;
+      padding: 10px;
       font-weight: 500;
-      text-align: left;
-      padding: 10px;
+      margin: 100px 0;
 
-      @include screen-res(phone) {
-        visibility: hidden;
-        height: 60px;
+      a {
+        color: $defaultBlue;
       }
-      @include screen-res(tablet) {
-        height: 80px;
-        line-height: 18px;
-        padding: 0px;
-        overflow: hidden;
-      }
-      @include screen-res(desktop) {
-        min-height: 40%;
-        line-height: 22px;
-      }
-    }
-
-    button {
-      color: white;
-      z-index: 10;
-      height: 40px;
-    }
-
-    .episode-meta {
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      padding: 10px;
-      width: 100%;
-      font-size: 10px;
     }
   }
 }

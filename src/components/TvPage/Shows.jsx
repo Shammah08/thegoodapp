@@ -1,25 +1,29 @@
-import { logos } from "../database";
-import ShowCards from "./ShowCards";
+import { logos, shows } from "../database";
+import ShowBadge from "./ShowBadge";
 // import ShowsWrapper from "./ShowsWrapper";
 
-const Shows = ({ setFilterTitle, setActiveWindow }) => {
-  const handleClick = (title) => {
-    setFilterTitle(title);
-
-    // Return to main window
-    setActiveWindow(true);
-  };
+const Shows = () => {
   return (
     <>
       {/* The Good TV Banner */}
-      <section className='channels-section' id='shows'>
-        <div className='banner'>
-          <img src={logos.goodBanner} alt='' />
+      <section className="channels-section" id="shows">
+        <div className="banner">
+          <img src={logos.goodBanner} alt="" />
         </div>
       </section>
 
-      {/* Channel Cards */}
-      <ShowCards handleClick={handleClick} />
+      {/* Channel Badges */}
+      <div className="channel-badge-container">
+        <div className="channel-badge-text">
+          <h2>Podcasts & Mixes</h2>
+        </div>
+
+        <section className="channel-badges" key={Math.random * 100}>
+          {shows.map((show) => {
+            return <ShowBadge show={show} />;
+          })}
+        </section>
+      </div>
     </>
   );
 };

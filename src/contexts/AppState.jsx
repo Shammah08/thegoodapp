@@ -11,7 +11,6 @@ const AppState = (props) => {
   };
 
   useEffect(() => {
-    console.log("Initial State: ", { ...initialState });
     const localState = localStorage.getItem("localState");
 
     if (localState) {
@@ -20,13 +19,11 @@ const AppState = (props) => {
       localStorage.setItem("localState", { ...initialState });
       setAppState({ ...initialState });
     }
-    console.log("App State: ", appState);
-    console.log("Local State: ", localState);
 
-    return () => {};
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const [state, dispatch] = useReducer(AppReducer, initialState);
+  const [state, dispatch] = useReducer(AppReducer, appState);
 
   const setNav = (route) => {
     dispatch({ type: "NAVIGATE", payload: route });
@@ -45,7 +42,8 @@ const AppState = (props) => {
         setNav,
         setIsAuth,
         setUserDetails,
-      }}>
+      }}
+    >
       {props.children}
     </AppContext.Provider>
   );

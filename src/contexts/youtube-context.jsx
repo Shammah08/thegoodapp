@@ -1,5 +1,5 @@
 import { createContext } from "react";
 
-const youtubeContext = createContext();
+const youtubeContext = createContext([]);
 
 export default youtubeContext;
