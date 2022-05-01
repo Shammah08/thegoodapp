@@ -7,22 +7,22 @@ import {
   FaFacebookF,
   FaGithub,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-const MemberProfile = ({ match }) => {
-  const urlId = parseInt(match.params.userid);
+const MemberProfile = () => {
+  const { userid } = useParams();
   const userProfile = team.filter((user) => {
-    return user.userid === urlId;
+    return user.userid === parseInt(userid);
   });
   return (
     <section className="user-profile-wrapper">
-      <Link to='/team' className='btn'>
+      <Link to="/team" className="btn">
         Go Back
       </Link>
       {userProfile.map((user) => {
         return (
-          <section className='user-profile' key={user.userid}>
-            <div className='user-bio'>
+          <section className="user-profile" key={user.userid}>
+            <div className="user-bio">
               <h2>{user.fullName}</h2>
               <h5>{user.title} at The Good Co.</h5>
               <p>
@@ -32,16 +32,17 @@ const MemberProfile = ({ match }) => {
                     user.username}
               </p>
             </div>
-            <div className='profile'>
+            <div className="profile">
               <img src={user.image} alt={user.fullName} />
               <h3>{user.username}</h3>
               <span>
                 {user.social.instagram ? (
                   <a
                     href={`https://www.instagram.com/${user.social.instagram} `}
-                    target='_blank'
-                    rel='noreferrer'>
-                    <FaInstagram className='icon' />
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaInstagram className="icon" />
                   </a>
                 ) : (
                   ""
@@ -50,9 +51,10 @@ const MemberProfile = ({ match }) => {
                 {user.social.linkedin ? (
                   <a
                     href={`https://www.linkedin.com/in/${user.social.linkedin} `}
-                    target='_blank'
-                    rel='noreferrer'>
-                    <FaLinkedinIn className='icon' />
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedinIn className="icon" />
                   </a>
                 ) : (
                   ""
@@ -60,9 +62,10 @@ const MemberProfile = ({ match }) => {
                 {user.social.twitter ? (
                   <a
                     href={`https://www.twitter.com/${user.social.twitter} `}
-                    target='_blank'
-                    rel='noreferrer'>
-                    <FaTwitter className='icon' />
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaTwitter className="icon" />
                   </a>
                 ) : (
                   ""
@@ -71,9 +74,10 @@ const MemberProfile = ({ match }) => {
                 {user.social.facebook ? (
                   <a
                     href={`https://www.facebook.com/${user.social.facebook} `}
-                    target='_blank'
-                    rel='noreferrer'>
-                    <FaFacebookF className='icon' />
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaFacebookF className="icon" />
                   </a>
                 ) : (
                   ""
@@ -82,9 +86,10 @@ const MemberProfile = ({ match }) => {
                 {user.social.github ? (
                   <a
                     href={`https://www.github.com/${user.social.github} `}
-                    target='_blank'
-                    rel='noreferrer'>
-                    <FaGithub className='icon' />
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub className="icon" />
                   </a>
                 ) : (
                   ""

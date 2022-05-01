@@ -28,8 +28,8 @@ const Header = () => {
 
   return (
     <header>
-      <Link to='/' className='logo'>
-        <img src={logos.logoBlue} alt='TGC_LOGO' />
+      <Link to="/" className="logo">
+        <img src={logos.logoBlue} alt="TGC_LOGO" />
       </Link>
 
       <nav className={mobileNav && "mobile-active"}>
@@ -43,7 +43,8 @@ const Header = () => {
                   linkState === link.route ? "nav-link active" : "nav-link"
                 }
                 key={link.url}
-                onClick={() => handleClick(link.route)}>
+                onClick={() => handleClick(link.route)}
+              >
                 {link.route}
               </a>
             );
@@ -55,7 +56,8 @@ const Header = () => {
                   linkState === link.route ? "nav-link active" : "nav-link"
                 }
                 key={link.url}
-                onClick={() => handleClick(link.route)}>
+                onClick={() => handleClick(link.route)}
+              >
                 {link.route}
               </Link>
             );
@@ -64,7 +66,7 @@ const Header = () => {
       </nav>
 
       {/* burger nav */}
-      <div className='burger-nav' onClick={() => setMobileNav(!mobileNav)}>
+      <div className="burger-nav" onClick={() => setMobileNav(!mobileNav)}>
         <span></span>
         <span></span>
         <span></span>
