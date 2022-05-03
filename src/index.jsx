@@ -5,14 +5,17 @@ import "./global.scss";
 import ProductState from "./contexts/ProductState";
 import AppState from "./contexts/AppState";
 import App from "./App";
+import YoutubeState from "./contexts/YoutubeState";
 
 ReactDOM.render(
   <React.StrictMode>
     <AppState>
       <BrowserRouter>
-        <ProductState>
-          <App />
-        </ProductState>
+        <YoutubeState>
+          <ProductState>
+            <App />
+          </ProductState>
+        </YoutubeState>
       </BrowserRouter>
     </AppState>
   </React.StrictMode>,

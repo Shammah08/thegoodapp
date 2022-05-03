@@ -14,7 +14,7 @@ import goodBanner from "../images/good-tv-banner.JPG";
 
 // Landing Sides
 import nairobi from "../images/nairobi.webp";
-import nairobi2 from "../images/nairobi_2.jpg";
+import nairobi2 from "../images/Deadpool_.webp";
 import skyline from "../images/Nairobi-Night-Skyline.jpg";
 import silverArrow from "../images/silver-arrow.webp";
 import laptop from "../images/laptop.webp";
@@ -24,6 +24,8 @@ import trail from "../images/forest.webp";
 
 // Team
 import GMoney from "../images/GMoney.jpg";
+import GMoney2 from "../images/G-Money-1.webp";
+
 import Andy from "../images/Andy.jpg";
 import Kevin from "../images/Kevin.jpg";
 import Michael from "../images/Michael.png";
@@ -97,7 +99,7 @@ export const landingTemplates = [
   {
     index: 1,
     image: nairobi,
-    title: "WE ARE THE GOOD COMPANY",
+    title: "WE ARE THE-GOOD COMPANY",
     desc: "a creative agency located in Nairobi, Kenya.",
     button: "About Us",
     startAnimation: true,
@@ -106,7 +108,7 @@ export const landingTemplates = [
   {
     index: 2,
     image: silverArrow,
-    title: "WE BUILD BRANDS",
+    title: "WE BUILD-BRANDS",
     desc: "We specialize in enhancing and building brand equity through tailored strategies & campaigns",
     button: "Learn More",
     startAnimation: "",
@@ -115,7 +117,7 @@ export const landingTemplates = [
   {
     index: 3,
     image: party,
-    title: "WE CREATE EXPERIENCES",
+    title: "WE CREATE-EXPERIENCES",
     desc: "We have over 20 years of event management experience. From concept to delivery, we have got you covered.",
     button: "Learn More",
     startAnimation: "",
@@ -123,17 +125,26 @@ export const landingTemplates = [
   },
   {
     index: 4,
+    image: GMoney2,
+    title: "WE ARE-THE INFLUENCE",
+    desc: "We have over 20 years of event management experience. From concept to delivery, we have got you covered.",
+    button: "Learn More",
+    startAnimation: "",
+    url: "tv",
+  },
+  {
+    index: 5,
     image: laptop,
-    title: "WE CREATE FOR THE WEB",
+    title: "WE CREATE-FOR THE WEB",
     desc: "We design and develop websites and mobile apps to achieve the specific declared goals set by our clients.",
     button: "Learn More",
     startAnimation: "",
     url: "#services",
   },
   {
-    index: 5,
+    index: 6,
     image: people,
-    title: "WE ARE GOOD COMPANY",
+    title: "WE ARE-GOOD COMPANY",
     desc: "After all you are the company you keep",
     button: "About Us",
     startAnimation: "",
@@ -141,11 +152,11 @@ export const landingTemplates = [
   },
 
   {
-    index: 6,
+    index: 7,
     image: nairobi2,
-    title: "WEBSITE BY Big O",
-    desc: " Made by Steve Shammah using the React JS. It a clone of the official website of the Good Company KE.",
-    button: " Shammah",
+    title: "WEBSITE-BY BIG O",
+    desc: " Made in JS by Steve Shammah.",
+    button: "More",
     startAnimation: "",
     url: "team/11",
   },
@@ -176,7 +187,7 @@ export const shows = [
     hosts: [{ name: "Dj Grauchi", id: 5 }],
     date: "Saturday @ 9am",
     cover: wakeUpCall,
-    logo: "",
+    logo: wakeUpCall,
     tagline: "Do Da Ting",
   },
   {
@@ -186,15 +197,15 @@ export const shows = [
     hosts: [{ name: "Dj Grauchi", id: 5 }],
     date: "Friday @ 10pm",
     cover: lockdownSession,
-    logo: "",
+    logo: lockdownSession,
     tagline: "Lockdown Session In Session",
   },
   {
     id: "selfmade",
     category: "podcast",
     title: "Self Made ",
-    hosts: [{ name: "Lyrical Jumper", id: "" }],
-    date: "Wednesday @ 12pm",
+    hosts: [{ name: "G Money", id: 1 }],
+    date: "Wednesday",
     cover: GMoney,
     logo: GMoney,
     tagline: "Self Made",
@@ -205,8 +216,8 @@ export const shows = [
     title: "The Truth ",
     hosts: [{ name: "G Money", id: 1 }],
     date: "Thursday @ 1pm",
-    cover: GMoney,
-    logo: GMoney,
+    cover: GMoney2,
+    logo: GMoney2,
     tagline: "The Truth",
   },
   {
@@ -217,9 +228,9 @@ export const shows = [
       { name: "Quellie", id: 10 },
       { name: "Ashley", id: 9 },
     ],
-    date: "Monday @ 10am",
+    date: "Wednesday",
     cover: theCookBook,
-    logo: "",
+    logo: theCookBook,
     tagline: "Queshley",
   },
   {
@@ -639,16 +650,16 @@ export const news = [
     id: 10,
     title: "4 Reasons Why UX Design is Good FOr Business",
     datePosted: ["12", "02", "2022"],
-    author: "Kevin Okeyo",
+    author: "TGC",
     content:
       "Bringing more than 25 years of international experience to the Good Company is something Anthony Gray aka G Money does with aplomb! Having been an integral part of the radio and music industry in the UK, his decade of working in Kenya has given him a unique perspective into what works for the local market. As a media brand himself, he has worked with major local and international brands from Safaricom to Ciroc he has brought his know how to the fore in all his endeavors. As the Head of Presenters of 103.5 Homeboyz Radio, he has used his knowledge to help shape the sound of Nairobi. Whether it’s dropping jams in the hottest clubs or training the next generation of presenters, G Money has always had his finger on the pulse of the next trend. G Money has also had a hand in some of the biggest events in Kenya, whether it’s concert management or club events, his knowledge of event management is highly sought after and he recently works on the hugely successful Chronixx event and most recently Jameson Live. The only question left for us to ask him is “when do you sleep”?",
-    image: GMoney,
+    image: blankLaptop,
   },
   {
     id: 11,
     title: "Brand Equity",
     datePosted: ["07", "02", "2022"],
-    author: "Kevin Okeyo",
+    author: "TGC",
     content:
       "Bringing more than 25 years of international experience to the Good Company is something Anthony Gray aka G Money does with aplomb! Having been an integral part of the radio and music industry in the UK, his decade of working in Kenya has given him a unique perspective into what works for the local market. As a media brand himself, he has worked with major local and international brands from Safaricom to Ciroc he has brought his know how to the fore in all his endeavors. As the Head of Presenters of 103.5 Homeboyz Radio, he has used his knowledge to help shape the sound of Nairobi. Whether it’s dropping jams in the hottest clubs or training the next generation of presenters, G Money has always had his finger on the pulse of the next trend. G Money has also had a hand in some of the biggest events in Kenya, whether it’s concert management or club events, his knowledge of event management is highly sought after and he recently works on the hugely successful Chronixx event and most recently Jameson Live. The only question left for us to ask him is “when do you sleep”?",
     image: GMoney,
@@ -657,10 +668,10 @@ export const news = [
     id: 12,
     title: "What is Brand Equity and Why Is It Valuable In Business?",
     datePosted: ["12", "02", "2022"],
-    author: "Kevin Okeyo",
+    author: "TGC",
     content:
       "Bringing more than 25 years of international experience to the Good Company is something Anthony Gray aka G Money does with aplomb! Having been an integral part of the radio and music industry in the UK, his decade of working in Kenya has given him a unique perspective into what works for the local market. As a media brand himself, he has worked with major local and international brands from Safaricom to Ciroc he has brought his know how to the fore in all his endeavors. As the Head of Presenters of 103.5 Homeboyz Radio, he has used his knowledge to help shape the sound of Nairobi. Whether it’s dropping jams in the hottest clubs or training the next generation of presenters, G Money has always had his finger on the pulse of the next trend. G Money has also had a hand in some of the biggest events in Kenya, whether it’s concert management or club events, his knowledge of event management is highly sought after and he recently works on the hugely successful Chronixx event and most recently Jameson Live. The only question left for us to ask him is “when do you sleep”?",
-    image: GMoney,
+    image: micsAreOpenSquad,
   },
 ];
 

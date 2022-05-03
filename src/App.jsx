@@ -11,6 +11,7 @@ import NewsPage from "./components/NewsPage/NewsPage";
 import NewsArticle from "./components/NewsPage/NewsArticle";
 import Header from "./components/Header/Header";
 import MemberProfile from "./components/TeamPage/MemberProfile";
+import Channel from "./components/TvPage/Channel";
 
 const App = () => {
   return (
@@ -20,13 +21,13 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
 
         <Route path="/walk" element={<WalkPage />} />
-        <Route path="/team" element={<Team />} exact />
+        <Route path="/team" element={<Team />} />
         <Route path="team/:userid" element={<MemberProfile />} />
         <Route path="tv" element={<Tv />} />
+        <Route path="/tv/channel/:channelId" element={<Channel />} />
+        <Route path="/tv/channel/:channelId/:videoId" element={<Channel />} />
         <Route path="news" element={<NewsPage />} />
         <Route path="news/:articleId" element={<NewsArticle />} />
-
-        {/* Enclosed in products context state */}
 
         <Route path="shop" element={<Shop />} />
         {/*  */}

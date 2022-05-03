@@ -1,12 +1,12 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import YoutubeContext from "./youtube-context";
 import YTPage1 from "../yt.res.pg1.json";
 
-// import YTPage2 from "../yt.res.pg1.json";
-// import YTPage3 from "../yt.res.pg1.json";
-// import YTPage4 from "../yt.res.pg1.json";
-// import YTPage5 from "../yt.res.pg1.json";
-// import YTPage6 from "../yt.res.pg1.json";
+import YTPage2 from "../yt.res.pg2.json";
+import YTPage3 from "../yt.res.pg3.json";
+import YTPage4 from "../yt.res.pg4.json";
+import YTPage5 from "../yt.res.pg5.json";
+import YTPage6 from "../yt.res.pg6.json";
 
 // youtube API config
 const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; // SR-Key
@@ -16,14 +16,27 @@ const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelI
 
 const YoutubeState = (props) => {
   const [videos, setVideos] = useState([]);
+  const allVideos = useMemo(() => {
+    const data = [
+      ...YTPage1.items,
+      ...YTPage2.items,
+      ...YTPage3.items,
+      ...YTPage4.items,
+      ...YTPage5.items,
+      ...YTPage6.items,
+    ];
+
+    return data;
+  }, []);
 
   const fetchLocalData = useCallback(() => {
-    console.log("Fetching local videos");
-    setVideos(YTPage1["items"]);
+    console.log("Setting local videos...");
+
+    setVideos(allVideos);
   }, []);
 
   const fetchData = useCallback(async () => {
-    let response = await fetch(url);
+    let response = await fetch("url" + "yt");
     if (!response.ok) {
       console.log(`HTTP error! status: ${response.status}`);
       return fetchLocalData();
@@ -37,6 +50,7 @@ const YoutubeState = (props) => {
   useEffect(() => {
     fetchData().catch((error) => {
       console.log("The Following Error Occurred (YT-Func): ", error.message);
+      fetchLocalData();
       return;
     });
 
