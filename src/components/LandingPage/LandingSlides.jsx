@@ -1,4 +1,4 @@
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { useState, useEffect } from "react";
 import { landingTemplates } from "../database";
 
@@ -8,7 +8,7 @@ const LandingSlides = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   //  transition effect
   useEffect(() => {
-    const timeRemaining = "15000";
+    const timeRemaining = "7000";
     const timeout = setInterval(() => {
       handleClick("right");
     }, timeRemaining);
@@ -28,20 +28,21 @@ const LandingSlides = () => {
   };
 
   return (
-    <section className='landing-section' id='home'>
+    <section className="landing-section" id="home">
       <div
-        className='slider'
-        style={{ transform: `translateX(-${activeSlide * 100}vw)` }}>
+        className="slider"
+        style={{ transform: `translateX(-${activeSlide * 100}vw)` }}
+      >
         {landingTemplates.map((slide) => (
           <Slide slide={slide} key={Math.random() * 1000} />
         ))}
       </div>
-      <FaChevronRight
-        className='arrow right-arrow'
+      <RiArrowRightSLine
+        className="arrow right-arrow"
         onClick={() => handleClick("right")}
       />
-      <FaChevronLeft
-        className='arrow left-arrow'
+      <RiArrowLeftSLine
+        className="arrow left-arrow"
         onClick={() => handleClick("left")}
       />
     </section>
