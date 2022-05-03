@@ -8,12 +8,22 @@ import "./header.scss";
 const Header = () => {
   const { activeUser, setNav } = useContext(AppContext);
   const [linkState, setLinkState] = useState("");
+  const [colorChange, setColorChange] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
   useEffect(() => {
     setLinkState(activeUser.activeLink);
-    return () => {};
+
     // eslint-disable-next-line
   }, []);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 600) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
 
   const handleClick = (link) => {
     // set active link in state
@@ -27,7 +37,11 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header
+      style={{
+        background: colorChange && "white",
+      }}
+    >
       <Link to="/" className="logo">
         <img src={logos.logoBlue} alt="TGC_LOGO" />
       </Link>
@@ -42,6 +56,7 @@ const Header = () => {
                 className={
                   linkState === link.route ? "nav-link active" : "nav-link"
                 }
+                style={{ color: colorChange && "black" }}
                 key={link.url}
                 onClick={() => handleClick(link.route)}
               >
@@ -55,6 +70,7 @@ const Header = () => {
                 className={
                   linkState === link.route ? "nav-link active" : "nav-link"
                 }
+                style={{ color: colorChange && "black" }}
                 key={link.url}
                 onClick={() => handleClick(link.route)}
               >
