@@ -1,15 +1,16 @@
 import { useContext, useEffect, useState } from "react";
-import AppContext from "../../contexts/app-context";
+import { appContext } from "../../contexts/AppState";
 import { logos, navLinks } from "../database";
 import { Link } from "react-router-dom";
 
 import "./header.scss";
 
 const Header = () => {
-  const { activeUser, setNav } = useContext(AppContext);
+  const { activeUser, setNav } = useContext(appContext);
   const [linkState, setLinkState] = useState("");
   const [colorChange, setColorChange] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
+
   useEffect(() => {
     setLinkState(activeUser.activeLink);
 

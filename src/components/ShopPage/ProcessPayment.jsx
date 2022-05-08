@@ -1,17 +1,16 @@
 import { useContext } from "react";
-import CartContext from "../../contexts/cart-context";
-import AppContext from "../../contexts/app-context";
+import { cartContext } from "../../contexts/CartState";
+import { appContext } from "../../contexts/AppState";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
 const ProcessPayment = ({ setUserOpen, active, setactive }) => {
   // user details from context
-  const { activeUser } = useContext(AppContext);
-  console.log({ activeUser });
+
+  const { activeUser } = useContext(appContext);
   const { auth } = activeUser;
   const { username, email, phone } = activeUser.userDetails;
 
-  // cart items from context
-  const { cart } = useContext(CartContext);
+  const { cart } = useContext(cartContext);
 
   // get individual prices
   const prices = cart.map((item) => {

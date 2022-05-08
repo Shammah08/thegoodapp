@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.form-container {
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //   padding: 10px;
+  background: whitesmoke;
+
+  .form-wrapper {
+    margin: auto;
+    flex: 1;
+    // width: 40%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // .form-text {
+    //   display: flex;
+    //   justify-content: center;
+
+    h3 {
+      font-size: 2rem;
+      text-align: left;
+      // background: red;
+      // align-self: flex-start;
+      margin: 20px;
+      color: $darkBlue;
+    }
+    // }
+
+    form {
+      background: white;
+      color: black;
+      height: 100%;
+      box-shadow: 2px 2px 20px 2px #333;
+      border-radius: 10px;
+      width: 90%;
+      padding: 20px;
+      input {
+        background: $grey;
+        color: $lightBlack;
+        border-radius: 6px;
+        padding: 10px;
+        margin: 10px;
+        outline: none;
+        height: 2.2rem;
+        width: 80%;
+        border: none;
+        // flex: 1;
+      }
+
+      .button-group {
+        display: flex;
+        align-items: center;
+        flex: 2;
+
+        .btn {
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+
+          &:nth-child(2) {
+            // justify-content: space-between;
+            background: $defaultRed;
+            // padding: 20px;
+          }
+
+          .icon {
+            font-size: 1.4rem;
+            color: $defaultBlue;
+            margin-right: 5px;
+            // align-self: flex-start;
+            // background: red;
+          }
+        }
+      }
+    }
+
+    .form-footer {
+      font-size: 0.8rem;
+
+      a {
+        color: $defaultBlue;
+      }
+    }
+  }
+  .auth-poster {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    img {
+      object-fit: cover;
+      // height: 50%;
+      // width: 50%;
+    }
+  }
+}

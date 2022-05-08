@@ -400,7 +400,7 @@ export const team = [
   {
     userid: 11,
     username: "Shammah",
-    fullName: "Shammah Odhiambo",
+    fullName: "Shammah Ranks",
     title: "Big O",
     bio: "I'm not saying I am spiderman but nobody has ever seen me and spiderman in a room together. Web developer behind the application.",
     image: Shammah,

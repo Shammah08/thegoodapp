@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import appContext from "../../contexts/app-context";
+import { appContext } from "../../contexts/AppState";
 
 const UserForm = ({ userOpen, setUserOpen }) => {
   const [details, setDetails] = useState({});
@@ -18,10 +18,10 @@ const UserForm = ({ userOpen, setUserOpen }) => {
         <span>
           <h5>Full name: </h5>
           <input
-            type='text'
-            name='username'
-            className='form-control'
-            placeholder='Username'
+            type="text"
+            name="username"
+            className="form-control"
+            placeholder="Username"
             onChange={(e) => {
               return setDetails({ ...details, username: e.target.value });
             }}
@@ -31,10 +31,10 @@ const UserForm = ({ userOpen, setUserOpen }) => {
         <span>
           <h5>Phone: </h5>
           <input
-            type='text'
-            name='phone'
-            className='form-control'
-            placeholder='Phone Number'
+            type="text"
+            name="phone"
+            className="form-control"
+            placeholder="Phone Number"
             onChange={(e) => {
               return setDetails({
                 ...details,
@@ -47,10 +47,10 @@ const UserForm = ({ userOpen, setUserOpen }) => {
         <span>
           <h5>Email: </h5>
           <input
-            type='text'
-            className='form-control'
-            placeholder='Email'
-            name='email'
+            type="text"
+            className="form-control"
+            placeholder="Email"
+            name="email"
             onChange={(e) => {
               return setDetails({
                 ...details,
@@ -62,12 +62,13 @@ const UserForm = ({ userOpen, setUserOpen }) => {
         <span>
           {" "}
           <button
-            type='button'
-            className='btn'
-            onClick={() => setUserOpen(!userOpen)}>
+            type="button"
+            className="btn"
+            onClick={() => setUserOpen(!userOpen)}
+          >
             Cancel
           </button>
-          <button type='button' className='btn' onClick={handleClick}>
+          <button type="button" className="btn" onClick={handleClick}>
             Submit
           </button>
         </span>

@@ -12,7 +12,7 @@ import Footer from "../Footer/Footer";
 import "./tv.scss";
 
 const Channel = () => {
-  const { channelId, videoId } = useParams("channelId");
+  const { channelId, videoId } = useParams();
   const [displayVideos, setDisplayVideos] = useState([]);
   const [activeTab, setActiveTab] = useState("Home");
   const [activeVideo, setActiveVideo] = useState({});

@@ -1,5 +1,11 @@
-import { useEffect, useState, useCallback, useMemo } from "react";
-import YoutubeContext from "./youtube-context";
+import {
+  useEffect,
+  useState,
+  useCallback,
+  createContext,
+  useMemo,
+} from "react";
+
 import YTPage1 from "../yt.res.pg1.json";
 
 import YTPage2 from "../yt.res.pg2.json";
@@ -14,6 +20,7 @@ const channelID = process.env.REACT_APP_CHANNEL_ID; //TGC
 const videoCount = 50;
 const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${videoCount}`;
 
+export const youtubeContext = createContext();
 const YoutubeState = (props) => {
   const [videos, setVideos] = useState([]);
   const allVideos = useMemo(() => {
@@ -58,13 +65,13 @@ const YoutubeState = (props) => {
   }, []);
 
   return (
-    <YoutubeContext.Provider
+    <youtubeContext.Provider
       value={{
         allVideos: videos,
       }}
     >
       {props.children}
-    </YoutubeContext.Provider>
+    </youtubeContext.Provider>
   );
 };
 

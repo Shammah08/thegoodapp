@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 import { landingTemplates } from "../database";
 
 import Slide from "./Slide";
+import Loader from "../Loader/Loader";
 
 const LandingSlides = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+
   //  transition effect
   useEffect(() => {
     const timeRemaining = "7000";
@@ -33,9 +35,13 @@ const LandingSlides = () => {
         className="slider"
         style={{ transform: `translateX(-${activeSlide * 100}vw)` }}
       >
-        {landingTemplates.map((slide) => (
-          <Slide slide={slide} key={Math.random() * 1000} />
-        ))}
+        {landingTemplates.map((slide) =>
+          slide ? (
+            <Slide slide={slide} key={Math.random() * 1000} />
+          ) : (
+            <Loader />
+          )
+        )}
       </div>
       <RiArrowRightSLine
         className="arrow right-arrow"

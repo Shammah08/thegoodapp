@@ -21,7 +21,13 @@ const ShowsContainer = ({ show }) => {
           {displayVideos.length > 1 &&
             displayVideos.map((video, index) => {
               if (index < 4) {
-                return <ShowCard episode={video} show={show} key={video.id + index} />;
+                return (
+                  <ShowCard
+                    episode={video}
+                    show={show}
+                    key={video.id + index}
+                  />
+                );
               }
               return <></>;
             })}

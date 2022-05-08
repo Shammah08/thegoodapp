@@ -18,9 +18,9 @@ const Shows = () => {
           <h2>Podcasts & Mixes</h2>
         </div>
 
-        <section className="channel-badges" key={Math.random * 100}>
+        <section className="channel-badges">
           {shows.map((show) => {
-            return <ShowBadge show={show} />;
+            return <ShowBadge show={show} key={Math.random() * 1000} />;
           })}
         </section>
       </div>
