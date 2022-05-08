@@ -4,6 +4,7 @@ import {
   FaTwitter,
   FaYoutube,
   FaFacebookF,
+  FaSpotify,
 } from "react-icons/fa";
 import { footerDetails } from "../database";
 import { TopButton } from "../Button";
@@ -11,8 +12,8 @@ import "./footer.scss";
 
 const Footer = () => {
   return (
-    <footer id='contacts'>
-      <div className='footer-text'>
+    <footer id="contacts">
+      <div className="footer-text">
         <h1>Get Connected.</h1>
         <hr />
         <p>
@@ -23,38 +24,48 @@ const Footer = () => {
       <section>
         {footerDetails.map((detail) => {
           return (
-            <div key={detail.id} className='footer-detail'>
+            <div key={detail.id} className="footer-detail">
               <h3> {detail.title}</h3>
               <p>{detail.text}</p>
             </div>
           );
         })}
       </section>
-      <div className='social-links-container'>
-        <ul className='social-links'>
+      <div className="social-links-container">
+        <ul className="social-links">
           <a
-            href='https://www.youtube.com/channel/UC7h4tUtdH0L06sDZVmBMc4Q'
-            target='_blank'
-            rel='noreferrer'>
-            <FaYoutube className='icon' />
-          </a>
-          <a
-            href='https://ke.linkedin.com/company/the-good-company-ke'
-            target='_blank'
-            rel='noreferrer'>
-            <FaLinkedinIn className='icon' />
+            href="https://www.youtube.com/channel/UC7h4tUtdH0L06sDZVmBMc4Q"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaYoutube className="icon" />
           </a>
           <a
-            href='https://www.instagram.com/thegoodcompanyke/?hl=en'
-            target='_blank'
-            rel='noreferrer'>
-            <FaInstagram className='icon' />
+            href="https://open.spotify.com/show/6aU9hxLKdMIEzBfQ2IhYt6"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaSpotify className="icon" />
           </a>
-          <a href='/#'>
-            <FaTwitter className='icon' />
+          <a
+            href="https://ke.linkedin.com/company/the-good-company-ke"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedinIn className="icon" />
           </a>
-          <a href='/#'>
-            <FaFacebookF className='icon' />
+          <a
+            href="https://www.instagram.com/thegoodcompanyke/?hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaInstagram className="icon" />
+          </a>
+          <a href="/#">
+            <FaTwitter className="icon" />
+          </a>
+          <a href="/#">
+            <FaFacebookF className="icon" />
           </a>
         </ul>
       </div>

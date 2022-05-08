@@ -1,11 +1,10 @@
 import { useState, useEffect, useContext } from "react";
-import youtubeContext from "../../contexts/youtube-context";
+import { youtubeContext } from "../../contexts/YoutubeState";
 
 const useYoutube = (showName) => {
   const [filteredVideos, setFilteredVideos] = useState([]);
   const { allVideos } = useContext(youtubeContext);
 
-  
   const data = allVideos?.filter((video) => {
     const title = video.snippet.title.slice(0, 10);
 

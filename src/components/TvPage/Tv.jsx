@@ -1,4 +1,4 @@
-import "./Tv.scss";
+import "./tv.scss";
 
 import Shows from "./Shows";
 

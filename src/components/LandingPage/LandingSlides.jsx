@@ -3,9 +3,12 @@ import { useState, useEffect } from "react";
 import { landingTemplates } from "../database";
 
 import Slide from "./Slide";
+import Loader from "../Loader/Loader";
 
 const LandingSlides = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [loading, setLoading] = useState(true);
+
   //  transition effect
   useEffect(() => {
     const timeRemaining = "15000";
@@ -28,20 +31,25 @@ const LandingSlides = () => {
   };
 
   return (
-    <section className='landing-section' id='home'>
+    <section className="landing-section" id="home">
       <div
-        className='slider'
-        style={{ transform: `translateX(-${activeSlide * 100}vw)` }}>
-        {landingTemplates.map((slide) => (
-          <Slide slide={slide} key={Math.random() * 1000} />
-        ))}
+        className="slider"
+        style={{ transform: `translateX(-${activeSlide * 100}vw)` }}
+      >
+        {landingTemplates.map((slide) =>
+          slide ? (
+            <Slide slide={slide} key={Math.random() * 1000} />
+          ) : (
+            <Loader />
+          )
+        )}
       </div>
       <FaChevronRight
-        className='arrow right-arrow'
+        className="arrow right-arrow"
         onClick={() => handleClick("right")}
       />
       <FaChevronLeft
-        className='arrow left-arrow'
+        className="arrow left-arrow"
         onClick={() => handleClick("left")}
       />
     </section>

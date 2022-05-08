@@ -2,16 +2,16 @@ import ProcessPayment from "./ProcessPayment";
 import UserForm from "./UserForm";
 import CartItem from "./CartItem";
 import { useState, useContext } from "react";
-import CartContext from "../../contexts/cart-context";
+import { cartContext } from "../../contexts/CartState";
 
 const Cart = ({ active, setactive }) => {
   const [userFormOpen, setUserFormOpen] = useState(false);
-  const { cart } = useContext(CartContext);
+  const { cart } = useContext(cartContext);
 
   return (
-    <section className='cart-section'>
-      <div className='cart-items'>
-        <span className='cart-intro'>
+    <section className="cart-section">
+      <div className="cart-items">
+        <span className="cart-intro">
           <h1>Cart</h1>
           <h5>Price</h5>
         </span>

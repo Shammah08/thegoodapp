@@ -1,7 +1,9 @@
-import { useReducer } from "react";
+import { useReducer, createContext } from "react";
 import cartReducer from "../reducers/CartReducer";
-import CartContext from "./cart-context";
+
 import { products } from "../components/database";
+
+export const cartContext = createContext();
 
 const CartState = (props) => {
   const initialState = {
@@ -21,10 +23,11 @@ const CartState = (props) => {
     dispatch({ type: "REDUCE ITEM", payload: itemId });
   };
   return (
-    <CartContext.Provider
-      value={{ cart: state.cart, addItem, deleteItem, reduceItem }}>
+    <cartContext.Provider
+      value={{ cart: state.cart, addItem, deleteItem, reduceItem }}
+    >
       {props.children}
-    </CartContext.Provider>
+    </cartContext.Provider>
   );
 };
 

@@ -1,16 +1,15 @@
 import { useContext } from "react";
-import CartContext from "../../contexts/cart-context";
-import AppContext from "../../contexts/app-context";
+import { cartContext } from "../../contexts/CartState";
+import { appContext } from "../../contexts/AppState";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
 const ProcessPayment = ({ setUserOpen, active, setactive }) => {
   // user details from context
-  const { activeUser } = useContext(AppContext);
+  const { activeUser } = useContext(appContext);
   const { auth } = activeUser;
   const { username, email, phone } = activeUser.userDetails;
 
-  // cart items from context
-  const { cart } = useContext(CartContext);
+  const { cart } = useContext(cartContext);
 
   // get individual prices
   const prices = cart.map((item) => {
@@ -56,7 +55,9 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
           console.log(response);
           closePaymentModal(); // this will close the modal programmatically
         },
-        onClose: () => {},
+        onClose: () => {
+          
+        },
       });
     } else {
       setUserOpen(true);
@@ -67,8 +68,8 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
     <>
       {/* Check if cart is empty */}
       {cart.length > 0 ? (
-        <div className='checkout-container'>
-          <div className='order-totals'>
+        <div className="checkout-container">
+          <div className="order-totals">
             <span>
               <h4>Items: </h4>
               <i>{cart.length}</i>
@@ -80,12 +81,12 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
           </div>
           {/* check if user is authenticated and email is present */}
           {auth && email ? (
-            <button className='btn' onClick={handleClick}>
+            <button className="btn" onClick={handleClick}>
               Checkout
             </button>
           ) : (
             <>
-              <button className='btn auth' onClick={handleClick}>
+              <button className="btn auth" onClick={handleClick}>
                 Proceed
               </button>
               <br />
@@ -94,7 +95,7 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
           )}
         </div>
       ) : (
-        <div className='empty-cart'>
+        <div className="empty-cart">
           <h2>No Items in the cart.</h2>
           <strong onClick={() => setactive(!active)}>Continue Shopping</strong>
         </div>
