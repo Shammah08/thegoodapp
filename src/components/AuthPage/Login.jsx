@@ -1,6 +1,6 @@
 import { logos } from "../database";
 import Footer from "../Footer/Footer";
-import { useState, useCallback, useMemo, useEffect, useRef } from "react";
+import { useState, useCallback, useRef } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { signInWithEmailAndPassword } from "firebase/auth";
 

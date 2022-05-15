@@ -2,12 +2,17 @@
 
 .loader-container {
   height: calc(100vh - 110px);
-  background: whitesmoke;
+
+  background: none;
   width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
 
   .loader {
     width: 48px;

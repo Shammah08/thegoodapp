@@ -722,6 +722,8 @@
         }
         .about-wrapper {
           flex: 1;
+          display: flex;
+          flex-direction: column;
 
           h2 {
             font-size: 2.4rem;
@@ -733,15 +735,23 @@
             flex-direction: column;
             align-items: center;
 
-            p {
+            .tagline {
               line-height: 40px;
               font-size: 1rem;
             }
             img {
-              height: 10rem;
-              width: 10rem;
+              height: 8rem;
+              width: 8rem;
               border-radius: 50%;
               object-fit: cover;
+            }
+
+            .about {
+              width: 90%;
+              font-size: 1rem;
+              line-height: 30px;
+
+              padding: 5px;
             }
             .hosts {
               margin: auto;
@@ -773,8 +783,8 @@
   .more-channels-container {
     padding: 20px;
     margin-top: 20px;
-    background: white;
-    height: 50vh;
+    background: $lightGrey;
+    height: 60vh;
     display: flex;
     flex-direction: column;
 
@@ -795,14 +805,16 @@
       flex-wrap: wrap;
 
       .channel-tag {
-        background: $lightGrey;
+        background: whitesmoke;
         height: 100px;
         width: 270px;
         display: flex;
         align-items: center;
-        margin: 10px;
+        margin: 20px;
         color: $lightBlack;
         border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
 
         &:hover {
           color: $lightBlack;
@@ -825,16 +837,17 @@
           width: 100%;
           padding: 5px;
 
-          a {
+          button {
             width: 60px;
             padding: 5px;
             background: $darkBlue;
+            border: none;
+            outline: none;
             color: white;
-            text-decoration: none;
             // color: $defaultBlue;
             font-size: 0.8rem;
-            border-radius: 15px;
-            align-self: center;
+            border-radius: 12px;
+            align-self: flex-end;
           }
         }
       }

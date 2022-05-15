@@ -7,6 +7,7 @@ import Loader from "../Loader/Loader";
 
 const LandingSlides = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [loading, setLoading] = useState(false);
 
   //  transition effect
   useEffect(() => {
@@ -20,6 +21,8 @@ const LandingSlides = () => {
   });
 
   const handleClick = (way) => {
+    setLoading(true);
+
     way === "left"
       ? setActiveSlide(
           activeSlide > 0 ? activeSlide - 1 : landingTemplates.length - 1
@@ -27,21 +30,22 @@ const LandingSlides = () => {
       : setActiveSlide(
           activeSlide < landingTemplates.length - 1 ? activeSlide + 1 : 0
         );
+    setLoading(false);
   };
 
   return (
     <section className="landing-section" id="home">
+      {loading && <Loader />}
+
       <div
         className="slider"
         style={{ transform: `translateX(-${activeSlide * 100}vw)` }}
       >
-        {landingTemplates.map((slide) =>
-          slide ? (
+        {landingTemplates.map((slide) => (
+          <>
             <Slide slide={slide} key={Math.random() * 1000} />
-          ) : (
-            <Loader />
-          )
-        )}
+          </>
+        ))}
       </div>
       <RiArrowRightSLine
         className="arrow right-arrow"

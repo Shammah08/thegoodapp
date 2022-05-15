@@ -1,5 +1,3 @@
-import React from "react";
-
 const About = ({ tab, channel }) => {
   return (
     <div
@@ -13,16 +11,21 @@ const About = ({ tab, channel }) => {
       <div className="about-wrapper">
         <h2>{channel.title}</h2>
         <div className="channel-info">
+          <img src={channel.logo} alt="" />
           <p className="tagline">{channel.tagline}</p>
 
-          <img src={channel.logo} alt="" />
-          <i>{channel.date}</i>
+          <p className="about">{channel.about}</p>
 
           <div className="hosts">
             {channel.hosts.map((host) => {
-              return <a href={`/team/${host.id}`}>{host.name} </a>;
+              return (
+                <a href={`/team/${host.id}`} key={host + Math.random() * 1000}>
+                  {host.name}{" "}
+                </a>
+              );
             })}
           </div>
+          <strong>{channel.date}</strong>
         </div>
       </div>
     </div>

@@ -1,0 +1,1713 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "smMZp-Z6GP_zgSGcETruWIjW4d0",
+  "nextPageToken": "CPoBEAA",
+  "prevPageToken": "CMgBEAE",
+  "regionCode": "KE",
+  "pageInfo": {
+    "totalResults": 329,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "PQqwyw5xjyzf16wMEMjmR9nDy-c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "O4uGX7xYcMg"
+      },
+      "snippet": {
+        "publishedAt": "2021-03-17T07:00:19Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Banter #3 - G Money&#39;s Back!",
+        "description": "Sometimes the funniest conversations take place BEFORE the Mics Are Open, on this edition of Banter, G Money talks about his ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/O4uGX7xYcMg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/O4uGX7xYcMg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/O4uGX7xYcMg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-17T07:00:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "o1vVmZomzzK0bI5e4CSoBBnffcU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "qCW3Qg3LhdQ"
+      },
+      "snippet": {
+        "publishedAt": "2021-03-16T07:00:15Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Last Man Standing - Episode 3",
+        "description": "What is the one question that you could never answer? Join Andy as he quizzes the ladies! When THAT question is asked, one ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qCW3Qg3LhdQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qCW3Qg3LhdQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qCW3Qg3LhdQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-16T07:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "neItlM0lqu1fQ6Hl9CrbyNUW07U",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "LMY5eb5gFYI"
+      },
+      "snippet": {
+        "publishedAt": "2021-03-13T06:00:18Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi Episode 13 #Banger",
+        "description": "Hit after Hit.. Its Bangers!! Join @Grauchi for a journey into sound, every Saturday at 9am..",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LMY5eb5gFYI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LMY5eb5gFYI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LMY5eb5gFYI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-13T06:00:18Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "xlHAfttGaI_VJK4AeymYITQ9o44",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "X0XhGLWKABM"
+      },
+      "snippet": {
+        "publishedAt": "2021-03-12T07:00:16Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #98 - If You Smash My Ex. Do It On The Low Low",
+        "description": "G is back this week with tales of falling in love while in hospital after being served tea and cake at 10 pm! The lads move from that ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/X0XhGLWKABM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/X0XhGLWKABM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/X0XhGLWKABM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-12T07:00:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "W68QIy_sTaOVIomUKBpBkoEYkpo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_zEAatc4HWw"
+      },
+      "snippet": {
+        "publishedAt": "2021-03-06T06:00:30Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi Episode 12 #ActionPak",
+        "description": "We are action packed... Join @Grauchi for a journey into sound, every Saturday at 9am..",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_zEAatc4HWw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_zEAatc4HWw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_zEAatc4HWw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-06T06:00:30Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "HwDl23MCLKna_srm_ZIVIXmU1j0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "iix5aBcqepA"
+      },
+      "snippet": {
+        "publishedAt": "2021-03-05T07:00:15Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #97 You&#39;ll Never Guess Who&#39;s Getting The Vaccine First",
+        "description": "On a Wide ranging pod today, Calvin and Andy dip into a myriad of Topics. From The Vaccine allocation, to an open discussion of ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iix5aBcqepA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iix5aBcqepA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iix5aBcqepA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-05T07:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "HMN1-mCzNNOLNF8CCGOwYkXdAJE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "bR9y5cLH0KY"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-27T06:00:27Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi Episode 11 #Monster",
+        "description": "We are the Monsters you made... Join @Grauchi for a journey into sound, every Saturday at 9am..",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bR9y5cLH0KY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bR9y5cLH0KY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bR9y5cLH0KY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-27T06:00:27Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "X823AldXUom74WfQOqgA3ZAhito",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "CsW0GCd8JTE"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-26T07:00:14Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #96 - Just Vibes and Inshallah",
+        "description": "If you had to live in any other African country apart from your own(Kenya).. Where would you live? G Money is back! Today, the ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/CsW0GCd8JTE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/CsW0GCd8JTE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/CsW0GCd8JTE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-26T07:00:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "q5IGfU2Lam9KGkfseOKomHWPT04",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fDFuXwdmzKY"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-20T06:00:17Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi Episode 10 #AfricanWoman",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fDFuXwdmzKY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fDFuXwdmzKY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fDFuXwdmzKY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-20T06:00:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2U83ev8i19LT-07-EAx34IiJ55w",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "tjBREdJZBZc"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-19T07:00:15Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #95 My House My Rules",
+        "description": "Andie shares chronicles of his super interesting uber ride as Calvin breaks it down matters how the Tinder for getting jobs ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tjBREdJZBZc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tjBREdJZBZc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tjBREdJZBZc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-19T07:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "B2T_hErms5jICPlYMoPJUTKCwmw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ejg4HC-bvvo"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-18T12:00:17Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Banter Episode 2",
+        "description": "\"Have You Ever been Tied Up?\" Neville and the girls on some bants..",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ejg4HC-bvvo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ejg4HC-bvvo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ejg4HC-bvvo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-18T12:00:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "in2C1NrM82XKlLJ1bGQzl_nJCBY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "rEkcy3L-T-s"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-17T09:00:12Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Last Man Standing - Episode 2",
+        "description": "What is the one question that you could never answer? Join Ashley as she quizzes the lads! When THAT question is asked, one ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rEkcy3L-T-s/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rEkcy3L-T-s/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rEkcy3L-T-s/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-17T09:00:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3KivfLtQWpZz29NdFSB0saMFo-0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Ks3JpbC_zrM"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-15T09:00:16Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Mistari - Qashley and Neville - Episode 4",
+        "description": "Who has the best music knowledge. Join Ashley , Neville and Quellie as they battle it out to be the Bosses matters Music.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Ks3JpbC_zrM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Ks3JpbC_zrM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Ks3JpbC_zrM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-15T09:00:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "TSp-Z7OsGREnC8sZwkHMQ-_i24k",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "lzG93TQyuNk"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-13T06:00:14Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi Episode 9 #DangerDinji",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/lzG93TQyuNk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/lzG93TQyuNk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/lzG93TQyuNk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-13T06:00:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "926g4R7KEIo4g0cNJGn-NknTXbE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "-7pyfGuP6FU"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-12T07:00:16Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #94 - Covid Finally Got Us :-(",
+        "description": "What an episode! G Money is Covid positive, Andy wants to know about the lies you've told during sex and Calvin's aunt has been ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-7pyfGuP6FU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-7pyfGuP6FU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-7pyfGuP6FU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-12T07:00:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qy5NGSdS6QsNI-HSzJh0dT4gq_Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "xudF30CVnd8"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-11T12:00:16Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Last Man Standing Episode 1",
+        "description": "What is the one question that you could never answer? Join Andy as he quizzes the ladies! When THAT question is asked, one ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xudF30CVnd8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xudF30CVnd8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xudF30CVnd8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-11T12:00:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "tzLADoyd8QuagsazR8gUBKjNkZM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mHAaN8YJylw"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-11T09:00:13Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Banter - Episode 1",
+        "description": "The Girls Go Head to head with pickup lines to woo Andy.. In Your Opinion who has the best bars??",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mHAaN8YJylw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mHAaN8YJylw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mHAaN8YJylw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-11T09:00:13Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "xuck4qtFHKUJ59Z5wi6r0khtxH4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "nSNN8T67Rn0"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-09T09:00:16Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "BTS (Behind The Scenes) - Episode 1 - &quot;Andy doesn&#39;t like Calvin&quot;",
+        "description": "Have you ever wondered about how the relationship of your favourite podcasters is behind the scenes. In this candid conversation ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nSNN8T67Rn0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nSNN8T67Rn0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nSNN8T67Rn0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-09T09:00:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "rfw38ZuXM6O8fSFdVzOKNcATGEA",
+      "id": {
+        "kind": "youtube#playlist",
+        "playlistId": "PLURaeuNWMwdx24dsfp_OLtMufWhmlaRbg"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-08T14:41:08Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Banter!",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mHAaN8YJylw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mHAaN8YJylw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mHAaN8YJylw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-08T14:41:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "17QwPnhLgnAES7VtX7mG1QQwq7A",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "2nxoH9JbaqM"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-08T09:00:12Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Mistari - Andy And Neville - Episode 3 (feat Quellie)",
+        "description": "Who has the best music knowledge. Join Andy , Neville and Quellie as they battle it out to be the Kings of Music. #AndyAndNeville ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2nxoH9JbaqM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2nxoH9JbaqM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2nxoH9JbaqM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-08T09:00:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "oCLZdiUoEwwYao1thLy1hCPQHsA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_kSLY2ZOX6k"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-06T06:00:09Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi Episode 8 #BigDeal",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_kSLY2ZOX6k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_kSLY2ZOX6k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_kSLY2ZOX6k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-06T06:00:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "EgiF9mssCTr8OnmTqjh_IFILRoM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "UPGYpih4nhU"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-05T07:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #93 - The Day We Did The Silhouette Challenge",
+        "description": "Another day, another challenge. Today the lad's discuss hyper sexualization and whether they would help their other half to do a ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UPGYpih4nhU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UPGYpih4nhU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UPGYpih4nhU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-05T07:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "fqnQej1O1DumgxueuYdX6uRwzyY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "5uRiv1ljGG4"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-03T09:00:12Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "IS IT TRUE YOU HAVE SHAFFIE&#39;S BABY??? - GET TO KNOW US - ASHLEY AND QUELLIE",
+        "description": "The First Ladies of the channel, Ashley and Quellie are always up to something. Join them weekly for loads of madness on the ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5uRiv1ljGG4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5uRiv1ljGG4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5uRiv1ljGG4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-03T09:00:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ge3fu50PAETdva_Rhve5vMLkkP0",
+      "id": {
+        "kind": "youtube#playlist",
+        "playlistId": "PLURaeuNWMwdz2O71QEPdEP3nUN7ZF2QR4"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-03T03:47:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "ASHLEY AND QUELLIE",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WTFdN3TVfFM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WTFdN3TVfFM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WTFdN3TVfFM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-03T03:47:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zU8WfBqMdxPPd6zGRh0dmMRQuOA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "22aSoN2f-Ns"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-01T12:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Mistari - Andy And Neville - Episode 2 (feat Quellie)",
+        "description": "Who has the best music knowledge. Join Andy , Neville and Quellie as they battle it out to be the Kings of Music. #AndyAndNeville ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/22aSoN2f-Ns/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/22aSoN2f-Ns/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/22aSoN2f-Ns/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-01T12:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Q66Tb71UVB92tTkABwwZFb5WH8Q",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "zGHlnXA_A5o"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-30T06:00:09Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi Episode 7 #Girlfriend",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zGHlnXA_A5o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zGHlnXA_A5o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zGHlnXA_A5o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-30T06:00:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "uMee6m4phDLpz3eulqnrwbAaOHs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "XSxa-Y64-Zc"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-29T07:00:58Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #92 - Jesus Didn&#39;t Have Disciples, He Had Mandem!",
+        "description": "This weeks edition is hilarious as the lads dive into religion once again, this time they ask the question, should the bible ever be ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/XSxa-Y64-Zc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/XSxa-Y64-Zc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/XSxa-Y64-Zc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-29T07:00:58Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2_OZG3BbVuK75vrFXS7Ua52tzHU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kZZK22uiXlQ"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-25T09:00:20Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Mistari - Andy And Neville - Episode 1 (feat Quellie)",
+        "description": "Who has the best music knowledge. Join Andy , Neville and Quellie as they battle it out to be the Kings of Music. #AndyAndNeville ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kZZK22uiXlQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kZZK22uiXlQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kZZK22uiXlQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-25T09:00:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "VfxPNChRnbEJ7QxIH3u1r4KqRU8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "pMLYP0-3ThI"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-23T06:00:25Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi Episode 6 #ThisisAfrica",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pMLYP0-3ThI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pMLYP0-3ThI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pMLYP0-3ThI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-23T06:00:25Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "8LJlFekwrMPaKysRzlS-TZ51fMQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "3aFMndnSepU"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-22T07:00:28Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mic Are Open - #91 - Corruption Only Sucks When You&#39;re Left Out!",
+        "description": "Donald Trump is out of the White House and the lads breathe a sigh of relief. We made it! The conversation ranges from corruption ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3aFMndnSepU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3aFMndnSepU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3aFMndnSepU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-22T07:00:28Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "vgdbpFfKEUkc0M_0Po0E-Q0n2f4",
+      "id": {
+        "kind": "youtube#playlist",
+        "playlistId": "PLURaeuNWMwdyfIGkn9IRrx6rOiZ0Am2PF"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-20T18:48:49Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Andy And Neville",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2xG3Pzx2Qlk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2xG3Pzx2Qlk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2xG3Pzx2Qlk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-20T18:48:49Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "FLF90y1kNS8lLwr4uJ1cgtI5bq8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "M8zetojGN5g"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-20T12:00:11Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "DID NEVILLE STEAL ANDY’S GIRL?? - GET TO KNOW US - ANDY AND NEVILLE",
+        "description": "Andy Young & Neville are always up to something. Join them weekly for loads of madness on the channel. Today, get to know ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/M8zetojGN5g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/M8zetojGN5g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/M8zetojGN5g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-20T12:00:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Pk8p-nl2S_9Y8ano6wtzMNSY2Pc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "nHHwnhHlT6A"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-16T06:00:14Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi - Episode 5 #BadManners",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am! @djGrauchi ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nHHwnhHlT6A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nHHwnhHlT6A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nHHwnhHlT6A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-16T06:00:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "o0CGsFexNmkTE1Lrcmt0nAOdenk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ceflIckgogs"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-15T07:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #90 - Not Even Viagra Can Prevent Soft Life! (feat Big Bear)",
+        "description": "This week it's all about you! The lads answer all the questions that you have sent in and get to the BOTTOM of the Buss It ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ceflIckgogs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ceflIckgogs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ceflIckgogs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-15T07:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "iIvWmIi4Ob5iue1T6nGBaEE0lxs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ruEv6RRfWW4"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-09T06:00:12Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call With Grauchi - Episode 4 #GalPolicy",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ruEv6RRfWW4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ruEv6RRfWW4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ruEv6RRfWW4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-09T06:00:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4NtC78As8XbrY3DjaN4YlclGHUs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Wut85opqky0"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-08T09:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #89 Mandem, Tell Me You Love Me!",
+        "description": "AfricanPodcast #TheMicsAreOpen #AfricasNumberOnePodcast.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Wut85opqky0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Wut85opqky0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Wut85opqky0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-08T09:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "cPfmaSfHFoeIPdxuIN3_ouRWOKo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "iaUQmMuqBMk"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-07T12:42:55Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "WALK WITH G",
+        "description": "Walk With G is an initiative aimed at promoting a healthy lifestyle. We walk for 10km in the amazing Karura Forest. Edition 3 was ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iaUQmMuqBMk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iaUQmMuqBMk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iaUQmMuqBMk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-07T12:42:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ftztwCHu3-PNWxzJcB7KFxEr_n8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "GOlcbgqTLfI"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-02T06:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call with Grauchi - Episode 3 #Lurkin",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GOlcbgqTLfI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GOlcbgqTLfI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GOlcbgqTLfI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-02T06:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zgt45JW6f58YAc4lZRjYkOTWLh4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "onU8OooKZis"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-01T06:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #88 - New Year, Same Old Us! (The Slumber Party)",
+        "description": "What do you get when you cross pajamas, stories, alcohol and a brand new year? You get the first crazy episode of the MIcs Are ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/onU8OooKZis/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/onU8OooKZis/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/onU8OooKZis/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-01T06:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ubpN6qtsycA-VVroNGvGGqx54t4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "pMZJeVV5R6c"
+      },
+      "snippet": {
+        "publishedAt": "2020-12-26T06:00:12Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call with Grauchi - Episode 2 - #Confessions",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pMZJeVV5R6c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pMZJeVV5R6c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pMZJeVV5R6c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-12-26T06:00:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "bNLY7EYelCYYTacCv0vtebROxbE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "j-b7mwrev00"
+      },
+      "snippet": {
+        "publishedAt": "2020-12-25T07:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #87 The Not So Secret Santa (Office Party Edition!!)",
+        "description": "You know what happens at the end of year office party, you get drunk, you dance with colleagues and you kiss your boss.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/j-b7mwrev00/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/j-b7mwrev00/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/j-b7mwrev00/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-12-25T07:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "oFWah3810PLBUIAd-gCE5iQTwnE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NAEDznb36aU"
+      },
+      "snippet": {
+        "publishedAt": "2020-12-20T12:00:11Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #86 - And Then My Mom Saw My Nudes",
+        "description": "Why don't men hold men accountable? Why don't women hold women accountable? What happens when you send nudes to the ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NAEDznb36aU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NAEDznb36aU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NAEDznb36aU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-12-20T12:00:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "fRzp7i3Of8d_P-kPW2tdQcwjg-E",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "rvLf33fjp2Q"
+      },
+      "snippet": {
+        "publishedAt": "2020-12-19T06:00:09Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call with Grauchi - Episode #1",
+        "description": "Saturday Mornings require a mix to get you started. Join Grauchi for a journey into sound, every Saturday at 9am!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rvLf33fjp2Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rvLf33fjp2Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rvLf33fjp2Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-12-19T06:00:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zx-tGlx8pdH1u8hyOyaTpLNoQYo",
+      "id": {
+        "kind": "youtube#playlist",
+        "playlistId": "PLURaeuNWMwdwbpIc0ioy7R_HEInCFUHPU"
+      },
+      "snippet": {
+        "publishedAt": "2020-12-18T20:26:34Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Wake Up Call with Grauchi",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rf3OHM8oqIg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rf3OHM8oqIg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rf3OHM8oqIg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-12-18T20:26:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "dZGI_vPhHev7uM62_aN6fiDuN2o",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "JrEFLOJB1Ls"
+      },
+      "snippet": {
+        "publishedAt": "2020-12-11T19:52:20Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #85 - All Day I Dream About Sex (A.D.I.D.A.S)",
+        "description": "Today we are live at the only OFFICIAL Adidas store and the conversation ranges from sneakers, to gifts, to World Cup memories ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/JrEFLOJB1Ls/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/JrEFLOJB1Ls/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/JrEFLOJB1Ls/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-12-11T19:52:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "m4ZPgdsPkpNBxiWrLyM9imoI9KY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "BipPhksgu_0"
+      },
+      "snippet": {
+        "publishedAt": "2020-12-06T14:00:11Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #84 - When It&#39;s Time To Go, It&#39;s Time To Go!",
+        "description": "Today the lads are back to normal and it's a conversation that ranges from careers, to people who don't pay back loans, to super ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BipPhksgu_0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BipPhksgu_0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BipPhksgu_0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-12-06T14:00:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "gLkUFJL7yuWfoeJ0szFDNE9De6E",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "xrOlvw5fMz4"
+      },
+      "snippet": {
+        "publishedAt": "2020-11-28T14:00:16Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #83 - Real Men Don&#39;t Do That",
+        "description": "Stop the World!! I cannot believe that G Money did that. This weeks episode is iconoclastic and other big words. The conversation ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xrOlvw5fMz4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xrOlvw5fMz4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xrOlvw5fMz4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-28T14:00:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ElUkV94gWbtEn5lYK6LCX6Y-0nc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "yqbHxEb2VVo"
+      },
+      "snippet": {
+        "publishedAt": "2020-11-25T12:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - Safaricom @ 20 Edition - Special guest Caroline Kendi",
+        "description": "You cant ignore the fact that Safaricom is 20 years and the lads just had to invade Safaricom House to find out why Kenya's ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yqbHxEb2VVo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yqbHxEb2VVo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yqbHxEb2VVo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-25T12:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "FJdBLGXp57pHPr2bxFyTPyMtJik",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "PfttH9WmpHQ"
+      },
+      "snippet": {
+        "publishedAt": "2020-11-24T12:08:40Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #82 - Fam!! I&#39;ve Had To Put My DMs On Private, I&#39;m Hot Property!!",
+        "description": "You won't find a wider range of conversation than today's podcast. From dinosaurs, to Noah's Ark, to the Holy Books, to why ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PfttH9WmpHQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PfttH9WmpHQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PfttH9WmpHQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-24T12:08:40Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "sk2i50gdnH8xWya3Um1CAGqdNpQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "1IbY4lHiSEs"
+      },
+      "snippet": {
+        "publishedAt": "2020-11-15T09:00:13Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #81 - The Night G Money Slapped Big C!",
+        "description": "This week we invited questions from you and answered as many of them as possible. From the time Calvin got suspended from ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1IbY4lHiSEs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1IbY4lHiSEs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1IbY4lHiSEs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-15T09:00:13Z"
+      }
+    }
+  ]
+}

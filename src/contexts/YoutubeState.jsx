@@ -15,10 +15,10 @@ import YTPage5 from "../yt.res.pg5.json";
 import YTPage6 from "../yt.res.pg6.json";
 
 // youtube API config
-const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; // SR-Key
-const channelID = process.env.REACT_APP_CHANNEL_ID; //TGC
-const videoCount = 50;
-const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${videoCount}`;
+// const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; // SR-Key
+// const channelID = process.env.REACT_APP_CHANNEL_ID; //TGC
+// const videoCount = 50;
+// const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${videoCount}`;
 
 export const youtubeContext = createContext();
 const YoutubeState = (props) => {
@@ -40,10 +40,10 @@ const YoutubeState = (props) => {
     console.log("Setting local videos...");
 
     setVideos(allVideos);
-  }, []);
+  }, [allVideos]);
 
   const fetchData = useCallback(async () => {
-    let response = await fetch("url" + "yt");
+    let response = await fetch("url");
     if (!response.ok) {
       console.log(`HTTP error! status: ${response.status}`);
       return fetchLocalData();

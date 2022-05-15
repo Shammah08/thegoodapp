@@ -4,6 +4,7 @@ import Shows from "./Shows";
 
 import ShowsContainer from "./ShowsContainer";
 import { shows } from "../database";
+import { Fragment } from "react";
 
 const Tv = () => {
   return (
@@ -11,9 +12,9 @@ const Tv = () => {
       <Shows />
       {shows.map((show) => {
         return (
-          <>
+          <Fragment key={"show" + Math.random() * 1000}>
             <ShowsContainer show={show} key={show.id} />
-          </>
+          </Fragment>
         );
       })}
     </section>

@@ -29,7 +29,8 @@ const ShowsContainer = ({ show }) => {
                   />
                 );
               }
-              return <></>;
+              // eslint-disable-next-line array-callback-return
+              return;
             })}
 
           <a className="more-shows" href={`tv/channel/${show.id}`}>

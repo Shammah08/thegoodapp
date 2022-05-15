@@ -47,7 +47,7 @@ const Header = () => {
         <img src={logos.logoBlue} alt="TGC_LOGO" />
       </Link>
 
-      <nav className={mobileNav && "mobile-active"}>
+      <nav className={mobileNav ? "mobile-active" : ""}>
         {/* Check if url links to an ID on page */}
         {navLinks.map((link) => {
           if (link.url.includes("#")) {

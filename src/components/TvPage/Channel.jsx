@@ -32,7 +32,14 @@ const Channel = () => {
     if (videoId) {
       setActiveVideo({ ...activeVideo, id: { videoId } });
     }
-  }, [activeVideo, data, videoId]);
+    if (!videoId && !activeVideo.id) {
+      setTimeout(() => {
+        setActiveTab("Episodes");
+      }, 2500);
+    }
+
+    window.scrollTo(0, 0);
+  }, [activeVideo, data, displayVideos, videoId]);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -53,6 +60,7 @@ const Channel = () => {
               <li
                 onClick={() => handleTabChange(tab)}
                 style={{ color: tab === activeTab ? "lightblue" : "" }}
+                key={activeTab + Math.random() * 100}
               >
                 {tab}
               </li>
@@ -74,7 +82,11 @@ const Channel = () => {
             <About tab={activeTab} channel={channel} video={activeVideo} />
           </div>
         </div>
-        <MoreChannels shows={shows} channelId={channelId} />
+        <MoreChannels
+          shows={shows}
+          channelId={channelId}
+          setActiveTab={setActiveTab}
+        />
       </section>
       <Footer />
     </>

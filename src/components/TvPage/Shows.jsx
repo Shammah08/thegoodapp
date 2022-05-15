@@ -15,7 +15,7 @@ const Shows = () => {
       {/* Channel Badges */}
       <div className="channel-badge-container">
         <div className="channel-badge-text">
-          <h2>Podcasts & Mixes</h2>
+          <h2>Podcasts & Music</h2>
         </div>
 
         <section className="channel-badges">

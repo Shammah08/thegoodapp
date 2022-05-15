@@ -29,6 +29,7 @@ const ChannelHome = ({ tab, video, episodes, handleVideoChange }) => {
                 <div
                   className="channel-tag"
                   onClick={() => handleVideoChange(episode)}
+                  key={episode + Math.random() * 1000}
                 >
                   <img
                     src={episode.snippet.thumbnails.high.url}
