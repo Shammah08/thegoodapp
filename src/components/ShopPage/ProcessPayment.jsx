@@ -55,9 +55,7 @@ const ProcessPayment = ({ setUserOpen, active, setactive }) => {
           console.log(response);
           closePaymentModal(); // this will close the modal programmatically
         },
-        onClose: () => {
-          
-        },
+        onClose: () => {},
       });
     } else {
       setUserOpen(true);

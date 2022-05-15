@@ -1,4 +1,4 @@
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { useState, useEffect } from "react";
 import { landingTemplates } from "../database";
 
@@ -7,11 +7,11 @@ import Loader from "../Loader/Loader";
 
 const LandingSlides = () => {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   //  transition effect
   useEffect(() => {
-    const timeRemaining = "15000";
+    const timeRemaining = "7000";
     const timeout = setInterval(() => {
       handleClick("right");
     }, timeRemaining);
@@ -21,6 +21,8 @@ const LandingSlides = () => {
   });
 
   const handleClick = (way) => {
+    setLoading(true);
+
     way === "left"
       ? setActiveSlide(
           activeSlide > 0 ? activeSlide - 1 : landingTemplates.length - 1
@@ -28,27 +30,28 @@ const LandingSlides = () => {
       : setActiveSlide(
           activeSlide < landingTemplates.length - 1 ? activeSlide + 1 : 0
         );
+    setLoading(false);
   };
 
   return (
     <section className="landing-section" id="home">
+      {loading && <Loader />}
+
       <div
         className="slider"
         style={{ transform: `translateX(-${activeSlide * 100}vw)` }}
       >
-        {landingTemplates.map((slide) =>
-          slide ? (
+        {landingTemplates.map((slide) => (
+          <>
             <Slide slide={slide} key={Math.random() * 1000} />
-          ) : (
-            <Loader />
-          )
-        )}
+          </>
+        ))}
       </div>
-      <FaChevronRight
+      <RiArrowRightSLine
         className="arrow right-arrow"
         onClick={() => handleClick("right")}
       />
-      <FaChevronLeft
+      <RiArrowLeftSLine
         className="arrow left-arrow"
         onClick={() => handleClick("left")}
       />

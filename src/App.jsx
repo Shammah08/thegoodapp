@@ -1,14 +1,8 @@
 import "./app.scss";
 import "./global.scss";
 import { appContext } from "./contexts/AppState";
-import {
-  useContext,
-  useEffect,
-  useState,
-  useCallback,
-  useLayoutEffect,
-} from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { useContext, useEffect, useCallback } from "react";
+import { Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import WalkPage from "./components/WalkWithG/WalkPage";
 import Team from "./components/TeamPage/Team";
@@ -18,40 +12,33 @@ import NewsPage from "./components/NewsPage/NewsPage";
 import NewsArticle from "./components/NewsPage/NewsArticle";
 import Header from "./components/Header/Header";
 import MemberProfile from "./components/TeamPage/MemberProfile";
+import Channel from "./components/TvPage/Channel";
 import Auth from "./components/AuthPage/Auth";
-import Loader from "./components/Loader/Loader";
 
 const App = () => {
-  const { checkAuth, activeUser } = useContext(appContext);
-  const [loading, setLoading] = useState(true);
+  const { checkAuth } = useContext(appContext);
 
-  const router = useNavigate();
+  // const router = useNavigate();
   const redirectIfNotAuth = useCallback(() => {
-    setLoading(true);
-
     checkAuth();
 
-    if (!activeUser.auth) {
-      router("/auth/login");
-    }
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
+    // if (!activeUser.auth) {
+    //   router("/auth/login");
+    // }
 
     return;
-  }, [activeUser, checkAuth, router]);
+  }, [checkAuth]);
 
   useEffect(() => {
     redirectIfNotAuth();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <div className="App">
       <Header />
-      {loading && <Loader />}
-      <Routes>
-        {activeUser?.auth && (
+      {true && (
+        <Routes>
           <>
             <Route path="/" element={<LandingPage />} />
 
@@ -59,13 +46,20 @@ const App = () => {
             <Route path="/team" element={<Team />} exact />
             <Route path="team/:userid" element={<MemberProfile />} />
             <Route path="tv" element={<Tv />} />
+            <Route path="tv/channel/:channelId" element={<Channel />} />
+            <Route
+              path="tv/channel/:channelId/:videoId"
+              element={<Channel />}
+            />
             <Route path="news" element={<NewsPage />} />
             <Route path="news/:articleId" element={<NewsArticle />} />
             <Route path="shop" element={<Shop />} />
           </>
-        )}
-        <Route path="/auth/:authAction" element={<Auth />} />
-      </Routes>
+          <Route path="/auth/:authAction" element={<Auth />} />
+
+          {/*  */}
+        </Routes>
+      )}
     </div>
   );
 };

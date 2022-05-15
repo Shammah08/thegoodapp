@@ -2,20 +2,22 @@ import "./tv.scss";
 
 import Shows from "./Shows";
 
-import YoutubeState from "../../contexts/YoutubeState";
 import ShowsContainer from "./ShowsContainer";
 import { shows } from "../database";
+import { Fragment } from "react";
 
 const Tv = () => {
   return (
-    <YoutubeState>
-      <section className="podcast-container">
-        <Shows />
-        {shows.map((show) => {
-          return <ShowsContainer show={show} />;
-        })}
-      </section>
-    </YoutubeState>
+    <section className="podcast-container">
+      <Shows />
+      {shows.map((show) => {
+        return (
+          <Fragment key={"show" + Math.random() * 1000}>
+            <ShowsContainer show={show} key={show.id} />
+          </Fragment>
+        );
+      })}
+    </section>
   );
 };
 

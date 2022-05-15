@@ -1,21 +1,25 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext, useMemo } from "react";
 import { youtubeContext } from "../../contexts/YoutubeState";
 
 const useYoutube = (showName) => {
-  const [filteredVideos, setFilteredVideos] = useState([]);
+  const [channelVideos, setChannelVideos] = useState([]);
   const { allVideos } = useContext(youtubeContext);
 
-  const data = allVideos?.filter((video) => {
-    const title = video.snippet.title.slice(0, 10);
+  const data = useMemo(
+    () =>
+      allVideos?.filter((video) => {
+        const title = video.snippet.title.slice(0, 10);
 
-    return title.includes(showName.slice(0, 8));
-  });
+        return title.includes(showName.slice(0, 6));
+      }),
+    [allVideos, showName]
+  );
 
   useEffect(() => {
-    setFilteredVideos(data);
+    setChannelVideos(data);
   }, [data]);
 
-  return [filteredVideos];
+  return [channelVideos];
 };
 
 export default useYoutube;

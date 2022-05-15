@@ -1,0 +1,1400 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "FB-wP75tz6QMu3Zge3ty6HitWBM",
+  "prevPageToken": "CPoBEAE",
+  "regionCode": "KE",
+  "pageInfo": {
+    "totalResults": 329,
+    "resultsPerPage": 41
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ipMSe7dhYCjnzoGU4MaJjPphkhg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fcLTyHGaV3k"
+      },
+      "snippet": {
+        "publishedAt": "2020-11-06T06:00:11Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - Episode 80 - &quot;Calvin Leave Orange House!&quot;  (feat. Eric Njiru)",
+        "description": "There's a lot of banter on this episode but there's also a bombshell too. After 8 years, Calvin is leaving the morning show and that's ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fcLTyHGaV3k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fcLTyHGaV3k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fcLTyHGaV3k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-06T06:00:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "rWPl-vA0g7A8sCA-gK3IvaeaE8g",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "I-0iTDYgEcE"
+      },
+      "snippet": {
+        "publishedAt": "2020-10-31T05:38:08Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "#79 - Is It Okay To Belong To The Streets? - (Feat Ashley)",
+        "description": "This week we celebrate Calvin's birthday and the drinks are flowing. We ask the question, is it okay to belong to the streets?, is it a ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/I-0iTDYgEcE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/I-0iTDYgEcE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/I-0iTDYgEcE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-31T05:38:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "j-ul75PBk5qC3UX0pgeLRkKL1JU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "H9lC4JdEqUE"
+      },
+      "snippet": {
+        "publishedAt": "2020-10-28T08:00:33Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "THE MOMENT OF MEDITATION - OCTOBER 28TH",
+        "description": "Don't be indifferent to Money.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/H9lC4JdEqUE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/H9lC4JdEqUE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/H9lC4JdEqUE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-28T08:00:33Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "nml4GRNwt1-eiDwdo004OFcFv30",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mqlTEnL47PY"
+      },
+      "snippet": {
+        "publishedAt": "2020-10-27T08:44:04Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "THE MOMENT OF MEDITATION - OCTOBER 28th",
+        "description": "Claim the Day YouWant #MomentOfMeditation.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mqlTEnL47PY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mqlTEnL47PY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mqlTEnL47PY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-27T08:44:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Bez3yPNhVmyRdyfwI7lYK5E5rSY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "HJsxY3B0f9I"
+      },
+      "snippet": {
+        "publishedAt": "2020-10-23T16:40:13Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #78 - If You Wash My Chest, I&#39;ll Wash Your Breasts!",
+        "description": "Deep conversations this week as the lads seek to make sense of a crazy world. Are you tired of politicians, do you shower with ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HJsxY3B0f9I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HJsxY3B0f9I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HJsxY3B0f9I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-23T16:40:13Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3pkKBeGm55titM8CmTnjl7VaNqU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "OVJXcGsHUCw"
+      },
+      "snippet": {
+        "publishedAt": "2020-10-20T18:43:56Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - The Conversation (Part 1)",
+        "description": "How do we to get to a million streams... #TheMicsAreOpen.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/OVJXcGsHUCw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/OVJXcGsHUCw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/OVJXcGsHUCw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-20T18:43:56Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ZAj0VBjZWuNsDLy-0rShVqKEVpc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "MsCpBmKfjU0"
+      },
+      "snippet": {
+        "publishedAt": "2020-10-16T19:58:48Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #77 - For Me, It&#39;s When Andy Said The Condom Burst!!",
+        "description": "YO!! The moment you have all been waiting for, Andy finally let's his guard down. Don't even read this description, just watch!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MsCpBmKfjU0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MsCpBmKfjU0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MsCpBmKfjU0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-16T19:58:48Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "SAWvQDJ9y7YnWAaC2bQxtejgGNI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NY-3pyypCWQ"
+      },
+      "snippet": {
+        "publishedAt": "2020-10-12T13:03:04Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - Episode 76 - Lions Eat Alone",
+        "description": "Andy is the MVP when it comes to cheating, that's all you need to know. The lads discuss monogamy and whether or not you can ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NY-3pyypCWQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NY-3pyypCWQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NY-3pyypCWQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-12T13:03:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "enQ2oiDDp1ZLPClsKvfNHNh8Jmw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kvdZsq0CV18"
+      },
+      "snippet": {
+        "publishedAt": "2020-10-04T13:44:09Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - Episode 75 - No Plan, Just Vibes",
+        "description": "The conversation ranges from which bank is best to bank with to Trump and Biden and everywhere in between. We also holla at ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kvdZsq0CV18/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kvdZsq0CV18/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kvdZsq0CV18/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-10-04T13:44:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-RLgoJowa1y7PkxKhZ9rBOqLtZc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ztQTVCd-yqY"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-26T23:50:44Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - If I Was A Girl ... And Other Short Stories",
+        "description": "You asked for it, you got it. Ashley joins us on the podcast today and its like she's been here forever. Today we finish the PS5 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ztQTVCd-yqY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ztQTVCd-yqY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ztQTVCd-yqY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-26T23:50:44Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Egq2NvY4cCSu7a3PxGZAdYTWeeY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "9eLyEqvVjf8"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-18T10:53:01Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #73 - I Just Wanna See My Kids",
+        "description": "The lads are in a good form today and the topics are super diverse. Cardi B and Offset, or is it take off? Whoever was taken off Bad ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9eLyEqvVjf8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9eLyEqvVjf8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9eLyEqvVjf8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-18T10:53:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "afKcn9Vr6BfUJpRR07AwS1GVm7s",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "agWz7zwGIFk"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-12T16:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #72 - Broke People Need Love Too!",
+        "description": "Have you ever been broke shamed? Do woman ever feel too broke to get into a relationship? G Money loses it all because Drake ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/agWz7zwGIFk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/agWz7zwGIFk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/agWz7zwGIFk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-12T16:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "xIONPowts_pzRJXeE_DpLwSzQZg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6x-VWGJ9n5w"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-11T17:51:41Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #72 - The Kardashian Body Count",
+        "description": "The lads are trying to count all of the Kardashians Body Count LOL.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6x-VWGJ9n5w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6x-VWGJ9n5w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6x-VWGJ9n5w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-11T17:51:41Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "INMGP95wB0JGxkxEaYKmVLxmxCU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "IlshvowwQTA"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-06T10:47:48Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - The Safest Sex Ever",
+        "description": "Are you staying sexually safe? Condoms and Face Mask? LOL.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/IlshvowwQTA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/IlshvowwQTA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/IlshvowwQTA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-06T10:47:48Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "PwufBjB_zo7Nc8w1BXVDmeotq7o",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "dj8PLL_tL80"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-06T09:32:39Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - &quot;Never Travel With G&quot;",
+        "description": "The infamous Dubai Trip. Neville spills the beans on what really went down. G Admits to hating travelling in groups and Calvin ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dj8PLL_tL80/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dj8PLL_tL80/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dj8PLL_tL80/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-06T09:32:39Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "nF7mTk4oiE0SwECorckYx_aV25M",
+      "id": {
+        "kind": "youtube#playlist",
+        "playlistId": "PLURaeuNWMwdy894eBMVPwR67ZDQpSWwsg"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-06T09:28:34Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wDTF3fajwcs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wDTF3fajwcs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wDTF3fajwcs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-06T09:28:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "d4vp5Y-1JTtdKvFfWBLHpRndFqw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fzImr8-kOw8"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-04T17:00:11Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #71 - No Mask, No Love!",
+        "description": "It's lit today, the topics range from gifting, to sex in the covid era, to fatherhood, to trips to Dubai. The lads are joined by former ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fzImr8-kOw8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fzImr8-kOw8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fzImr8-kOw8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-04T17:00:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3erj3fJoYs2LeyxLveJwbw2fim4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sMOnmNklJ8g"
+      },
+      "snippet": {
+        "publishedAt": "2020-08-28T07:00:10Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open - #70 How To Marinate Your Housey, The Gospel According To Calvin!!",
+        "description": "Fire Episode Today, The lads go from Athletics, To Church, To How To Marinate Your Housey. It's A Lot.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sMOnmNklJ8g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sMOnmNklJ8g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sMOnmNklJ8g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-28T07:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qEQAjKhQ-bbJzf7rjR1NHDUyodI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6ndkmkR46ZE"
+      },
+      "snippet": {
+        "publishedAt": "2020-08-21T13:48:09Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #69 - Clap Those Cheeks!",
+        "description": "This week is wild, the conversation ranges from politics, to sex, to masciline fragility. You will be stunned by our intellect on this ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6ndkmkR46ZE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6ndkmkR46ZE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6ndkmkR46ZE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-21T13:48:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "42CcQoNQApGKqVOxgYj-Q_KPuhM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ipL3wHZLKoo"
+      },
+      "snippet": {
+        "publishedAt": "2020-08-18T21:41:38Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Kranium and G Money",
+        "description": "I recently had a chance to catch up with Dancehall king of Melodies, the man like Kranium. We spoke about everything!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ipL3wHZLKoo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ipL3wHZLKoo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ipL3wHZLKoo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-18T21:41:38Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "tQer7-WiwIa8WSovSkqpdK7QJJU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "nsBT3ayzMNM"
+      },
+      "snippet": {
+        "publishedAt": "2020-08-18T18:03:29Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Overnight sensation",
+        "description": "Christopher Martin Recording a soon to be hit tune on the Bubble Gum Riddim.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nsBT3ayzMNM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nsBT3ayzMNM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nsBT3ayzMNM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-18T18:03:29Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "SFOZybCUvu4a8lZvjlJf56Ry1WM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "rIrRBhZ_87Q"
+      },
+      "snippet": {
+        "publishedAt": "2020-08-18T12:30:29Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #68 No More Excuses, Hand In Your Homework Now! - Part 2 (The Moment of Truth)",
+        "description": "Calvin set the guys some homework two podcasts ago and finally the day of reckoning is here. The guys have been challenged to ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rIrRBhZ_87Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rIrRBhZ_87Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rIrRBhZ_87Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-18T12:30:29Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "gVdvZAuJh3LCViGablab-t3Wpdc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "qHYSFI9PzRE"
+      },
+      "snippet": {
+        "publishedAt": "2020-08-18T11:32:23Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open #68 No More Excuses, Hand In Your Homework Now! Part 1",
+        "description": "Calvin set the guys some homework two podcasts ago and finally the day of reckoning is here. Calvin set the guys some ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qHYSFI9PzRE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qHYSFI9PzRE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qHYSFI9PzRE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-18T11:32:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3LZ4cK7rLRJC_tyxAvAKibX7w3M",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "8LieTk3WDyg"
+      },
+      "snippet": {
+        "publishedAt": "2020-08-03T19:38:58Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Black Is King, But Bey Ain&#39;t Mama Africa - The Monday Minisode",
+        "description": "From Beyonce's Black is King, To Wiley, To GIFs and unscheduled deliveries. Your Monday Morsel, with the Mandem.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8LieTk3WDyg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8LieTk3WDyg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8LieTk3WDyg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-08-03T19:38:58Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "kiUjEzWJ1o1uD6mPre03aTm4fyo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "IppvT1W-tTk"
+      },
+      "snippet": {
+        "publishedAt": "2020-07-31T11:25:11Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open",
+        "description": "66 - So What If It's Not My Kid? (The Episode that shouldn't have been recorded) This weeks episode is a rambling alcohol fuelled ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/IppvT1W-tTk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/IppvT1W-tTk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/IppvT1W-tTk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-31T11:25:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "aTlzB_DWC3QqbRZ5UWGRiNv7nPE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "MxjfHhpmgws"
+      },
+      "snippet": {
+        "publishedAt": "2020-07-28T19:13:34Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "#26 - If your Mom In Law Has Tattoos, She Gets The Front Seat!",
+        "description": "SNIPPET OF THE MONDAY MINISODE. Full Audio on ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MxjfHhpmgws/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MxjfHhpmgws/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MxjfHhpmgws/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-28T19:13:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "8FPBbDvTZwA3X0_rvFJ7cazZDYI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "M82X0q3N2-g"
+      },
+      "snippet": {
+        "publishedAt": "2020-07-24T19:57:15Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Mics Are Open",
+        "description": "65 - Its Not Always About Who Hit it First This week the conversation ranges from new money, to whether or not we talk about out ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/M82X0q3N2-g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/M82X0q3N2-g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/M82X0q3N2-g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-24T19:57:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "oumLFWpLLFzL3nmZ84jR3pgctUQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "uBjQuWxE0x4"
+      },
+      "snippet": {
+        "publishedAt": "2020-04-10T09:27:34Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Electric Avenue (April 9th - Part 2)",
+        "description": "Part 2 of Electric Avenue.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uBjQuWxE0x4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uBjQuWxE0x4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uBjQuWxE0x4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-04-10T09:27:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "jv-eOPAloV8BOjHS-F-U8dQmfZw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "pNBaYvtoMIg"
+      },
+      "snippet": {
+        "publishedAt": "2020-04-10T07:38:54Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Electric Avenue (April 9th, 2020)",
+        "description": "With the whole world in lockdown, Every week G Money and CodeRedStylez bring the party to your living room, It's all about the ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pNBaYvtoMIg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pNBaYvtoMIg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pNBaYvtoMIg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-04-10T07:38:54Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-nimRMfsKT725M3HiK3sExtYgZs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "cKuEabUojvI"
+      },
+      "snippet": {
+        "publishedAt": "2020-03-27T06:47:38Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Electric Avenue - March 26 - Lock Down Set",
+        "description": "Since the clubs have been closed G Money and Styles recreated the Thursday Night Milan Vibe! Enjoy!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/cKuEabUojvI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/cKuEabUojvI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/cKuEabUojvI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-03-27T06:47:38Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "rXUm5xFD7UPpZm2OWFRt3XOhmTU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kDOUsLcdlF4"
+      },
+      "snippet": {
+        "publishedAt": "2018-04-08T10:08:19Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "FREE YOUR MIND",
+        "description": "Free Your Mind Snippet!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kDOUsLcdlF4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kDOUsLcdlF4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kDOUsLcdlF4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-04-08T10:08:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "KuxDYmIkna362X_Q7GhNxtN5zFU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ksl22nEjHmc"
+      },
+      "snippet": {
+        "publishedAt": "2018-04-03T11:32:43Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "DAY IN THE LIFE OF G",
+        "description": "In this new mini series, Im gonna take you behind the scene of the career that I love, this first edition takes you to Mombasa and ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ksl22nEjHmc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ksl22nEjHmc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ksl22nEjHmc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-04-03T11:32:43Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "oW8lW0ZDRi-UycAXmPnwPNH0ddM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6kScYLpkuEs"
+      },
+      "snippet": {
+        "publishedAt": "2018-02-08T10:18:24Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "TURN IT UP LOUDER!",
+        "description": "New Show Alert on HBR 103.5fm Nairobi Turn It Up Louder with G Money.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6kScYLpkuEs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6kScYLpkuEs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6kScYLpkuEs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-02-08T10:18:24Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "jHix9fkDZYEAiov3mVrCbnRpSto",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "dF_dpmKQOuE"
+      },
+      "snippet": {
+        "publishedAt": "2018-02-05T10:25:56Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "MDQ ON GMITM FEB",
+        "description": "MDQ comes through to discuss the African Nouveau Festival and drops an EXCLUSIVE New song.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dF_dpmKQOuE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dF_dpmKQOuE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dF_dpmKQOuE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-02-05T10:25:56Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ctLGfpg_iXhhHyH-FRSLi6b7GCc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "lF_Hg-dtZQg"
+      },
+      "snippet": {
+        "publishedAt": "2018-01-29T09:45:27Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "GMITM Vanessa Mdee Interview",
+        "description": "Vanessa Mdee came to GMITM to discuss the new album, the importance of going digital, her going to prison and working with ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/lF_Hg-dtZQg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/lF_Hg-dtZQg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/lF_Hg-dtZQg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-01-29T09:45:27Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "szUUZSXqIH6BBF9Nc7owRhCxcxk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fWA4y8_Qr0Y"
+      },
+      "snippet": {
+        "publishedAt": "2018-01-19T06:32:38Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The KDF CHALLENGE #GMITM",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fWA4y8_Qr0Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fWA4y8_Qr0Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fWA4y8_Qr0Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-01-19T06:32:38Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "P5QaxJ312-Up4LA86lwGM-EBf2w",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "qY08qoXclDY"
+      },
+      "snippet": {
+        "publishedAt": "2011-12-22T18:33:29Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "DJ Kafi",
+        "description": "In my yard terrorizing my deck. Dude loves scratching too much lol.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qY08qoXclDY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qY08qoXclDY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qY08qoXclDY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2011-12-22T18:33:29Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ajYAgbuWL7Ao-egLqHuLxyrgb_E",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "OD-I1d9PG0s"
+      },
+      "snippet": {
+        "publishedAt": "2011-12-17T11:17:22Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Christopher Martin",
+        "description": "Christopher Martin takes over the bar at Sankara.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/OD-I1d9PG0s/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/OD-I1d9PG0s/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/OD-I1d9PG0s/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2011-12-17T11:17:22Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "q9hJWr7exkwd_9xnQwNg-laMUD0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "tlGjLrmnJrk"
+      },
+      "snippet": {
+        "publishedAt": "2011-12-17T11:05:30Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Behind the scenes with Chris Martin",
+        "description": "Chris doing an interview for the Nairobi Star.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tlGjLrmnJrk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tlGjLrmnJrk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tlGjLrmnJrk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2011-12-17T11:05:30Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "kIkbKJQXeK12ttyXC9SI_tf_khk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "QpvyoyiMFeo"
+      },
+      "snippet": {
+        "publishedAt": "2011-12-16T22:28:52Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "Mavado Statement and Apologises to Kenyan Fans",
+        "description": "Mavado Apologises to his fans in Kenya for missing Uptown Saturday this weekend (Dec 17th) and assures Kenya that he will be ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QpvyoyiMFeo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QpvyoyiMFeo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QpvyoyiMFeo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2011-12-16T22:28:52Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "SqUNo3eBeC4AE97_rJfdH6Y3jHE",
+      "id": {
+        "kind": "youtube#channel",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q"
+      },
+      "snippet": {
+        "publishedAt": "2009-11-12T05:25:14Z",
+        "channelId": "UC7h4tUtdH0L06sDZVmBMc4Q",
+        "title": "The Good Company KE",
+        "description": "A crazy cool channel for all the madness from the creative geniuses at the Good Company. \"You are the company that you keep\"",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLTSPqR3c69NqZD0KMLuvHKVbmWqjCICw3-rsIYlzQ=s88-c-k-c0xffffffff-no-rj-mo"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLTSPqR3c69NqZD0KMLuvHKVbmWqjCICw3-rsIYlzQ=s240-c-k-c0xffffffff-no-rj-mo"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLTSPqR3c69NqZD0KMLuvHKVbmWqjCICw3-rsIYlzQ=s800-c-k-c0xffffffff-no-rj-mo"
+          }
+        },
+        "channelTitle": "The Good Company KE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2009-11-12T05:25:14Z"
+      }
+    }
+  ]
+}
