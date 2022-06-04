@@ -41,11 +41,7 @@ const LandingSlides = () => {
         className="slider"
         style={{ transform: `translateX(-${activeSlide * 100}vw)` }}
       >
-        {landingTemplates.map((slide) => (
-          <>
-            <Slide slide={slide} key={Math.random() * 1000} />
-          </>
-        ))}
+        {landingTemplates.map((slide, index) => <Slide slide={slide} key={index * 1000} />)}
       </div>
       <RiArrowRightSLine
         className="arrow right-arrow"

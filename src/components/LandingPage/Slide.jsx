@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 
 const Slide = ({ slide }) => {
   return (
-    <div className="slide-container" key={slide.index}>
+    <div className="slide-container" key={Math.floor() * 1000}>
       <div className="container">
         <div className="text-container">
-          <h2>
-            {slide.title.split("-").map((text) => {
+          
+            {slide.title.split("-").map((text, index) => {
               return (
-                <>
-                  <h2>{text}</h2>
-                </>
+                
+                  <h2 key={'title' + index}>{text}</h2>
+                
               );
             })}
-          </h2>
+          
 
           <p>{slide.desc}</p>
           <Link to={slide.url}>

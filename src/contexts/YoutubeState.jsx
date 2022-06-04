@@ -21,8 +21,9 @@ import YTPage6 from "../yt.res.pg6.json";
 // const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${videoCount}`;
 
 export const youtubeContext = createContext();
-const YoutubeState = (props) => {
+const YoutubeState = ({children}) => {
   const [videos, setVideos] = useState([]);
+  const [activeVideo, setActiveVideo] = useState({});
   const allVideos = useMemo(() => {
     const data = [
       ...YTPage1.items,
@@ -68,9 +69,10 @@ const YoutubeState = (props) => {
     <youtubeContext.Provider
       value={{
         allVideos: videos,
+        activeVideo,setActiveVideo
       }}
     >
-      {props.children}
+      {children}
     </youtubeContext.Provider>
   );
 };

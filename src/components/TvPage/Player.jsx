@@ -1,10 +1,24 @@
-const Player = ({ video }) => {
-  const url = ` https://www.youtube.com/embed/${video?.id?.videoId}?autoplay=1`;
+import { useContext, useMemo } from "react";
+import { youtubeContext } from "../../contexts/YoutubeState";
+import Loader from '../Loader/Loader';
+
+const Player = () => {
+  const { activeVideo } = useContext(youtubeContext);
+  const url = useMemo(
+    () => {
+return ` https://www.youtube.com/embed/${activeVideo.id?.videoId}?autoplay=1`;
+      
+    },
+    [activeVideo],
+  )
+  
   return (
+  
     <div className="player-container">
       <section className="video-player-container" id="#">
-        <div className="player-section">
-          <iframe
+          <div className="player-section">
+          {
+            activeVideo.id ?          <iframe
             className="video-player"
             src={url}
             width="640"
@@ -13,10 +27,15 @@ const Player = ({ video }) => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          />
+            />
+            :
+            <Loader />
+          
+          }
         </div>
       </section>
     </div>
+  
   );
 };
 

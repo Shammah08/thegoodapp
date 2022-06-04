@@ -1,4 +1,10 @@
-import { useEffect, useState, useCallback } from "react";
+import {
+  useEffect,
+  useState,
+  useCallback,
+  useLayoutEffect,
+  useContext,
+} from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { shows } from "../database";
@@ -10,12 +16,15 @@ import MoreChannels from "./MoreChannels";
 import Footer from "../Footer/Footer";
 
 import "./tv.scss";
+import { youtubeContext } from "../../contexts/YoutubeState";
+
 
 const Channel = () => {
-  const { channelId, videoId } = useParams();
+  const { channelId } = useParams();
+  const { activeVideo,setActiveVideo } = useContext(youtubeContext);
   const [displayVideos, setDisplayVideos] = useState([]);
   const [activeTab, setActiveTab] = useState("Home");
-  const [activeVideo, setActiveVideo] = useState({});
+
   const channel = shows.filter((show) => show.id === channelId)[0];
   const channelName = channel.title;
   const [channelVideos] = useYoutube(channelName);
@@ -27,19 +36,18 @@ const Channel = () => {
     setDisplayVideos(channelVideos);
   }, [channelVideos]);
 
+  useLayoutEffect(() => {
+    if ( !activeVideo) {
+      setActiveTab("Episodes");
+    }
+  }, [activeVideo, ])
   useEffect(() => {
     data();
-    if (videoId) {
-      setActiveVideo({ ...activeVideo, id: { videoId } });
-    }
-    if (!videoId && !activeVideo.id) {
-      setTimeout(() => {
-        setActiveTab("Episodes");
-      }, 2500);
-    }
-
+    // if (videoId) {
+    //   setActiveVideo({ ...activeVideo, id: { videoId } });
+    // }
     window.scrollTo(0, 0);
-  }, [activeVideo, data, displayVideos, videoId]);
+  }, [activeVideo, data, displayVideos, setActiveVideo]);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);

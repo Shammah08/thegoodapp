@@ -1,10 +1,20 @@
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
 import { logos } from "../database";
+import { youtubeContext } from "../../contexts/YoutubeState";
 
 const ShowCard = ({ episode, show }) => {
+  const navigate = useNavigate()
+  const { setActiveVideo } = useContext(youtubeContext);
+  const handleClick = (episode) => {
+    setActiveVideo(episode);
+    return navigate(`/tv/channel/${show.id}/`);
+  }
+   
   if (episode) {
     return (
       <figure className="show-card" key={episode.snippet.title}>
-        <a href={`/tv/channel/${show.id}/${episode.id.videoId}`}>
+        <div onClick={()=>handleClick(episode)} className='card'>
           {episode.snippet.liveBroadcastContent === "upcoming" ||
           episode.snippet.liveBroadcastContent === "live" ? (
             <img src={logos.logoRed} alt="" />
@@ -27,7 +37,7 @@ const ShowCard = ({ episode, show }) => {
               <i>share</i>{" "}
             </span>
           </figcaption>
-        </a>
+        </div>
       </figure>
     );
   }
