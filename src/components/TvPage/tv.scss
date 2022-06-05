@@ -22,9 +22,10 @@
     width: 100%;
 
     @include screen-res(phone) {
-      height: 140px;
+      height: 4rem;
     }
 
+    
     .banner {
       height: 100%;
       width: 100%;
@@ -37,15 +38,13 @@
         height: 100%;
         width: 50%;
 
-        @include screen-res(phone) {
-          object-fit: contain;
-        }
+        
       }
     }
   }
 
   .channel-badge-container {
-    height: 35vh;
+   height: 15rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -53,17 +52,18 @@
     padding: 20px;
     background-color: $darkBlue;
     width: 100%;
-    position: sticky;
-    top: 0;
+ 
 
     @include screen-res(phone) {
-      width: 95%;
-      padding: 10px;
+      
+      padding: 5px;
       justify-content: space-around;
+      
     }
-
+    
     @include screen-res(tablet) {
       padding: 10px;
+      height: auto;
     }
 
     @include screen-res(desktop) {
@@ -73,7 +73,7 @@
     .channel-badge-text {
       color: $grey;
       min-height: 50px;
-      // flex: 1;
+      
 
       h2 {
         font-size: 2rem;
@@ -85,10 +85,23 @@
       width: 100%;
       height: 100%;
 
+
+      @include screen-res(phone){
+        flex-wrap: wrap;
+      }
+
+        @include screen-res(tablet){
+        flex-wrap: wrap;
+      }
+
+        @include screen-res(desktop){
+        flex-wrap: nowrap;
+      }
+
       .channel-badge {
         height: 200px;
         width: 200px;
-        padding: 5px;
+        
 
         display: flex;
         flex-direction: column;
@@ -99,6 +112,12 @@
         transition: all ease-out 0.3s;
         text-decoration: none;
 
+        &:hover {
+          box-shadow: 0px 0.5px 0.5px 0.5px gray;
+          border-radius: 10%;
+          
+        }
+
         @include screen-res(phone) {
           height: 70px;
           width: 70px;
@@ -107,15 +126,10 @@
           outline: none;
         }
 
-        &:hover {
-          box-shadow: 0px 0.5px 0.5px 0.5px gray;
-          border-radius: 10%;
-          padding: 5px;
-        }
         .channel-badge-img-wrapper {
           height: 150px;
           width: 150px;
-          padding: 2px;
+          
           border-radius: 50%;
 
           img {
@@ -123,8 +137,6 @@
             width: 100%;
             object-fit: cover;
             border-radius: 10px;
-            border-radius: 50%;
-            box-shadow: 0px 2px 10px 2px gray;
           }
         }
 
@@ -135,140 +147,106 @@
           color: $grey;
 
           @include screen-res(phone) {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
             height: 100%;
             padding: 5px;
+            display: none;
           }
         }
 
-        // .show-details {
-        //   height: 50%;
-        //   width: 100%;
-        //   // background-color: #051229;
-        //   background: red;
-        //   display: flex;
-        //   align-items: center;
-        //   justify-content: space-between;
-        //   flex-direction: column;
-        //   color: white;
-        //   display: none;
-
-        //   @include screen-res(phone) {
-        //     display: none;
-        //   }
-
-        //   span {
-        //     width: 100%;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: space-evenly;
-        //     height: 50%;
-        //   }
-
-        //   strong {
-        //     font-size: 0.8rem;
-        //     font-weight: 600;
-        //     color: white;
-        //   }
-        //   a {
-        //     text-decoration: none;
-        //   }
-
-        //   h3 {
-        //     font-weight: 600;
-        //     font-size: 0.8rem;
-        //     color: $defaultRed;
-
-        //     &:hover,
-        //     .show-name:hover {
-        //       animation: zoom 1s infinite;
-        //       color: white;
-        //     }
-        //   }
-        // }
+  
       }
     }
   }
 
   .shows-container {
-    // max-height: 50vh;
-    height: auto;
+    min-height: 50vh;
+    
     text-align: left;
-    box-shadow: 5px 5px 5px $grey;
-    // background-color: green;
+    box-shadow: 5px 5px 10px 5px $grey;
+    
     display: flex;
-    // align-content: space-between;
+    
     align-items: flex-start;
-    // justify-content: center;
+    
     flex-direction: column;
     margin-bottom: 3rem;
     width: 90%;
 
+    
+    
     .show-title {
-      // color: lime;
+      
       font-size: 2rem;
       padding: 10px;
-    }
 
+
+      @include screen-res(phone) {
+        font-size: 1.6rem;
+        
+      }
+    }
+    
     .shows-wrapper {
-      // background-color: red;
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
-      height: auto;
+      flex-wrap: wrap;
+      
+      
       width: 100%;
-      padding: 20px;
-
+      padding: 1rem;
+      
+      @include screen-res(phone) {
+        justify-content: center;
+    
+      
+      }
+      
       .show-card {
         border-radius: 6px;
-
-        width: 250px;
-        margin-right: auto;
-
-        box-shadow: 2px 2px 15px 2px #333;
-
+             box-shadow: 2px 2px 15px 2px #333;
+             display: flex;
+        
         @include screen-res(phone) {
           flex-direction: column;
-          flex: 1;
+          
+          width: 45%;
+          margin: 0.4rem;
+          
         }
 
-        @include screen-res(tablet) {
-          flex-direction: column;
-          height: 300px;
+        @include screen-res(tablet){
+          width: 45%;
+          margin: 0.5rem;
         }
+
+      
 
         @include screen-res(desktop) {
-          // flex-direction: initial;
+            width: 250px;
+            
+            height: auto;
+        margin-right: auto;
+        
+
         }
         .card {
           height: 100%;
-          text-decoration: none;
-          color: $lightBlack;
+                    color: $lightBlack;
           display: flex;
           flex-direction: column;
+
+         
           img {
-            background-color: $lightBlack;
+            
             transition: all ease-in-out 2s;
             object-fit: cover;
             width: 100%;
             height: 100%;
+            
             border-top-left-radius: 6px;
             border-top-right-radius: 6px;
-
-            // @include screen-res(phone) {
-            //   width: 100%;
-            //   height: 50%;
-            // }
-
-            // @include screen-res(tablet) {
-            //   width: 100%;
-            //   height: 50%;
-            // }
-
-            // @include screen-res(desktop) {
-            //   width: 100%;
-            //   height: 100%;
-            // }
           }
         }
 
@@ -281,24 +259,16 @@
           position: relative;
           padding: 5px;
 
-          @include screen-res(phone) {
-            width: 90%;
-          }
 
           .show-text {
-            height: 90%;
+            min-height: 6rem;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
-
-            @include screen-res(phone) {
-              width: 100%;
-            }
-
-            @include screen-res(tablet) {
-              width: 100%;
-            }
+            justify-content: space-between;
+            
+            
           }
 
           h2 {
@@ -308,6 +278,13 @@
             letter-spacing: 1px;
             line-height: 20px;
             text-transform: uppercase;
+            
+
+          @include screen-res(phone) {
+              letter-spacing: normal;
+              line-height: normal;
+              font-size: 0.7rem;
+            }
           }
 
           p {
@@ -319,6 +296,7 @@
             @include screen-res(phone) {
               visibility: hidden;
               height: 60px;
+              font-size: 0.5rem;
             }
             @include screen-res(tablet) {
               height: 80px;
@@ -348,7 +326,7 @@
             width: 100%;
             font-size: 10px;
           }
-          // }
+        
         }
       }
     }
@@ -357,6 +335,10 @@
       color: $darkBlue;
       text-align: right;
       float: right;
+
+      @include screen-res(phone){
+        margin-top: 1rem;
+      }
     }
     // }
     .redirect-title {
@@ -380,12 +362,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  // padding: 10px;
-  // background-color: $lightBlack;
+  
+  
 
-  @include screen-res(phone) {
-    justify-content: flex-start;
-  }
   span {
     display: flex;
     align-items: center;
@@ -410,7 +389,7 @@
 
       @include screen-res(phone) {
         height: 100%;
-        width: 90%;
+        width: 100%;
       }
       @include screen-res(tablet) {
         width: 90%;
@@ -521,6 +500,8 @@
   align-items: flex-start;
   justify-content: center;
   background: whitesmoke;
+  // overflow-y: hidden;
+  
 
   .channel-main {
     height: 75vh;
@@ -530,6 +511,14 @@
     margin: auto;
     // justify-content: center;
     // align-items: center;
+    
+
+            @include screen-res(phone){
+        height: auto;
+        
+        width: 100%;
+      }
+        
 
     h3 {
       height: 10%;
@@ -541,6 +530,12 @@
 
       font-size: 1.4rem;
       box-shadow: 2px 2px 20px 2px black;
+
+        @include screen-res(phone){
+                min-height: 3rem;
+                width: 100%;
+              }
+   
     }
 
     .channel-nav {
@@ -551,6 +546,11 @@
       height: 10%;
       background: $lightBlack;
       color: $lightGrey;
+      
+              @include screen-res(phone){
+                min-height: 3rem;
+                
+              }
 
       li {
         margin-left: 20px;
@@ -568,12 +568,23 @@
       .channel-home {
         width: 100%;
         height: 100%;
-        overflow-y: hidden;
+        // overflow-x: hidden;
+
+
+           @include screen-res(phone){
+        flex-direction: column;
+      }
         
 
         .player-container {
           width: 80%;
           height: 100%;
+
+    @include screen-res(phone){
+        height: 40vh;
+        width: 100vw;
+      }
+        
         }
         .now-playing-container {
           width: 25%;
@@ -585,6 +596,13 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+
+                  @include screen-res(phone){
+        width: 100%;
+          border: none;
+
+      }
+        
           
           
           .now-playing {
@@ -598,6 +616,12 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+
+                           @include screen-res(phone){
+        height: 15rem;
+        
+      }
 
             h2 {
               font-size: 1.4rem;
@@ -666,24 +690,59 @@
         display: flex;
         flex-wrap: wrap;
 
+
+            @include screen-res(phone){
+              justify-content: center;
+                
+                
+              }
+
         .episode-container {
           height: 200px;
-          width: 30%;
+      
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
 
-          background: $lightGrey;
+          background: whitesmoke;
+          box-shadow: 2px 2px 10px 2px black;
           border-radius: 4px;
           margin: 20px;
           // padding: 5px;
           overflow: hidden;
+
+            @include screen-res(phone){
+              justify-content: center;
+                width: 35%;
+                height: 10rem;
+                
+              }
+
+                    @include screen-res(tablet){
+              
+                width: 40%;
+                
+                
+              }
+
+                    @include screen-res(desktop){
+              justify-content: center;
+                width: 30%;
+                height: 200px;
+                
+              }
 
           img {
             flex: 2;
             object-fit: cover;
             height: 100%;
             width: 40%;
+
+             @include screen-res(phone){
+                object-position: center;
+                object-fit: fill;
+                
+              }
           }
 
           .episode-meta {
@@ -728,6 +787,11 @@
         justify-content: space-between;
         width: 100%;
         overflow-y: hidden;
+
+              @include screen-res(phone){
+         flex-direction: column-reverse;
+                
+              }
 
         .channel-image {
           flex: 1;
@@ -792,6 +856,11 @@
               align-items: center;
               justify-content: space-around;
 
+                    @include screen-res(phone){
+           width: 100%;
+                
+              }
+
               a {
                 display: flex;
                 align-items: center;
@@ -804,6 +873,11 @@
                 outline: none;
                 border-radius: 5px;
                 padding: 10px;
+
+                      @include screen-res(phone){
+            margin-bottom: 1rem;
+                
+              }
               }
             }
           }
@@ -815,10 +889,21 @@
   .more-channels-container {
     padding: 20px;
     margin-top: 20px;
-    background: $lightGrey;
+    
+    box-shadow: 2px 2px 20px 2px $lightGrey ;
     height: 60vh;
     display: flex;
     flex-direction: column;
+    
+
+
+          @include screen-res(phone){
+            height: auto;
+            overflow-x: hidden;
+                padding: 1px;
+                // justify-content: center;
+                // align-items: center;
+              }
 
     .more-channels-title {
       font-size: 2rem;
@@ -830,19 +915,27 @@
       width: 90%;
       margin: auto;
       display: flex;
+      flex-wrap: wrap;
 
       align-items: flex-start;
       justify-content: space-evenly;
-      display: flex;
-      flex-wrap: wrap;
+      
+
+            @include screen-res(phone){
+          align-items: center;
+          justify-content: center;
+                
+              }
 
       .channel-tag {
-        background: whitesmoke;
-        height: 100px;
-        width: 270px;
+        
+    box-shadow: 5px 5px 20px 5px $lightGrey ;
+
+        height: 7rem;
+        width: 18rem;
         display: flex;
         align-items: center;
-        margin: 20px;
+        margin: 10px;
         color: $lightBlack;
         border-radius: 5px;
         cursor: pointer;
@@ -852,12 +945,35 @@
           color: $lightBlack;
         }
 
+               @include screen-res(phone){
+          flex-direction: column;
+          // min-width: 6rem;
+          // width: 8rem;
+          width: 90vw;
+          height: 12rem;
+          margin: 5px;
+          
+
+                
+              }
+
         img {
           height: 100%;
           width: 40%;
           object-fit: cover;
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
+
+          
+
+                @include screen-res(phone){     
+width: 100%;  
+height: 50%;  
+border-radius: 0;  
+    border-top-right-radius: 5px;
+    
+          border-top-left-radius: 5px;          
+              }
         }
 
         .meta-info {
@@ -868,6 +984,10 @@
           height: 100%;
           width: 100%;
           padding: 5px;
+
+              @include screen-res(phone){
+              font-size: 0.7rem;
+            }
 
           button {
             width: 60px;
@@ -880,6 +1000,11 @@
             font-size: 0.8rem;
             border-radius: 12px;
             align-self: flex-end;
+
+
+            @include screen-res(phone){
+              width: 100%;
+            }
           }
         }
       }

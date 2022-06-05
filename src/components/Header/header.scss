@@ -56,6 +56,7 @@ header {
       width: 100%;
       flex-direction: column;
       background-color: $lightBlack;
+      color: white;
       margin: 0;
     }
     @include screen-res(tablet) {
@@ -105,6 +106,7 @@ header {
   .burger-nav {
     display: none;
     height: 25px;
+    
 
     @include screen-res(phone) {
       display: flex;
@@ -117,6 +119,6 @@ header {
   .burger-nav span {
     height: 4px;
     width: 40px;
-    background-color: $lightBlack;
+    background-color: $lightGrey;
   }
 }

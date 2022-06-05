@@ -3,7 +3,8 @@ import { logos } from "../database";
 
 const EpisodeCard = ({ episode, handleVideoChange }) => {
   return (
-    <div className="episode-container">
+    <div className="episode-container"
+      onClick={() => handleVideoChange(episode)}>
       {episode.snippet.liveBroadcastContent === "upcoming" ||
       episode.snippet.liveBroadcastContent === "live" ? (
         <img src={logos.logoRed} alt="" />

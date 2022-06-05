@@ -195,7 +195,7 @@ export const shows = [
   {
     id: "lockdown",
     category: "mixes",
-    title: "Lockdown Sessions",
+    title: "Lockdown Session",
     hosts: [
       { name: "Dj Grauchi", id: 5 },
       { name: "Guest Djs", id: "" },

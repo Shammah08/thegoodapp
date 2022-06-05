@@ -61,7 +61,7 @@
           color: white;
           z-index: 100;
           opacity: 1;
-  
+          
           @include screen-res(phone) {
             width: 80%;
             height: 300px;
@@ -83,13 +83,18 @@
 
             @include screen-res(phone) {
               font-size: 2.6rem;
+            line-height: 50px;
+
             }
             @include screen-res(tablet) {
               font-size: 4.4rem;
+            line-height: 70px;
+
             }
             @include screen-res(desktop) {
               font-size: 113px;
               width: 100%;
+              line-height: 8rem;
             }
           }
           p {
