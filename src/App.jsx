@@ -1,19 +1,19 @@
-import "./app.scss";
-import "./global.scss";
-import { appContext } from "./contexts/AppState";
 import { useContext, useEffect, useCallback } from "react";
 import { Route, Routes } from "react-router-dom";
-import LandingPage from "./components/LandingPage/LandingPage";
-import WalkPage from "./components/WalkWithG/WalkPage";
-import Team from "./components/TeamPage/Team";
-import Shop from "./components/ShopPage/Shop";
-import Tv from "./components/TvPage/Tv";
-import NewsPage from "./components/NewsPage/NewsPage";
-import NewsArticle from "./components/NewsPage/NewsArticle";
-import Header from "./components/Header/Header";
-import MemberProfile from "./components/TeamPage/MemberProfile";
-import Channel from "./components/TvPage/Channel";
-import Auth from "./components/AuthPage/Auth";
+import { appContext } from "./contexts/AppState";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import WalkPage from "./pages/WalkWithG/WalkPage";
+import Team from "./pages/TeamPage/Team";
+import Shop from "./pages/ShopPage/Shop";
+import Tv from "./pages/TvPage/Tv";
+import NewsPage from "./pages/NewsPage/NewsPage";
+import NewsArticle from "./pages/NewsPage/NewsArticle";
+// import Header from "./components/Header/Header";
+import MemberProfile from "./pages/TeamPage/MemberProfile";
+import Channel from "./pages/TvPage/Channel";
+import Auth from "./pages/AuthPage/Auth";
+import "./app.scss";
+// import "./global.scss";
 
 const App = () => {
   const { checkAuth } = useContext(appContext);
@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       {true && (
         <Routes>
           <>

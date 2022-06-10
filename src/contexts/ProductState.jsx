@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import productsReducer from "../reducers/ProductReducer";
 import ProductContext from "./products-context";
-import { products } from "../components/database";
+import { products } from '../resources/database'
 
 const ProductState = (props) => {
   const initialState = {
