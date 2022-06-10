@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { appContext } from "../../contexts/AppState";
-import { logos, navLinks } from "../database";
+import { logos, navLinks } from '../../resources/database'
 import { Link } from "react-router-dom";
 
 import "./header.scss";

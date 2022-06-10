@@ -6,13 +6,13 @@ import {
   useMemo,
 } from "react";
 
-import YTPage1 from "../yt.res.pg1.json";
+import YTPage1 from '../resources/yt.res.pg1.json'
 
-import YTPage2 from "../yt.res.pg2.json";
-import YTPage3 from "../yt.res.pg3.json";
-import YTPage4 from "../yt.res.pg4.json";
-import YTPage5 from "../yt.res.pg5.json";
-import YTPage6 from "../yt.res.pg6.json";
+import YTPage2 from "../resources/yt.res.pg2.json"
+import YTPage3 from '../resources/yt.res.pg3.json'
+import YTPage4 from '../resources/yt.res.pg4.json'
+import YTPage5 from '../resources/yt.res.pg5.json'
+import YTPage6 from '../resources/yt.res.pg6.json'
 
 // youtube API config
 // const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; // SR-Key

@@ -6,7 +6,7 @@ import {
   FaFacebookF,
   FaSpotify,
 } from "react-icons/fa";
-import { footerDetails } from "../database";
+import { footerDetails } from '../../resources/database'
 import { TopButton } from "../Button";
 import "./footer.scss";
 
